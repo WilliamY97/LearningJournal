@@ -4,7 +4,7 @@ A data stucture that maps keys to values for a highly efficient lookup.
 
 ## Implementation CTCI
 
-(hashtable.png)
+![alt tag](hashtable.png)
 
 It can be implemented using an array of linked lists and a hash code function. In order to insert a key (could be a string or any other data type) and value, we do the following:
 
