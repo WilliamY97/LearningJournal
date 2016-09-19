@@ -6,7 +6,7 @@ A data stucture that maps keys to values for a highly efficient lookup.
 
 ## Implementation CTCI
 
-It can be implemented using an array of linked lists and a hash code function. In order to insert a key (could be a string or any other data type) and value, we do the following:
+It can be implemented using an array of **linked lists** and a hash code function. In order to **insert** a key (could be a string or any other data type) and value, we do the following:
 
 **1.** Compute the key's hash code, which will usually be an *int* or *long*. NOTE: Two different keys can have the same has code, as there may be an infinite number of keys and a finite number of ints.
 
