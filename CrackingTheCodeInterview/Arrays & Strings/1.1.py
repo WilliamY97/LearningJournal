@@ -41,4 +41,4 @@ print is_unique('  ')
 print is_unique('qwerty')
 print is_unique('qwerte')
 
-# T F TTTT F TT
+# T F TTTT F TF
