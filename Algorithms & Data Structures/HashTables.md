@@ -4,7 +4,7 @@ A data stucture that maps keys to values for a highly efficient lookup.
 
 ![alt tag](hashtable.png)
 
-## Implementation CTCI
+## Implementation (Linked List)
 
 It can be implemented using an array of **linked lists** and a hash code function. In order to **insert** a key (could be a string or any other data type) and value, we do the following:
 
@@ -19,3 +19,7 @@ It can be implemented using an array of **linked lists** and a hash code functio
 ##Worst Case: # of collisions is high O(N), where N is the number of keys.
 
 ##Best Case: # of colliisions is low - lookup time is O(1).
+
+## Implementation (Balance Binary Search Tree)
+
+With a BBST we can obtain O(log N) lookup time. The **advantage** being using less space, since we no longer allocate a large array. We can also iterate through the keys in order, which can be useful sometimes.
