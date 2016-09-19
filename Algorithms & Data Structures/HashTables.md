@@ -14,7 +14,7 @@ It can be implemented using an array of **linked lists** and a hash code functio
 
 **3.** At this index, there is a linked list of keys and values. Store the key and value in this index. We must use a linked list because of collisions. You could have two different keys with the same hash code, or two different hash codes that map to the same index.
 
-*Retrieval:* In order to retrieve a value pair by its key, you repeat this process. Compute the hash code from the key, and then compute the index from the hash code. After, search through the linked list for the value with this key.
+**Retrieval:** In order to retrieve a value pair by its key, you repeat this process. Compute the hash code from the key, and then compute the index from the hash code. After, search through the linked list for the value with this key.
 
-*Worst Case:* # of collisions is high O(N), where N is the number of keys.
-*Best Case:* # of colliisions is low - lookup time is O(1).
+**##Worst Case:** # of collisions is high O(N), where N is the number of keys.
+**##Best Case:** # of colliisions is low - lookup time is O(1).
