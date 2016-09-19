@@ -16,6 +16,6 @@ It can be implemented using an array of **linked lists** and a hash code functio
 
 **Retrieval:** In order to retrieve a value pair by its key, you repeat this process. Compute the hash code from the key, and then compute the index from the hash code. After, search through the linked list for the value with this key.
 
-##Worst Case:## # of collisions is high O(N), where N is the number of keys.
+##Worst Case: # of collisions is high O(N), where N is the number of keys.
 
-##Best Case:## # of colliisions is low - lookup time is O(1).
+##Best Case: # of colliisions is low - lookup time is O(1).
