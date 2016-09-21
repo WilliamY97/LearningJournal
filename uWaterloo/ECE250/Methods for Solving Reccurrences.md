@@ -22,4 +22,6 @@ case
 
 ##Master Method
 
+(https://acrocontext.files.wordpress.com/2014/01/master-method.png)
+
 If the algorithm takes on the form **T(n) = aT(n/b) + Theta(n^k log Pn)**
