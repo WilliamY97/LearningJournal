@@ -60,9 +60,13 @@ If the other party does not uphold his/her end, the law provides recourse.
 agreement to be legally enforeable:
 
 1. An offer is made and accepted
-2. THere is mutual intent to enter into the contract
+2. There is mutual intent to enter into the contract
 3. Consideration - Can be anything of value (item or service), which each
 party to a legally binding contract must agree to exchange if the contract
+
+- Ex. I promise you that I will do X, in consideration for which you 
+promise me that you will do Y
+
 is to be valid. They must be given something for it. 
 4. Capacity
 5. Lawful Purpose
@@ -75,7 +79,7 @@ enforceable
 ##Legally Enforceable
 
 - Any agreement, even one not in writing, that possesses all five elements
-is enforeable.
+is enforceable.
 
 - Proving the existence of the contract may be harder if it is not in writing,
 but it may still be formed
