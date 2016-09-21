@@ -21,3 +21,5 @@ case
 - Solve the resulting summation
 
 ##Master Method
+
+If the algorithm takes on the form **T(n) = aT(n/b) + Theta(n^k log Pn)**
