@@ -27,7 +27,7 @@ case
 If the algorithm takes on the form **T(n) = aT(n/b) + Theta(n^k log Pn)** where a >= 1, b > 1, and
 f is asymptotically positive
 
-#leaves = n^(log_b(a))
+leaves = n^(log_b(a))
 
 - Running time **dominated by cost at leaves**
 
