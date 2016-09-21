@@ -47,3 +47,39 @@ and bargain on their own
 If the other party does not uphold his/her end, the law provides recourse.
 
 ##Good and Bad Deals
+
+- Law does not prevent people from making bad deals
+
+- Ex. I can seal my car for $10, still a bad deal.
+
+- All that matters is a contract is legally enforceable.
+
+##Components of a Legal Contract
+
+- Over time, common law became the following essential elements for an 
+agreement to be legally enforeable:
+
+1. An offer is made and accepted
+2. THere is mutual intent to enter into the contract
+3. Consideration - Can be anything of value (item or service), which each
+party to a legally binding contract must agree to exchange if the contract
+is to be valid. They must be given something for it. 
+4. Capacity
+5. Lawful Purpose
+
+Ex. **Quid pro quo**: Something for something / this for that
+
+- If any one of those items is absent, the contract will not be legally 
+enforceable
+
+##Legally Enforceable
+
+- Any agreement, even one not in writing, that possesses all five elements
+is enforeable.
+
+- Proving the existence of the contract may be harder if it is not in writing,
+but it may still be formed
+
+- even if the contract is unfair, it will be enforced
+
+- if one element is absent, the courts will decline to intervene
