@@ -97,3 +97,29 @@ but it may still be formed
 - Even if the contract is unfair, it will be enforced
 
 - if one element is absent, the courts will decline to intervene
+
+##Intervention
+
+- The terms in a contract include any benefits and obligations usually arrived
+at through negotiation and then agreement
+
+- The courts will be willing to step in if a party to a contract does not fulfill
+its obligations under the terms
+
+- Courts will not, however, alter the terms of a contract in favour of more fair
+or just terms than those that were decided upon.
+
+- The courts may, however, declare a contract void, voidable, or unenforceable.
+
+##Changing a Contract
+
+- A contract can be, through mutual agreement, altered (up to a point).
+
+- The changes must fall within the scope of the original contract
+
+- A contact to build a house may change the design or add a shed
+
+- but a contract to design an apartment cannot be modified to design a house
+
+
+
