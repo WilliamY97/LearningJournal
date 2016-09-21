@@ -63,13 +63,23 @@ agreement to be legally enforeable:
 2. There is mutual intent to enter into the contract
 3. Consideration - Can be anything of value (item or service), which each
 party to a legally binding contract must agree to exchange if the contract
+is to be valid. They must be given something for it.
 
 - Ex. I promise you that I will do X, in consideration for which you 
 promise me that you will do Y
 
-is to be valid. They must be given something for it. 
-4. Capacity
-5. Lawful Purpose
+4. Capacity: The ability, capability, or fitness to do something; a legal
+right, power of competency to perform some act - ability to comprehend both
+the nature and consequences of one's acts
+
+ex. A capacity defense is used in both criminal and civil actions to describe
+a lack of fundamental ability to be accountable for one's action that nullifies
+the element of intent when intent is essential to the action, thereby
+relieving a person of responsibility for it
+
+5. Lawful Purpose: An agreement is legal and enforceable only if it complies
+with the law of the land and public policy. Any agreement entered into for an
+illegal purpose is not legally binding
 
 Ex. **Quid pro quo**: Something for something / this for that
 
@@ -84,6 +94,6 @@ is enforceable.
 - Proving the existence of the contract may be harder if it is not in writing,
 but it may still be formed
 
-- even if the contract is unfair, it will be enforced
+- Even if the contract is unfair, it will be enforced
 
 - if one element is absent, the courts will decline to intervene
