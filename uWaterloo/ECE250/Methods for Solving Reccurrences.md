@@ -10,4 +10,14 @@ http://www.cs.cornell.edu/courses/cs3110/2012sp/lectures/lec20-master/lec20.html
 
 ##Repeated Substitution
 
+- Substitute a few times until you see a pattern
+
+- Write a formula in terms of n and the number
+of substitutions i
+
+- Choose i so that all references to the base
+case
+
+- Solve the resulting summation
+
 ##Master Method
