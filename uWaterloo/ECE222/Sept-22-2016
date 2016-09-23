@@ -1,0 +1,12 @@
+#Stack Frame
+
+- Locations at the top of the processor stack are used as a private work space by subroutines
+
+- Consists of all of the items pushed onto the stack prior to the calling of a subroutine and during the execution of a subroutine
+
+- Difference: As you execute - stack pointer may move.
+
+- From frame pointer to stack pointer
+
+- If you want to use something that typically doesn't change - use frame pointer
+
