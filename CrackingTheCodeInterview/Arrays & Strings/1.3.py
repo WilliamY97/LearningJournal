@@ -1,3 +1,10 @@
+"""SOLUTION: I set up a new string variable and for every letter in s,
+I reduce from the integer counter and check if the letter is ' ',
+if it is I add %20 to the new string or else I add the letter itself.
+When i reaches < 0 then we have gone through the true length of the
+string and everything after is not necessary to add. Finally return new
+"""
+
 def URLify (s,i):
     new = ''
     for letter in s:
