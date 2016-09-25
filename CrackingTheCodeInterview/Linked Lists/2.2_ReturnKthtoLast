@@ -1,5 +1,8 @@
 from LinkedList import LinkedList
 
+"""Iterate through linked list up to k times and then from there on out
+start iterating through linked list until the node is point to none """
+
 def Kth_last(ll,k):
     
     for i in range(0,k,1):
@@ -11,3 +14,8 @@ def Kth_last(ll,k):
     while current.next != None:
         print current.value
         current = current.next
+
+ll = LinkedList()
+ll.generate(10, 0, 9)
+print(ll)
+Kth_last(ll,3)
