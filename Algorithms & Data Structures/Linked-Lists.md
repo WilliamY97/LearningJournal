@@ -40,3 +40,6 @@ iteration, p2 selects an elements and inserts it after p1.
 
 - A number of linked list problems rely on recursion. If you're having trouble solving a linked list problem, you should explore if a
 recursive approach will work. We won't go into depth on recursion, since a later chapter is devoted to it. 
+
+- However note that recursive algorithms take at least O(n) space, where n is the depth of the recursive call. All recursive algorithms
+can be implemented iteratively, although they may be much more complex. 
