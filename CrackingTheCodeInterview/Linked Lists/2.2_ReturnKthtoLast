@@ -1,0 +1,13 @@
+from LinkedList import LinkedList
+
+def Kth_last(ll,k):
+    
+    for i in range(0,k,1):
+        if i == 0:
+            current = ll.head
+        else:
+            current = current.next
+    
+    while current.next != None:
+        print current.value
+        current = current.next
