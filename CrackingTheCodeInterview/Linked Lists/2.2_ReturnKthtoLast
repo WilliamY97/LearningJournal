@@ -1,9 +1,36 @@
 from LinkedList import LinkedList
 
-"""Iterate through linked list up to k times and then from there on out
-start iterating through linked list until the node is point to none """
 
-def Kth_last(ll,k):
+"""SOLUTION: Set up a runner to iterate ahead of current by k nodes then
+afterwards iterate both until runner reaches None. The current node
+should be at the Kth node and now return the value"""
+
+def kth_to_last(ll,k):
+    current = runner = ll.head
+    
+    for i in range(k):
+        if runner is None:
+            return None
+        runner = runner.next
+        
+    while runner.next != None:
+        current = current.next
+        runner = runner.next
+        
+    return current
+
+ll = LinkedList()
+ll.generate(10, 0, 99)
+print ll
+print(kth_to_last(ll, 3)
+
+"""Iterate through linked list up to k times and then from there on out
+start iterating through linked list until the node is pointing to none
+and printing the values from k to the last node"""
+
+"""NOTE: This is the solution when I misread the book"""
+
+def Kth_MISREAD(ll,k):
     
     for i in range(0,k,1):
         if i == 0:
@@ -18,4 +45,4 @@ def Kth_last(ll,k):
 ll = LinkedList()
 ll.generate(10, 0, 9)
 print(ll)
-Kth_last(ll,3)
+kth_to_last(ll,3)
