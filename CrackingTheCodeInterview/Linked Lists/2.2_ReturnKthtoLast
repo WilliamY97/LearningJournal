@@ -5,6 +5,10 @@ from LinkedList import LinkedList
 afterwards iterate both until runner reaches None. The current node
 should be at the Kth node and now return the value"""
 
+"""EDGE CASE: Need to consider that the list might be smaller than the
+k value. In this case you need to check when the runner is iterating
+if it's equal to None and return None if so"""
+
 def kth_to_last(ll,k):
     current = runner = ll.head
     
