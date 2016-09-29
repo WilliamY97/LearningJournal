@@ -29,3 +29,11 @@ Linked lists would too have the O(n log n) plus more O(n log n) for traversing u
 
 **Conclusion:** Arrays are better and you also get the benefit of better caching than linked lists. Derivatives of a binary search tree
 such as a **heap** are commonly represented as arrays.
+
+##Binary Search Trees
+
+- Each node stores an item (k) of a dictionary
+
+- Keys stored at nodes in the left subtree are less than or equal to k
+
+- Keys stored at nodes in the right subtree are greater than (or equal) to k
