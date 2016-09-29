@@ -81,3 +81,30 @@ TreeMinimum(x)
 02 x ← x.left()
 03 return x
 ```
+
+##BST Successsor
+
+- Given x, find the node with the smallest key greater than x.key()
+
+- Successor is the leftmost node in the right subtree
+
+- This can be done by returning TreeMinimum(x.right())
+
+##BST Successor - Case 2
+
+- The right subtree of x is empty
+
+- Successor is the lowest ancestor of x whose left child is also an ancestor of x
+
+#Successor Pseudocode
+
+```
+TreeSuccessor(x)
+01 if x.right() ≠ NIL
+02 then return TreeMinimum(x.right())
+03 y ← x.parent()
+04 while y ≠ NIL and x = y.right()
+05 x ← y
+06 y ← y.parent()
+03 return y
+```
