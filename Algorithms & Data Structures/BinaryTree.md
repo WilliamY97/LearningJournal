@@ -47,16 +47,17 @@ such as a **heap** are commonly represented as arrays.
 ##Pseudocode for BST Search
 
 - Recursive
-
+```
 Search(T,k)
 01 if T = NIL then return NIL
 02 if k = T.key() then return T
 03 if k < T.key()
 04 then return Search(T.left(),k)
 05 else return Search(T.right(),k)
+```
 
 - Iterative
-
+```
 Search(T,k)
 01 x ← T
 02 while x ≠ NIL and k ≠ x.key() do
@@ -64,6 +65,7 @@ Search(T,k)
 04 then x ← x.left()
 05 else x ← x.right()
 06 return x
+```
 
 - Running time on tree of height h is O(h)
 
