@@ -65,3 +65,4 @@ Search(T,k)
 05 else x ← x.right()
 06 return x
 
+- Running time on tree of height h is O(h)
