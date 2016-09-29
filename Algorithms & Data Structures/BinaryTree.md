@@ -66,3 +66,16 @@ Search(T,k)
 06 return x
 
 - Running time on tree of height h is O(h)
+
+##BST Minimum (Maximum)
+
+- Find the minimum key in a tree root at x (far left sub tree)
+
+- Find the maximum key in a tree root at x (far right sub tree)
+
+'''
+TreeMinimum(x)
+01 while x.left() ≠ NIL do
+02 x ← x.left()
+03 return x
+'''
