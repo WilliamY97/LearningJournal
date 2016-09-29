@@ -48,12 +48,14 @@ such as a **heap** are commonly represented as arrays.
 
 - Recursive
 ```
+**
 Search(T,k)
 01 if T = NIL then return NIL
 02 if k = T.key() then return T
 03 if k < T.key()
 04 then return Search(T.left(),k)
 05 else return Search(T.right(),k)
+**
 ```
 
 - Iterative
