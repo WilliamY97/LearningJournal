@@ -8,6 +8,7 @@
 
 - TEQ - Test if Equal
 
-- BNE - branch not equal (if flag != 0)
+- BNE - branch not equal (if flag != 0) it will return 1
 
+- BE - branch equal (if flag == 0) it will return 1
 
