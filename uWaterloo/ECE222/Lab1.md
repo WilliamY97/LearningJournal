@@ -14,3 +14,7 @@
 
 - BE - branch equal (if flag == 0) it will return 1
 
+- STMFD: Pushes given parameters into stack
+
+- LDMDF: Pops given parameters out of stack
+
