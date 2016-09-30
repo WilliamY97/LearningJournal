@@ -14,7 +14,7 @@
 
 - BE - branch equal (if flag == 0) it will return 1
 
-- STMFD: Pushes given parameters into stack
+- STMFD: Pushes given parameters into stack - the !() moves the stack pointer to the last parameter put into stack
 
 - LDMDF: Pops given parameters out of stack
 
