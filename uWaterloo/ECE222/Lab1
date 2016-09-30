@@ -8,6 +8,8 @@
 
 - TEQ - Test if Equal
 
+- Flag is for if zero exists 1 = there is a zero, 0 = no zero.
+
 - BNE - branch not equal (if flag != 0) it will return 1
 
 - BE - branch equal (if flag == 0) it will return 1
