@@ -1,0 +1,21 @@
+##One-Pass Assembling
+
+- It won't know how to generate offset.
+- If you can't synthesize in one pass - do it in multiple passes
+
+
+##Linkers and Loaders
+
+- You will probably have multiple modules
+
+- Linker: What is the exact offset I need to put to ensure that the code continues in module?
+
+- Use linker to link files into one executable
+
+- **Position independent code:** Code that does not change based on location
+
+Ex. Relative addressing, instructions
+
+- **Position dependent code:** Code that does change based on location
+
+Ex. references to external labels
