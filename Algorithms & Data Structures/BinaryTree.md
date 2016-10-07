@@ -35,7 +35,7 @@ such as a **heap** are commonly represented as arrays.
 
 ##Binary Search Trees
 
-![Reference Image](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/2000px-Binary_search_tree.svg.png)
+![Reference Image](http://2.bp.blogspot.com/-3eyinMSgNi4/Vio9pd_tdYI/AAAAAAAAD-8/zT2D0lgWa8s/s1600/binary%2BSearch%2BTree%2Bin%2BJava.png)
 
 - Each node stores an item (k) of a dictionary
 
