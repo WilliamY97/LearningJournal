@@ -35,6 +35,8 @@ such as a **heap** are commonly represented as arrays.
 
 ##Binary Search Trees
 
+![Reference Image](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/2000px-Binary_search_tree.svg.png)
+
 - Each node stores an item (k) of a dictionary
 
 - Keys stored at nodes in the left subtree are less than or equal to k
