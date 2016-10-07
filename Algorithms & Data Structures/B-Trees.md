@@ -1,5 +1,7 @@
 #B-Trees
 
+![Reference Image](http://www.cs.cornell.edu/courses/cs3110/2011sp/recitations/rec24-B-trees/images/B-trees-insert3.gif)
+
 - **Definition:** An organizational structure for information storage in the form of a tree where all the terminal nodes are the
 same distance from the base and all nonterminal nodes have n - 2n subtrees
 
