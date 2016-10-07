@@ -1,5 +1,7 @@
 #Memory Leak
 
+![Reference Image](http://www.programcreek.com/wp-content/uploads/2013/10/where-is-memory-leak-650x400.jpeg)
+
 - In Computer Science, a **memory leak** occurs when a computer program incorrectly manages memory allocations in such a way that
 memory which is no longer needed is not released. In OOP, this can occur when an object is stored in memory but cannot be accessed
 by the running code.
