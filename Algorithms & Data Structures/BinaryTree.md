@@ -1,5 +1,8 @@
 #Binary Tree
 
+![Reference Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Binary_tree.svg/192px-Binary_tree.svg.png)
+
+
 **Definition:** A data structure in which a record is linked to two successor records, usually referred to as the left branch
 when greater and the right when less than the previous record.
 
