@@ -46,3 +46,21 @@ Root:   Children
 ##Height of a B-tree
 
 - B-tree T if height h, containing n >= 1 keys and minimm degree t >= 2, the follwing restriction on the height holds: h <= log_t (n+1)/2
+
+Example: Google Search is built on variation of B-tree. It is very important b/c majority of search engine use it.
+
+- How are keys stored? The best way to implementing keys is a bi-directional linked list. 
+
+```
+n: total # of keys
+
+n >= (|x|) + (2(t-1))+(2t(t-1))+(2t^2 * (t-1)) + ...
+
+n >= 1 + (t-1)(2 + 2t + 2t^2 + ...) ->2 [n E (i = 1)] t^n = 2 x (t^n -1 / t-1)
+
+n >= 1 + (t-1)* 2 * (t^n -1 / t-1)
+
+n >= 1 + 2t^n - 2
+
+2t^n <= n+1 -> t^n <= (n+1)/2 -> h <= log_t (n+1)/2
+```
