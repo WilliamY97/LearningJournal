@@ -66,3 +66,13 @@ n >= 1 + 2t^n - 2
 
 2t^n <= n+1 -> t^n <= (n+1)/2 -> h <= log_t (n+1)/2
 ```
+
+##Searching
+
+- Straightforward generalization of tree search (e.g. binary search trees)
+
+##Splitting nodes
+
+- Nodes fill up and reach their maximum capacity 2t-1
+
+- Before we can insert a new key, we have to "make room", i.e. split nodes
