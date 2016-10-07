@@ -15,3 +15,11 @@ same distance from the base and all nonterminal nodes have n - 2n subtrees
 
 - Size of B-tree is determined by the page size. One page - one node.
 
+```
+degree-t
+
+Every node (except Root):
+  Minimum # of Keys: t-1
+  Maximum # of keys: 2t-1
+
+```
