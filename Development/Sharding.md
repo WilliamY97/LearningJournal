@@ -1,5 +1,7 @@
 #Sharding
 
+![Reference Image](https://docs.mongodb.com/v3.0/_images/sharded-collection.png)
+
 - Sharding is a kind of database partitioning that turns very large databases into data shards which are smaller, faster, and more easily managed.
 
 - These shards can then be spread amongst multiple servers
