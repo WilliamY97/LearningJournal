@@ -45,4 +45,4 @@ Root:   Children
 
 ##Height of a B-tree
 
-- B-tree T if heigh h, containing n >= 1 keys and minimm degree t >= 2, the follwing restriction on the height holds: h <= log_t (n+1)/2
+- B-tree T if height h, containing n >= 1 keys and minimm degree t >= 2, the follwing restriction on the height holds: h <= log_t (n+1)/2
