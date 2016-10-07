@@ -1,5 +1,7 @@
 #Linked Lists
 
+![Reference Image](http://www.cs.usfca.edu/~srollins/courses/cs112-f08/web/notes/linkedlists/ll2.gif)
+
 A linked list is a data structure that represents a sequence of nodes. In a singly linked list, each node points to the next node
 in the linked list. A doubly linked list gives each node pointers to both the next node and the previous node.
 
