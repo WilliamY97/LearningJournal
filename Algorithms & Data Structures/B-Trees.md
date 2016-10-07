@@ -3,6 +3,8 @@
 - **Definition:** An organizational structure for information storage in the form of a tree where all the terminal nodes are the
 same distance from the base and all nonterminal nodes have n - 2n subtrees
 
+- Often used in database systems or other applications where data is stored externally on disks and keeping tree shallow is important
+
 ##Disk Based Data Structures
 
 - So far searchtrees were limited to main memory structures
@@ -41,4 +43,6 @@ Root:   Children
 2t-1 -> 2t
 ```
 
+##Height of a B-tree
 
+- B-tree T if heigh h, containing n >= 1 keys and minimm degree t >= 2, the follwing restriction on the height holds: h <= log_t (n+1)/2
