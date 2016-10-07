@@ -1,5 +1,8 @@
 #B-Trees
 
+- **Definition:** An organizational structure for information storage in the form of a tree where all the terminal nodes are the
+same distance from the base and all nonterminal nodes have n - 2n subtrees
+
 ##Disk Based Data Structures
 
 - So far searchtrees were limited to main memory structures
@@ -11,3 +14,4 @@
 ##Binary Trees vs. B-trees
 
 - Size of B-tree is determined by the page size. One page - one node.
+
