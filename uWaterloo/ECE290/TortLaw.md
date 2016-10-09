@@ -131,5 +131,19 @@ defendant in that case.
 
 - For the most part ** in this class we focus on unintentional torts**.
 
+#Lecture 13 Tort: Negligence
+
+- Unintentional torts - a person causes harm without any intent to cause the harm.
+
+- Victim may still deserve compensation
+
+- The question is was the the defendant **negligent** in his/her actions?
+
+**Negligence:** Want of attention to what ought to be done or looked after carelessness with regard
+to one's duty or business; lack of necessary or ordinary care in doing something
+
+Or: a failure to take action that a reasonable or prudent person would take to protect another
+person/property from harm (**Appeal for Case 1 of Assignment 2**)
+
 
 
