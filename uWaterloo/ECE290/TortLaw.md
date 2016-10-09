@@ -159,3 +159,30 @@ harmed somoone?
 
 - **Courts have held** that if harmful results are unforseeable, A is not held responsible.
 
+##Standard of Care
+
+- Much debate in any tort law case is about the standard of care.
+
+- For the tort action to succeed, it must be demonstrated that there is an expected standard
+that the defendant has failed to meet.
+
+- Specifically engineer's standard of care
+
+- Engineers have a duty to use the reasonable care and skill of engineers of ordinary competence.
+
+Good Case Example (**Dominion ChainCo. Ltd. v. Eastern Construction Co. et al.**)
+
+- The case concerned an alleged faulty construction of a factory roof.
+
+'''
+- Court said: "It is trite law that an engineer is liable for incompetence, carelessnessor negligence which results in damages to his employer and his is in thesame position as any other professional or skilled person whoundertakes his professional work for reward and is thereforeresponsible if he does or omits to do his professional undertakings withan ordinary and reasonable degree of care and skill."
+'''
+
+```
+Architects and engineers are bound to possess a reasonable amount ofskill in the art or profession they exercise for reward, and to use areasonable amount of care and diligence in the carrying out of workwhich they undertake, including the preparation of plans and specifications.
+```
+- For this reason, liability insurance is **highly** recommended.
+
+##Negligence and Mistake
+
+- 
