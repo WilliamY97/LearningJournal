@@ -53,7 +53,7 @@ and can be a party in tort law.
 
 - Ex. A man is walking down the road and trampled by a horse loose from a carriage 
 
-- Under the old system, the owner is responsible - end of story.
+e- Under the old system, the owner is responsible - end of story.
 
 - Over time the concept was refined to include idea of **fault** so if he was careless and let the
 horse escape then he is liable but if horse was scared by snake then it is beyond operator's control
@@ -79,6 +79,8 @@ indirectly, and this allowed B to recover damages.
 
 - If any one of those elements is absent, the action will fail.
 
+##Duty of Care
+
 **Duty of Care:** a duty that a person has to ensure that others do not suffer a harm or loss
 
 - A duty typically arises when a person takes an action that could reasonably harm others, such as
@@ -88,3 +90,46 @@ driving or providing engineering consulting services.
 
 - The courts will usually hold parties to the standard of **"the conduct expected of a reasonable
 person under the circumstances"** 
+
+##Causation
+
+- The third element in the list requires the plaintiff to establish causation
+
+- Ex. Suppose that Alison breaks a plat on Monday at dinner time.
+
+The next day, her wife Bether makes a special trip by car to a shop to replace it.
+
+On her way she gets in a car crash
+
+Is Alison's carelessness in dropping the plate responsible for the car accident?
+
+**In the law** she did not. It is true she dropped the plate and caused her wife to drive, but
+many voluntary acts occured between the dropping of the plate and the car crash. Beth could
+have chosen to go at another time, as the other drive might have.
+
+These **voluntary acts** decouple the two events. **Causation can be traced back to the voluntary acts
+but no further**
+
+Another idea: crash could have occured due to carelessness on the part of Beth or the other driver.
+
+**General Rule**: The closer a person is to the event in question, the less chance there is of an
+intervening event.
+
+##Burden of Proof
+
+- The burden of proof in tort law is somewhat complex... in tort law - **the injured party need only
+demonstrate the defendant's product caused the injury; not the exact details of how**
+
+- Then the defendant must prove that they are not responsible for the injury. The burden has shifted to the
+defendant in that case.
+
+##Intentional Torts
+
+- Torts can be classified based on intent
+
+- An **intentional tort** is one where the tortfeasor deliberately performs an action which harms another.
+
+- For the most part ** in this class we focus on unintentional torts**.
+
+
+
