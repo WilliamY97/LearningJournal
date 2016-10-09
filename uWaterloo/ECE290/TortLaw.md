@@ -191,4 +191,6 @@ Architects and engineers are bound to possess a reasonable amount ofskill in the
 
 - Something bad happened but a bad outcome doesn't necessarily act as an indication that there was negligence.
 
-- 
+```
+Whether or not there was negligence in regard to design and construction of the dam is a question of fact. Engineers are expected to be possessed of reasonably competent skill in the exercise of their particular calling, but not infallible, nor is perfection expected, and the most that can be required of them is the exercise of reasonable care and prudence in the light of scientific knowledge of the time, of which they should be aware...
+```
