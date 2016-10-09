@@ -246,5 +246,58 @@ of a product
 
 - On the basis of **better safe than sorry**
 
+#Tort: Duty to Warn - Economic Loss; Occupier's Liability
 
+- Causation is important to Tort law
 
+- Injuries, or damages must be "directly caused" by the defendant's actions, inactions, or negligence
+
+- **In assignment 1 the subsurface company was negligent and lead to company paying more money they did
+expect to have to pay**
+
+- **GOOD CASE**: 1982 decision from the English House of Lords
+
+- A negligently laid floor was defective but was not dangerous, nor did it risk damages to property. However
+the floor needed to be replaced, materials moved out, profits lost, due to business disturbance, et cetera.
+
+- **The damage caused to the owner was a direct result of the negligence.
+
+- Defendant found liable.
+
+##Occupier's Liability
+
+- Common sense makes us believe owner of land would be liable for injuries according to the rules of negligence.
+
+- Nope! Occupier's liability comes from land law - occupier must ensure safety of people coming into property.
+
+#Lecture 16: Negligent Misstatement
+
+** GOOD EXAMPLE FOR ASSIGNMENT 2**
+
+- What happens if engineer says something that is incorrect and someone acts on it?
+
+- One might be liable for damages if another part is affected
+
+**SUBSURFACE COMPANY KNEW BRIDGE DESIGNER WOULD USE THEIR INFORMATION TO BUILD BRIDGE THUS INSTILLING DUTY OF CARE**
+
+- **Where one person relies on the special skill and judgement of another, and thesecond person knew of the reliance, this establishes a duty.** 
+
+**EX. Trident Construction Ltd. v. W.L. Wardrop and Assoc. et al.**
+
+- An engineer designed a sewage plant but it had serious problems and it causedproblems for the contractor. 
+
+- Yes, the engineer was liable. His special skill (design) was was applied here,without a suitable disclaimer of liability
+
+**THUS DUTY OF CARE ATTACHED AND THE ENGINEER WAS RESPONSIBLE.
+
+CONCLUSION: You must be extremely careful about giving professional advice!
+
+#Lecture 17 - Vicarious Liability
+
+- If an employee commits a tort in the course of employment, the employer,through the principle of vicarious liability, is also liable for damage in tort
+
+- A party hiring an independent contractor is generally NOT VICARIOUSLY LIABLE for the wrongful acts of the independent contractor.
+
+#Lecture 18 -  Tort: Concurrent Tortfeasors & Contributory Negligence
+
+- 
