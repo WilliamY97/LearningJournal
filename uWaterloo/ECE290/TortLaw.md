@@ -145,5 +145,17 @@ to one's duty or business; lack of necessary or ordinary care in doing something
 Or: a failure to take action that a reasonable or prudent person would take to protect another
 person/property from harm (**Appeal for Case 1 of Assignment 2**)
 
+##Forseeability
 
+- An important component of negligence is **forseeability**
+
+- Should A have foreseen that his actions would cause harm (**Yes in the case of assignment 2**)
+
+- It is not expected that A has the power of clairvoyance; his ability to foresee the consequences
+need not be exceptional.
+
+- Would a normally intelligent and alert person have foreseen that his conduct would have likely
+harmed somoone?
+
+- **Courts have held** that if harmful results are unforseeable, A is not held responsible.
 
