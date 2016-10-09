@@ -183,6 +183,12 @@ Architects and engineers are bound to possess a reasonable amount ofskill in the
 ```
 - For this reason, liability insurance is **highly** recommended.
 
-##Negligence and Mistake
+##Negligence and Mistake (**Importance for Assignment 2**)
+
+- Consider the 1952 case of **Ramsay and Penno v. The King[4]**
+
+- This was an action against the Crown involving the flooding of lands, allegingnegligence in the design and construction of certain dams.
+
+- Something bad happened but a bad outcome doesn't necessarily act as an indication that there was negligence.
 
 - 
