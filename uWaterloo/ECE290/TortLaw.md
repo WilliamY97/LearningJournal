@@ -59,3 +59,32 @@ and can be a party in tort law.
 horse escape then he is liable but if horse was scared by snake then it is beyond operator's control
 and he is not considered liable
 
+- Tort was also expanded to include less direct situations
+
+- Ex. Suppose A carelessly drops a log on the road at sunset and leaves it there.
+
+B's horse trips over the log and is injured.... in early times it was not recognized as A's fault
+but later on the corut recognized that A's action (**inaction**) was responsible for B's injury,
+indirectly, and this allowed B to recover damages.
+
+- So now the law accounts for both fault and **causation**.
+
+##Elements of Tort Action
+
+- To establish the right to recover compensation, the plaintiff must prove:
+
+**1.** The defendant owed the plaintiff a duty of care.
+**2.** The defendant breached that duty by his or her conduct.
+**3.** The defendant's conduct caused injury to the plaintiff.
+
+- If any one of those elements is absent, the action will fail.
+
+**Duty of Care:** a duty that a person has to ensure that others do not suffer a harm or loss
+
+- A duty typically arises when a person takes an action that could reasonably harm others, such as
+driving or providing engineering consulting services.
+
+- **Reasonableness** is a very large element of tort law.
+
+- The courts will usually hold parties to the standard of **"the conduct expected of a reasonable
+person under the circumstances"** 
