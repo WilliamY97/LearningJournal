@@ -194,8 +194,7 @@ Architects and engineers are bound to possess a reasonable amount of skill in th
 ```
 Whether or not there was negligence in regard to design and construction of the dam is a question of fact. Engineers are expected to be possessed of reasonably competent skill in the exercise of their particular calling, but not infallible, nor is perfection expected, and the most that can be required of them is the exercise of reasonable care and prudence in the light of scientific knowledge of the time, of which they should be aware...
 ```
-** So the answer is no: a mistake is not necessarily negligence. **
-
+** So the answer is no: a mistake is not necessarily negligence. 
 - Remember that **tort action** can take place many years after the work has originally been performed.
 
 1. May be possible to show that work was done with best available tools and knowledge at the time of the work
@@ -203,4 +202,49 @@ Whether or not there was negligence in regard to design and construction of the 
 2. In high tech industries, standards are not as well established as they are in, say, civil engineering
 
 - A bit harder to show that best practises were not followed
+
+#Product Liability
+
+##Who is at Fault?
+
+Case **1932:Donoghue v. Stevenson.**
+
+- Donoghue drank rootbeer with partially decomposed snail in it. Until this point injuries from defective products
+were normally claimed on the basis of an agreement of sale.
+
+- No contract with the manufacturer, but courts did not agree with this interpretation. 
+
+Judge says:
+
+```
+You must take reasonable care to avoid acts or omissions which youcan reasonably foresee would be likely to injure your neighbour. Who,then, in law, is my neighbour? The answer seems to be – persons whoare so closely and directly affected by my act that I ought reasonably tohave them in contemplation as being so affected when I am directingmy mind to the acts or omissions which are called in question.
+```
+- Manufacturer of product has duty that it isn't harmful or injurious to the purchaser, user, or consumer.
+
+- There were multiple parties here: manufacturer, the shop that sold the plaintiff's friend the ginger beer,
+and even the friend herself.
+
+- Anyone in the supply chain is potentially a defendant in a court action.
+
+- Where multiple parties in the wrong, this situation is said to have **concurrent tortfeasors**.
+
+##Digression: Strict Liability
+
+- The courts sometimes find that the idea of fault is unnecessary in tort.
+
+- Ex. Worker's pay organization. If an employee is injured at work it is not req. that the employer is at fault.
+
+- Compensation is provided according to applicable provincial law.
+
+- In the USA, product liability case law has trended towards strict liability: a manufacturer is liable even if not
+negligent.
+
+##Duty to Warn
+
+- Manufacturers, sellers, distributors, et cetera, have a duty to warn consumers or users of any dangerous potential
+of a product
+
+- On the basis of **better safe than sorry**
+
+
 
