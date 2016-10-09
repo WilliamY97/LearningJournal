@@ -179,7 +179,7 @@ Good Case Example (**Dominion ChainCo. Ltd. v. Eastern Construction Co. et al.**
 '''
 
 ```
-Architects and engineers are bound to possess a reasonable amount ofskill in the art or profession they exercise for reward, and to use areasonable amount of care and diligence in the carrying out of workwhich they undertake, including the preparation of plans and specifications.
+Architects and engineers are bound to possess a reasonable amount of skill in the art or profession they exercise for reward, and to use areasonable amount of care and diligence in the carrying out of workwhich they undertake, including the preparation of plans and specifications.
 ```
 - For this reason, liability insurance is **highly** recommended.
 
@@ -194,3 +194,13 @@ Architects and engineers are bound to possess a reasonable amount ofskill in the
 ```
 Whether or not there was negligence in regard to design and construction of the dam is a question of fact. Engineers are expected to be possessed of reasonably competent skill in the exercise of their particular calling, but not infallible, nor is perfection expected, and the most that can be required of them is the exercise of reasonable care and prudence in the light of scientific knowledge of the time, of which they should be aware...
 ```
+** So the answer is no: a mistake is not necessarily negligence. **
+
+- Remember that **tort action** can take place many years after the work has originally been performed.
+
+1. May be possible to show that work was done with best available tools and knowledge at the time of the work
+
+2. In high tech industries, standards are not as well established as they are in, say, civil engineering
+
+- A bit harder to show that best practises were not followed
+
