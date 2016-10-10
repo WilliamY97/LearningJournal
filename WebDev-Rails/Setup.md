@@ -74,7 +74,7 @@ Now when a user visits http://localhost:8000/welcome, the route will send a requ
 
 Once we have a controller and a route, we can do the third part of the request/response cycle and create a **view.**
 
-In **app/views/pages/home.html.erb** we can add the view for the route
+In **app/views/pages/home.html.erb** we can add the view for the route we made to #home that leads to home.html.erb
 
 ```
 <div class="main">
