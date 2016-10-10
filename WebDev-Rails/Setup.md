@@ -72,4 +72,15 @@ Rails.application.routes.draw do
 
 Now when a user visits http://localhost:8000/welcome, the route will send a request to the Page's controller's **home** action
 
+Once we have a controller and a route, we can do the third part of the request/response cycle and create a **view.**
 
+In **app/views/pages/home.html.erb** we can add the view for the route
+
+```
+<div class="main">
+  <div class="container">
+    <h1>Hello my name is __</h1>
+    <p>I make Rails apps.</p>
+  </div>
+</div>
+```
