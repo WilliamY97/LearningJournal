@@ -58,3 +58,14 @@ end
 ```
 - Inside the new Pages controller, we add a method called home. Methods in rails controllers are also referred to as
 **controller actions**, so here we add the **home** action to the pages controller
+
+##Creating Routes
+
+Moving on to the second part of the request/response cycle and create a route.
+
+In **config/routes.db** we add:
+
+```
+Rails.application.routes.draw do
+  get 'welcome' => 'pages#home'
+```
