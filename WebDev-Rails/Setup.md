@@ -38,3 +38,9 @@ the controller.
 5. The view renders the page as HTML.
 
 6. The controller sends the HTML back to the browser for you to see.
+
+```
+rails generate controller Pages
+```
+
+Generated a new controller named Pages. This created a file named **app/controllers/pages_controller.rb**
