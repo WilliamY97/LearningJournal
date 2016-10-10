@@ -84,3 +84,11 @@ In **app/views/pages/home.html.erb** we can add the view for the route we made t
   </div>
 </div>
 ```
+
+##Generalizing the Setup Process
+
+1. Generate a new Rails app.
+2. Generate a controller and add an action.
+3. Create a route that maps a URL to the controller action.
+4. Create a view with HTML and CSS.
+5. Run the local web server and preview the app in the browser.
