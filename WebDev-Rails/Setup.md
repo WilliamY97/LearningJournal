@@ -22,7 +22,7 @@ rails server
 Started the Rails development server so that we could preview the app in the browser by visiting http://localhost:8000.
 This development server is called WEBrick.
 
-##What Happens When You Visit http://localhost:8000 in the Browser?
+##What Happens When You Visit http://localhost:8000 in the Browser? Request / Response Cycle
 
 1. The browser makes a request for the URL http://localhost:8000.
 
