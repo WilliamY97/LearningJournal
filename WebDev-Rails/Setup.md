@@ -69,3 +69,7 @@ In **config/routes.db** we add:
 Rails.application.routes.draw do
   get 'welcome' => 'pages#home'
 ```
+
+Now when a user visits http://localhost:8000/welcome, the route will send a request to the Page's controller's **home** action
+
+
