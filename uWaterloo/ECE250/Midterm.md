@@ -39,3 +39,6 @@
 ##Preperation for the Exam
 
 - **First**, concentrate on the lecture notes
+- **Second**, studying the CLRS/Weiss books wherever are needed (although you have to know the concepts!)
+- **Third**, solving exercises by yourself
+> When solving write your solutions down!
