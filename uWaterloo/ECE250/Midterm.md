@@ -49,4 +49,20 @@
 
 - Study all solutions for the first assignment (5)
 
-- **ECE250 - Previous Midterms**
+- **ECE250 - Previous Midterms (21) **
+
+- Study solutions for sample questions (9)
+
+- Office Hours (October 18-25; 15 hours)
+
+##Potential Structure for Midterm
+
+- Four questions with two/three sub-problems
+
+1. Algorithm Analysis (~30 marks) (CLRS 2, 3, 4 , A. 1) ONE QUESTION
+
+2. Linked Lists, Stacks, and Queues (~20 marks) (CLRS 10)
+
+3. Trees and Tree Traveersals (~30 marks) (CLRS 12, 18.1, 18.2, B.5; Weiss 4)
+
+4. Hashing (~20 marks) (CLRS 11)
