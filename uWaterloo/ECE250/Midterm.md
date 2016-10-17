@@ -35,3 +35,7 @@
 - AVL Trees
 
 - B-Trees
+
+##Preperation for the Exam
+
+- **First**, concentrate on the lecture notes
