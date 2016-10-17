@@ -24,4 +24,14 @@
 
 - A queue differs from a stack in that its insertion and removal routines follows the first-in-first-out (FIFO) principle.
  
- ##Hashing
+##Hashing
+
+- Collision Resolution: Chaining, Open Addressing (Linear Probing, Double Hashing)
+
+##Trees
+
+- Binary Search Trees (BST)
+
+- AVL Trees
+
+- B-Trees
