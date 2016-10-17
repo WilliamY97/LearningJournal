@@ -42,3 +42,11 @@
 - **Second**, studying the CLRS/Weiss books wherever are needed (although you have to know the concepts!)
 - **Third**, solving exercises by yourself
 > When solving write your solutions down!
+
+##More materials (46 questions)...
+
+- Study all solved exercises in the tutorials/lectures (11)
+
+- Study all solutions for the first assignment (5)
+
+- **ECE250 - Previous Midterms**
