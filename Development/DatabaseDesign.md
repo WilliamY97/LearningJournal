@@ -27,3 +27,11 @@ If we want to allow for the possibility that one person rents more than one apar
 
 - This would be achieved by creating a new table called **TenantApartments** that stores relationship between Tenants and Apartments by holding the TenantID and ApartmentID.
 
+##Step 4: Investigate Actions
+
+- Finally, walk through some of the common actions  that will be taken and understand how to store and retrieve the relevant data. We'll need to handle lease terms, moving out, rent payments, etc. Each of these actions requires new tables and columns.
+
+##Large Database Design
+
+- When designing a large, scalable database, joins (which are required in the above examples) are generally very slow... You have to **denormalize** your data. Think carefully about how data will be used - you'll have to duplicate the data in many tables.
+
