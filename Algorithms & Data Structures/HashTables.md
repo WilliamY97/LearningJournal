@@ -4,6 +4,19 @@ A data stucture that maps keys to values for a highly efficient lookup.
 
 ![alt tag](hashtable.png)
 
+##Dictionary
+
+- An element has a key part and a data part. It stores elements so that
+they can be located quickly using keys.
+
+- Dictionary ADT - a dynamic set with methods:
+
+Search(S,k)
+
+Insert(S,k)
+
+Delete(S,k)
+
 ## Implementation (Linked List)
 
 It can be implemented using an array of **linked lists** and a hash code function. In order to **insert** a key (could be a string or any other data type) and value, we do the following:
@@ -23,3 +36,4 @@ It can be implemented using an array of **linked lists** and a hash code functio
 ##Implementation (Balance Binary Search Tree)
 
 With a BBST we can obtain O(log N) lookup time. The **advantage** being using less space, since we no longer allocate a large array. We can also iterate through the keys in order, which can be useful sometimes.
+
