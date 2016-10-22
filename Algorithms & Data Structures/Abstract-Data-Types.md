@@ -62,3 +62,24 @@ if size() == N then
 t = t+1
 S[t] = o
 ```
+- The array implementation is simple and efficient (methods performed in O(1))
+
+- There is an upper bound, N, on the size of the stack. The arbitrary value N may be
+too small for a given application, or a waste of memory.
+
+##Queue ADT
+
+- A queue differs from a stack in that its insertion and removal routines follows the
+first-in-first-out (FIFO) principle.
+
+- Elements may be inserted at any time, but only the element which has been in the queue
+the longest may be removed.
+
+- Elements are inserted at the rear (enqueued) and removed from the front (dequeued)
+
+Queue - An array implementation: Create a queue using an array in a circular fashion
+
+- A maximum size N is specified
+
+- The queue consists of an N-element array Q and two integer variables.
+
