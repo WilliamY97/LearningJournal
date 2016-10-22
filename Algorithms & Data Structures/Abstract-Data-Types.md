@@ -40,3 +40,25 @@ The before(p), insertBefore() commands take O(n) time and remove(p) takes O(n) t
 
 - To implement all of the linked list operations in constant time we use doubly linked lists
 - A node of a doubly linekd list has a next and a prev link
+
+##Stack ADT
+
+- A stack is a container of objects that are insert and removed according to the last-in-first
+out (LIFO) principle.
+
+- Objects can be inserted at any time, but only the last (the most-recently inserted) object
+can be removed.
+
+- Inserting an item is known as "pushing" onto the stack. "Popping" off the stack is synonymous with
+removing an item.
+
+Stack Array Implementation: Create a stack using an array with max size and an integer variable
+t, the index of the top element in array S.
+
+```
+Algo push(o)
+if size() == N then
+  return Error
+t = t+1
+S[t] = o
+```
