@@ -8,4 +8,7 @@
 
 Balanced BST - O(lgn)
 UnBalanced BST - O(n^2)
+In-Order Walk - O(n)
 
+Best Case: O(nlgn + n) = O(nlgn)
+Worst Case: O(n^2 + n) = O(n^2)
