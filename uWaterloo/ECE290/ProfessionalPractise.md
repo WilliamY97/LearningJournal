@@ -43,4 +43,63 @@ Act defines:
 - The requirements for insurance
 - Details regarding discipline and enforcement
 
+##Law Vs. Regulations
+
+- The legislative branch of parliament enacts statutes
+- Only an act of parliamenty can compel the government to spend money.
+- The executive branch may enact regulations, codes, orders-in-council, etc. PEO may
+make regulations through the approval of the Lieutenant Governor.
+- Regulations are subject to review by the Attorney General.
+- The Attorney General is a member of the **Cabinent or Executive Council"**
+- The Attorney Genreal is the chief legal advisor to the government with the responsibility
+for the oversight of the justice system within the province.
+
+##Why Provincial?
+
+- The reason that this is a provincial act and not an act of the federal Parliament of Canada
+is that the Constitution of Canada prescribes:
+
+"In each Province the Legislature may exclusively make laws in relation to Matters coming within
+the Classes of Subjects next hereinafter enumerated, that is to say, 10. Local Works and Undertakings...
+
+- The practise of professional engineering falls, at least, under that clause.
+
+##How does Regulation Work?
+
+- Section 7(10 of the Professional Engineers Act specifies those items with respect to which PEO may make
+regulations.
+
+- The regulations are published under Ontario Regulation 941.
+
+- There are 34 items listed in the act (a couple of which are repealed)
+
+- There are 88 sections in O.Reg 941
+
+- Each of the 88 sections must in some way regulate at least one aspect of one of the items in the act.
+
+##How Does Peo Regulate?
+
+- PEO regulates the practise of professional engineering through:
+
+1. Issuing of licenses to those qualified to engage in the practice of professional engineering.
+
+2. Issuing of Certificates of Authorization for to organizations wishing to do business offering
+professional engineering services to the public.
+
+##Licenses
+
+- License (n): A formal, usually a printed or written permission from a constituted authority to do something
+e.g. to marry, to print/publish a book, to preach, to carry on some trade, etc; a permit
+
+- License (v): To grant (a person) a license of authoritative permission to hold a certain status or todo certain
+things, e.g. to practise some trade or profession, to hold a curacy, to preach, to use armorial bearings,
+to keep a dog, to carry a gun, etc.
+
+**Source:** Oxford English Dictionary
+
+- PEO issues licenses to natural persons who have satisfied:
+
+The general requirements for licensure stated in the Professional Engineers Act AND the specific requriements
+for licensure listed in the regulations.
+
 
