@@ -156,3 +156,143 @@ rules one is ethical.
 - Kant saw a need for universal principles that guided human behaviour and conscience.
 
 - This led him to introduce the idea of a **categorical imperative**
+
+##Deontology Cont.
+- An action can only be moral if it is a consequence of following a categorical imperative (i.e, a universally applicable principle)
+
+1. It is performed out of a sense of moral duty.
+2. Any maxim in harmony with the categorical imperative must be universally applicable to all beings with free will.
+3. All actions that are performed according to a maxim that cannot be applied universally do not have moral worth.
+
+Kant formulated three maxims:
+
+1. Act only on the maxim whereby thou canst at the same time will that it should become a universal law.
+
+2. So act as to treat humanity, whether in thine own person or in that of any other, in every case as an end withal, never as means only.
+
+3. A rational being must always regard himself as giving laws either as member or as sovereign in a kingdom of ends which is rendered possible by the freedom of will.
+
+One possible way that this duty based morality can be abused is "I was only following orders"
+
+##Deontology Cont. 2
+
+Deontology has continued to evolve as a theory of normative ethics
+
+Frances Kamm of Harvard continues to use this approach
+
+##Necessity and Sufficiency
+
+A little formal logic for you
+
+A condition a is sufficient for z if a -> z.
+
+But it is also possible that b -> z, c -> z
+
+Example: Event z is you have enough money to go the concert
+
+This could be caused by:
+
+Your parents giving you money (a)
+You find money on the street (b)
+You win the lottery (c)
+etc.
+
+There is also the contrapositive !z -> !a and !b and !c
+
+If you don't have the money, you didn't get it from your parents, or find it on the street, or win the lottery, or...
+
+**Example 2**
+
+A condition a is necessary for z if !a -> !z
+
+But it is also possible that !b -> !z ... !a or !b or !c ... -> !z
+
+Consider getting your engineering license as z.
+
+All of these elements are necessary:
+
+1. Engineering education (a)
+2. Work Experiecne (b)
+3. Completion of the PPE (c)
+
+The absence of any one of those necessary elements means the license will not be granted.
+
+The contrapositive: z -> a and b and c
+
+If both a -> z and !a -> !z then it follows that z -> a and we say a is necessary and sufficient for z
+
+We can also say a if and only if z (or a iff b).
+
+##Frances Kamm
+
+- Frances Kamm introduced the The Principle of Permissable Harm.
+
+- One may harm in order to save more if and only if the harm is an effect or an aspect of the greater good itself.
+
+- Evil is contrasted with wrong or harm as the involvement of persons without their consent when forseeably this will lead to
+a wrong or harm to them.
+
+**The Doctrine of Productive Purity**
+
+1. If an evil cannot be at least initially sufficiently justified, it cannot be justified by the greater good that it is necessary (given our act) to causally produce. However, such an evil can be justified by the greater good whose component(s) cause it, even if the evil is causally necessary to help sustain the greater good or its components.
+
+2. In order for an act to be permissible, it should be possible for any evil side effect (except possibly indirect side effects) of what we do, or evil causal means that we must use (given our act) to bring about the greater good, to be at least the effect of a [greater good that] is working itself out (or the effect of means that are noncausally related to that greater good that is working itself out).
+
+##Consequentialism
+
+- After Immanuel Kant described his ethical philosophies, others began using a different approach: they focused on the consequences of the action.
+
+- It is the consequences that will form the basis of any judgement about the ethical correctness of the action.
+
+- A morally right act or omission is one that has good consequences.
+
+- Such ethical theories are **consequentialist** or **teleological**.
+
+How do we define consequences?
+
+- The same outcome may be viewed as positive by one person and negative by another.
+
+- There may be vastly different short and long term consequences...
+
+##State Consequentialism
+
+- Consider Mozi, a Chinese philosopher from the 5th century BCE
+
+He introduced the idea of state consequentialism:
+
+"It is the business of the benevolent man to seek to promote what is beneficial to the world and to eliminate what is harmful, and to provide a model for the world. What benefits he will carry out; what does not benefit men he will leave alone"
+
+##Utilitarianism
+
+More recently, Jeremy Bentham (1748-1832) introduced the concept of **utilitarianism**.
+
+- We must develop a measure of the **utility** of the consequences of an action.
+
+- A means of quantitatively, or at least qualitatively, determining whether consequences are "good" (and which courses of action are better).
+
+- He advocated for animal rights, gender equality, and acceptance of homosexuality (all ideas very much ahead of the times in which he lived)
+
+##Math Problem
+
+- Bentham introduced the concept of felicific calculus
+
+The happiness of a consequence can be judged by:
+1.Intensity
+2.Duration
+3.Certainty
+4.Proximity
+5.Fecundity
+6.Purity
+7.Extent
+
+In simple terms, the greatest increase in good for the greatest number.
+
+##Final Frontier
+
+“The needs of the many outweigh the needs of the few.”
+
+"Or the one."
+
+##Incorrect Utilitarianism
+
+One way that utilitarianism can be simplified, incorrectly, is the argument that “the ends justify the means”
