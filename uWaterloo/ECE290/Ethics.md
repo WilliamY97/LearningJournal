@@ -106,3 +106,53 @@ We will focus entirely on normative ethics:
 
 "In serving his parents, a filial son reveres them in daily life; he makes them happy while he nourishes them;
 he takes anxious care of them in sickeness; he shows great sorrow over their death; and he sacrifices to them with solemnity"
+
+
+##Lecture 31 - Ethics: Modern Ethical Theories
+
+##Agree to Disagree
+
+- In this course you will be exposed to different ethical theories and different points of view. So far we have already seen
+the opinions of others...
+
+- You may agree with some of the theories under discussion, disagree with others...
+
+- You may nevertheless be required to answer questions based on these theories, regardless of your personal beliefs
+
+- This is not a natural science where there are correct answers ("the world is round, not flat"); reasonable people
+can agree to disagree civilly.
+
+##With Support
+
+- Therefore, we must understand that you know how to make an ethical decision by making a reason decision based on underlying assumptions.
+
+- Your opinion in class is invaluable - it will make for fascinating discussions.
+
+- Your opinion on an examination, without a logical support, is worth nothing.
+
+- "Because I said so" -type argumens and "I feel like this is true" are not adequate reasoons to support the assertions
+
+##Deontology
+
+- The science of duty; the branch of knowledge that deals with moral obligations; ethics.
+
+- Deontology determines the morality of an action, behaviour, character, or desire based on its adherence to a rule or rules.
+
+- It is also known as duty-based ethics.
+
+- Deontology was the first modern ethical theory.
+
+- It is based heavily on concepts such as moral absolutism and divine command theory
+
+- It posts that there are rules or duties that must be followed and that by fulfilling one's duties or following these
+rules one is ethical.
+
+- Immanuel Kant (1724-1804) argued an action is good only if it is the consequence of duty as opposed to desire or need.
+
+- He also argued that good intentions, rather than good outcomes, are what make an act moral.
+
+- After all, bad things may happen by accident, but intent is important.
+
+- Kant saw a need for universal principles that guided human behaviour and conscience.
+
+- This led him to introduce the idea of a **categorical imperative**
