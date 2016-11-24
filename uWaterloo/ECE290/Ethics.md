@@ -66,4 +66,43 @@ ex. actions, behaviours, characteristics, desires
 ##Hippocratic Oath
 
 - The Hippocratic Oath and Professional Engineers Ontario Code of Ethics are two examples of collections of rules of conduct
-- In many jurisdictions, a code of ethics defines the boundary between professional conduct and misconduct
+- In many jurisdictions, a code of ethics defines the boundary between professional conduct and misconduct.
+
+- We will see later, that PEO's Code of Ethics provide a guide to conduct while, as we've seen, misconduct is explicitly
+defined in the regulations.
+
+##Ethics: The Science of Morals
+
+Ethics is itself broken into numerous categories:
+
+- **Meta-ethics:** The theoretical inquiry of moral principles and how their truth values (if any) may be determined.
+- **Normative Ethics:** Concerning the practical means of determining a moral course of action.
+- **Applied Ethics:** Situation-based moral outcomes
+- **Descriptive Ethics:** The study of extant ethical behaviour and comparative analysis
+- **Moral Psychology:** The scientific study of the development and evolution of ethical behaviour
+
+##Normative Ethics
+
+We will focus entirely on normative ethics:
+
+- Concerning the practical means of determining a moral course of action
+- Normative ethics tends to be prescriptive: it prescribes how to deal with a particular ethical situation
+- Descriptive ethics is empirical: it investigates a society's response in dealing with a particular ethical situation
+
+##Virtue Ethics
+
+- Asks how a response to a situation will affect the percieved character of the person
+- Helping a person in need would be charitable, and viewed positively.
+- A decision on whether or not to lie would be judged on how that falsehood reflects on the individual's character
+- First discussed in western philosophy by Plato and then Aristotle.
+- Plato lists four cardinal moral virtues: courage, temperance, justice, prudence.
+- Each is the golden mean between two extremes.
+
+##Role Ethics
+
+- Morality is derived from people's relationship with their community and is not individualistic.
+
+- Confucianism demonstrates this through the concept of filial piety as a desire and not only as an action
+
+"In serving his parents, a filial son reveres them in daily life; he makes them happy while he nourishes them;
+he takes anxious care of them in sickeness; he shows great sorrow over their death; and he sacrifices to them with solemnity"
