@@ -41,3 +41,29 @@ Also an example from a car crash where one person may be sacrificed to save five
 sufficient to fix the mistake but not tell anyone about it?
 - Is it right to take credit for the work done by your subordinates and co-op students working under you?
 
+##Morals
+
+- A moral, meaning a custom or a habit is an action, behaviour, character trait or desire that has been determined to be:
+1. Right or wrong
+2. Good or bad
+3. Saintly or evil
+4. Honourable or dishonourable
+5. Brave or cowardly
+
+- It is based on a general consensus of society. They are not based in law or regulations; there are immoral rules and immoral orders.
+
+##Ethics
+
+- The study of ethics or moral philosophy is the study of human interactions.
+- It is for determining or recommending whether an actions, behaviours, conduct, or desires is right or wrong, including:
+ex. actions, behaviours, characteristics, desires
+
+- There are two general definitions of ethics.
+
+1. A collection or system of moral principles or rules of conduct by which a person or association is guided.
+2. The science of morals; the department of study concerned with the principles of human duty.
+
+##Hippocratic Oath
+
+- The Hippocratic Oath and Professional Engineers Ontario Code of Ethics are two examples of collections of rules of conduct
+- In many jurisdictions, a code of ethics defines the boundary between professional conduct and misconduct
