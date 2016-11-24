@@ -296,3 +296,163 @@ In simple terms, the greatest increase in good for the greatest number.
 ##Incorrect Utilitarianism
 
 One way that utilitarianism can be simplified, incorrectly, is the argument that “the ends justify the means”
+
+##L32: Ethics: A Psychological Basis
+
+##Ethics and Science
+
+- Ethics used to be entirely in the domain of philosohy.
+
+- Today, we have the ability to image the brain and apply neuroscience and other scientific study techniques.
+
+- Ethics is slowly being moving from art to science.
+
+Consider light:
+*See slides for context*
+
+##Ethics and Science Cont.
+Values supporting it: care and loyalty to the family.
+
+In some countries it would be a serious betrayal not to hire your relatives.
+- Can we break ethics down into quantifiable items that can be measured?
+
+- With functional magnetic resonance imaging (fMRI) we can now begin to probe the human brain
+
+- The human brain - not surprisingly - seems to be finite dimensional, as well.
+
+- There is still much we do not understand about how the brain works, but research continues.
+
+##Probing the Brain
+
+- A part of the brain is associated with counting small numbers.
+
+- In the intraparietal sulcus, different neurons will become excited if you view one, two, three, four or more subjects.
+
+## Ethics are Societal and Biological
+
+Ethics is an evolved trait and depends on:
+- Human species and the characteristics of the human species
+
+Examples:
+
+Shaking hands is reasonable, because little or no harm can come of it. Normal in Western Society; bowing is appropriate in Eastern
+cultures
+
+Contact with a stranger's face is unacceptable; too high a risk of damage. It takes trust to allow others to touch the face.
+
+If humans had thicker skin, greater protection around the eyes, such contact might be acceptable/normal.
+
+## Ethics and Science Cont.
+
+Drinking alcohol is not immoral and neither is driving. However a combination of them is.
+
+Alcohol adversely affects human performance and that degradation can and will adversely affect others (e.g. car crash)
+
+## We are but mortal...
+
+- Killing another human is seen as unacceptable, but there are circumstances in which is it seen as permitted
+
+You may agree or disagree with some or all of the following examples:
+
+- If someone is threatening your life (or the lives of others), it is acceptableto defend oneself even if it means killing the other person.
+- During a war, it is acceptable to kill the soldiers of the opposing forces.
+- It is acceptable to execute prisoners convicted of heinous crimes.
+- Some see killing as an acceptable response to blasphemy or apostasy.
+
+## The Moral Compass
+
+Based on examinations of the brain with fMRI technology, scientists posit thathumans all have the following basic moral evaluation scale:
+
+**Positive**: Care, Fairness, Liberty, Sanctity, Loyalty, Authority
+**Negative**: Harm, Cheating, Oppression, Degradation, Betrayal, Subversion
+
+One may consider ehtics as the interconnections between these values.
+
+##Nepotism
+
+Consider nepotism – the idea of giving favour to one’s relatives – comes fromthe Italian word for nephew (hiring practices back then were not like now).
+
+Values supporting it: care and loyalty to the family.
+
+In some countries it would be a serious betrayal not to hire your relatives.
+
+The head of government of Trinidad and Tobago recently took her niece on a world-wide tour, charging her niece’s expenses to the country.
+
+Canadian society, however, frowns upon nepotism.
+
+Everyone else is affected by it: the company, the employees of the company,and ultimately the country as a whole.
+
+Values of fairness to others and preventing harm to others/society are seen as more important than looking after family members.
+
+##Five Whys
+
+All of these values have evolutionary advantage.
+
+This does not, however, mean that each of them is a value that supports civilization and human progress.
+
+Nor does it mean that all values are equally important.
+
+As an engineer, when you consider any ethical situation, you must consideryour choices and why you are taking those choices.
+
+##Empathy
+Primates, including humans, have empathy for others in their species.
+
+Mirror neurons will fire when certain activities occur either to oneself or whileone is watching someone else.
+
+Sociopathy is associated with an inability to feel empathy.
+
+Narcissism is an abnormal focus on oneself.
+
+Empathy is something that develops as an infant grows into an adult.
+
+Empathy will be enabled when watching other people in situations involvingpain, disgust, or contact.
+
+Most of you will feel pain when others do.How would you feel if your best friend were injured in a car crash?
+
+Consider a picture of a Dalit, covered in excrement, coming up from having cleared a blockage in the sewers of an Indian city.
+
+##Sympathy vs Empathy
+
+There is a distinction between sympathy and empathy, even though the wordsare sometimes incorrectly used interchangeably.
+
+Sympathy is acknowledgment of another person’s suffering and providing comfort/assistance.
+
+Empathy is understanding how others are feeling (and may be from personal experience or imagining oneself in the other person’s place).
+
+##Liberals vs. Conservatives
+
+For all the fighting we see in politics about liberals vs. conservatives, both groups have morals and attempt to have them enshrined in society.
+
+The major difference is what morals the sides consider important.
+
+We will draw a distinction here between small-l liberal and the Liberal Party;equally a distinction between small-c conservative and the Conservative Party.
+
+Just because the party calls itself something does not mean it follows thosevalues, nor do such parties necessarily take the same stances on all issues...
+
+##A Question of Values
+
+Traditional liberal values include care, fairness, liberty...
+
+Traditional libertarian values put a greater emphasis on liberty:Freedom, individual liberty, voluntary association...
+
+Traditional conservative values include authority, loyalty, sanctity (that generally liberal values de-emphasize).
+
+Fascist values put even more emphasis on authority and loyalty.
+
+##Me Good them bad
+
+- When you reach a different ethical conclusion from someone else, it’s not thatthey’re immoral – they simply have different values.
+
+- The United States Congress has an interesting aspects.
+
+- The outside polarization of Republican – Democrat appears very strong when compared to the Canadian multi-party system.
+
+- There are, however, many more bi-partisan communication and significantly fewer restrictions w.r.t. voting along party lines.
+
+- In Canada, voting along party lines is considered much more essential due to non-confidence votes.
+
+##Ethics and Professional Misconduct
+
+- There is an official PEO Code of Ethics.
+
+- We will now examine it, and the definition of professional misconduct, in the light of the value compass:
