@@ -455,4 +455,39 @@ Fascist values put even more emphasis on authority and loyalty.
 
 - There is an official PEO Code of Ethics.
 
-- We will now examine it, and the definition of professional misconduct, in the light of the value compass:
+- We will now examine it, and the definition of professional misconduct, in the light of the value compass.
+
+##L33: Ethics: PEO Code of Ethics
+
+##Enforceable Codes of Ethics
+
+- In most jurisdictions, the Code of Ethics is enforceable.
+- A violation of the code of ethics is professional misconduct.
+
+- In Ontario, the Code of Ethics is not enforceable.
+Instead, it lists items considered to be best practices.
+
+Professional misconduct is defined in section 72 of the regulations.
+
+##Always Seven, There Are
+
+The Code of Ethics focuses on seven areas (most of which are about interactions with others):
+
+1. Personal conduct, standards of behaviour, employers, clients, other professionals, other practitioners of engineering, profession of engineering itself
+
+The code of ethics is written into the Regulations (section 77)
+
+##Personal Conduct
+
+1. It is the duty of a practitioner to the public, to the practitioner’s employer, tothe practitioner’s clients, to other members of the practitioner’s profession,and to the practitioner to act at all times with,
+
+i) fairness and loyalty to the practitioner’s associates, employer, clients,subordinates and employees
+ii) fidelity to public needs
+iii) devotion to high ideals of personal honour and professional integrity
+iv) knowledge of developments in the area of professional engineering relevant to any services that are undertaken, and
+v) competence in the performance of any professional engineering servicesthat are undertaken
+
+##Standards of Behaviour
+
+
+
