@@ -39,4 +39,10 @@ five cycles for one instruction.
 
 ##Pipelining Issues
 
-- Data Hazards
+- Data Hazards: RAW Hazards -> Read-after-write
+
+##Stalling the Pipeline for RAW Hazard
+
+- Allow subtract to continue so long as Add completes the write-back
+
+
