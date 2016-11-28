@@ -37,3 +37,6 @@ five cycles for one instruction.
 - Carry any instruction from a stage forward
 - Not only do this for data but for control signals
 
+##Pipelining Issues
+
+- Data Hazards
