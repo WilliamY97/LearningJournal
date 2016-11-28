@@ -45,4 +45,7 @@ five cycles for one instruction.
 
 - Allow subtract to continue so long as Add completes the write-back
 
+![Reference Image](http://people.engr.ncsu.edu/efg/521/s06/common/lectures/notes/lec18_files/image003.gif)
+
+
 
