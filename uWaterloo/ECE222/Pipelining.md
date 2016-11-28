@@ -47,10 +47,26 @@ five cycles for one instruction.
 
 ![Reference Image](http://people.engr.ncsu.edu/efg/521/s06/common/lectures/notes/lec18_files/image003.gif)
 
-##A Closer Inspection
+##A Closer Inspection (Slide 15)
 
 - We can allow the subtract to continue to the next stage without stalling. The computed result for R2 is available at end of cycle 3.
 - Pass this as an input to the Execute stage (ALU) when the Subtract reaches there.
+- This is called **Operand Forwarding**: Handles dependencies w/o need to stall the pipeline
+
+##Operand Forwarding
+
+- For the next sequence of instructions, the new value of R2 is gonnab e ready at the end of cycle 3
+- **Forward** value to where it is needed in cycle 4
+
+##Implementing Forwarding
+
+- Introduce multiplexers before ALU inputs to use contents of RZ as forwarded value
+
+- Control circuitry notices that there is a dependency in cycle 4 when Subtract is in Execute stage
+
+- Compare destination of Add in Memory stage with source(s) of Subtract in Execute stage
+
+- Set multiplexer control based on comparison
 
 
 
