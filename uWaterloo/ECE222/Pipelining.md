@@ -47,5 +47,10 @@ five cycles for one instruction.
 
 ![Reference Image](http://people.engr.ncsu.edu/efg/521/s06/common/lectures/notes/lec18_files/image003.gif)
 
+##A Closer Inspection
+
+- We can allow the subtract to continue to the next stage without stalling. The computed result for R2 is available at end of cycle 3.
+- Pass this as an input to the Execute stage (ALU) when the Subtract reaches there.
+
 
 
