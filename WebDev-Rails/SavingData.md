@@ -68,3 +68,6 @@ If only for specific actions we can use :only to fine tune the resource route. `
 ```
 
 Putting this under the index.html.erb file under the views/messages to make the design and display of the message index route.
+
+This file is known as a **web template**. Web templates are HTML files that contain variables and control flow statements. We use them to display data from the database.
+
