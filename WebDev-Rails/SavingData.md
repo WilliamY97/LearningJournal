@@ -14,3 +14,24 @@ guide to see how all the app's files and folders fit together.
 5. View renders in HTML
 6. Controller sends the HTML back to browser. Page loads and the user sees it.
 
+```
+rails generate model
+```
+
+Command creates a new model. In doing so, Rails created two files:
+
+- Model file in app/models/message.rb
+- Migration file in db/migrate **migration files are a way to update the database**
+
+**Migration File**
+
+- Change method tells Rails what change to make to the database. It uses create_table method to create a new
+table in the database for storing messages.
+
+- Inside create_table, we added t.text :content. This will create a text column called content in the model tables
+- t.timestamps creates two columns **created_at** and **updated_at**. They automatically set when a message is created
+and updated.
+
+```rake db:migrate``` updates the database with the new data model
+
+```rake db:seed``` commands seeds the database with sample data from db/seeds.rb
