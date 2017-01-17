@@ -54,6 +54,17 @@ Rails has seven standard controller actions that can be used to do common things
 
 Use ```resources :messages``` to make routes for all seven actions in app.
 
-If only for specific actions we can use :only to fine tune the resource route. ```reseources :messsages, only: [:index, :show]
+If only for specific actions we can use :only to fine tune the resource route. ```reseources :messsages, only: [:index, :show]'''
 
 ##Part 3: Controller Action
+
+```
+<% @messages.each do |message| %> 
+<div class="message"> 
+  <p class="content"><%= message.content %></p> 
+  <p class="time"><%= message.created_at %></p> 
+</div> 
+<% end %>
+```
+
+Putting this under the index.html.erb file under the views/messages to make the design and display of the message index route.
