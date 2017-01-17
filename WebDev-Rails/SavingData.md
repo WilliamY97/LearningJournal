@@ -85,3 +85,15 @@ post 'messages' => 'messages#create'
 ```
 in routes
 
+##Rails App With Form
+
+- The methods above help create a new route that leads to a form which we use to take input for submitting data.
+
+- When the browser sends a POST request to the Rails app, the POST request hits the Rails router. The router maps
+the POST request to the correct controller action.
+
+- The action recieves the POST request. The action retrieves the submitted data from the form and uses the model
+to store the data into the database.
+
+- The model completes its task and the controller action passes the request on to the view. The view renders the
+page as HTML. The controller sends the HTML back to the browser. The page loads and the user sees it. 
