@@ -48,3 +48,7 @@ end
 
 This method is added to the messages_controller so that routing to index will retrieve all messages from database and store them in variable @messages.
 
+Rails has seven standard controller actions that can be used to do common things like display and modify data.
+
+![Reference Image](https://s3.amazonaws.com/codecademy-content/projects/3/seven-actions.svg)
+
