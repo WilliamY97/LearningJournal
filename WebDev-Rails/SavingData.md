@@ -14,6 +14,8 @@ guide to see how all the app's files and folders fit together.
 5. View renders in HTML
 6. Controller sends the HTML back to browser. Page loads and the user sees it.
 
+##Part 1: Model
+
 ```
 rails generate model Message
 ```
@@ -36,3 +38,10 @@ and updated.
 
 ```rake db:seed``` commands seeds the database with sample data from db/seeds.rb
 
+##Part 2: Controller Action
+
+```
+def index
+  @messages = Message.all
+end
+```
