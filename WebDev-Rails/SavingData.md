@@ -71,3 +71,16 @@ Putting this under the index.html.erb file under the views/messages to make the 
 
 This file is known as a **web template**. Web templates are HTML files that contain variables and control flow statements. We use them to display data from the database.
 
+##Creating a new/create action
+
+```
+def new
+  @message = Message.new
+end
+```
+A new method in the Messages controller and
+
+```
+post 'messages' => 'messages#create'
+```
+in routes
