@@ -45,3 +45,6 @@ def index
   @messages = Message.all
 end
 ```
+
+This method is added to the messages_controller so that routing to index will retrieve all messages from database and store them in variable @messages.
+
