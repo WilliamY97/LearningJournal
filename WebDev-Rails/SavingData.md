@@ -15,7 +15,7 @@ guide to see how all the app's files and folders fit together.
 6. Controller sends the HTML back to browser. Page loads and the user sees it.
 
 ```
-rails generate model
+rails generate model Message
 ```
 
 Command creates a new model. In doing so, Rails created two files:
@@ -35,3 +35,4 @@ and updated.
 ```rake db:migrate``` updates the database with the new data model
 
 ```rake db:seed``` commands seeds the database with sample data from db/seeds.rb
+
