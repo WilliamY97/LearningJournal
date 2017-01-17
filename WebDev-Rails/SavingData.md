@@ -52,3 +52,8 @@ Rails has seven standard controller actions that can be used to do common things
 
 ![Reference Image](https://s3.amazonaws.com/codecademy-content/projects/3/seven-actions.svg)
 
+Use ```resources :messages``` to make routes for all seven actions in app.
+
+If only for specific actions we can use :only to fine tune the resource route. ```reseources :messsages, only: [:index, :show]
+
+##Part 3: Controller Action
