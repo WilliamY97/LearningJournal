@@ -36,3 +36,7 @@ end
 Migrations are not limited to changing the schema. You can also use them to fix bad data in the database or populate new fields.
 
 Then ```rake db:migrate```
+
+##Seeding
+
+In db/seeds.rb we can add items to populate the database. If we run ```rake db:seed``` it will populate it.
