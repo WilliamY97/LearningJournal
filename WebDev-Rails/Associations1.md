@@ -13,3 +13,24 @@ The has_many and belongs_to pair is used to define one-to-many relationships. A 
 - an Album has many Photos; a Photo belongs to an Album
 
 - a Store has many Products; a Product belongs to a Store
+
+##Creating Tables
+
+Under db/migrate/
+
+```
+class CreateDestinations < ActiveRecord::Migration
+  def change
+    create_table :destinations do |t|
+			t.string :name
+      t.string :image
+      t.string :description
+      t.references :tag
+      t.timestamps
+    end
+  end
+end
+```
+**Migrations** are a convenient way to alter the database schema.
+
+Migrations are not limited to changing the schema. You can also use them to fix bad data in the database or populate new fields.
