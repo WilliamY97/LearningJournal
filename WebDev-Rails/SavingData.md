@@ -14,6 +14,18 @@ guide to see how all the app's files and folders fit together.
 5. View renders in HTML
 6. Controller sends the HTML back to browser. Page loads and the user sees it.
 
+##Routing
+
+In the routes file, add a new route that maps requests to /tags to the Tags controller's index action.
+
+```
+Rails.application.routes.draw do
+	get '/tags' => 'tags#index'
+end
+```
+This will lead to /tags in the url to route to the index method of the tags controller
+
+
 ##Part 1: Model
 
 ```
