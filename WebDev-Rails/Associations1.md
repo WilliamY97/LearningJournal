@@ -34,3 +34,5 @@ end
 **Migrations** are a convenient way to alter the database schema.
 
 Migrations are not limited to changing the schema. You can also use them to fix bad data in the database or populate new fields.
+
+Then ```rake db:migrate```
