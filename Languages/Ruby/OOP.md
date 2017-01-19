@@ -23,3 +23,16 @@ Creating a new instance of a class:
 ```
 me = Person.new("Eric")
 ```
+
+##Scope
+
+The scope of a variable is the context in which it's visible to the program.
+
+**Global Variables:** Available everywhere
+
+**Local Variables:** Available only in certain methods
+
+**Class Variables:** Available in certain classes
+
+**Instance variables:** Available to a particular instance
+
