@@ -55,3 +55,7 @@ err.display_error
 ```
 
 SuperBadError doesn't have the display_error method, but it inherits from ApplicationError and so it can call the method.
+
+##Overriding
+
+Sometimes we want one class that inherits from another to not only take on the methods and attributes of its parent, but to override one or more of them.
