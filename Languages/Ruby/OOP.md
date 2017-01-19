@@ -28,11 +28,30 @@ me = Person.new("Eric")
 
 The scope of a variable is the context in which it's visible to the program.
 
-**Global Variables:** Available everywhere
+**Global Variables:** Available everywhere - $
 
-**Local Variables:** Available only in certain methods
+**Local Variables:** Available only in certain methods 
 
-**Class Variables:** Available in certain classes
+**Class Variables:** Available in certain classes - @@
 
-**Instance variables:** Available to a particular instance
+**Instance variables:** Available to a particular instance - @
 
+##Inheritance
+
+Inheritance is the process by which one class takes on the attributes and methods of another, and it's used to express an is-a relationship. A fox **is a** animal.
+
+```
+class ApplicationError
+  def display_error
+    puts "Error! Error!"
+  end
+end
+
+class SuperBadError < ApplicationError
+end
+
+err = SuperBadError.new
+err.display_error
+```
+
+SuperBadError doesn't have the display_error method, but it inherits from ApplicationError and so it can call the method.
