@@ -12,3 +12,6 @@ Symbols are very commonly used to represent some kind of state, for example
 order.status = :canceled
 order.status = :confirmed
 ```
+## class << self
+
+http://stackoverflow.com/questions/2505067/class-self-idiom-in-ruby
