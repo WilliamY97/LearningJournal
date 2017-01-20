@@ -76,7 +76,7 @@ Not allowed. However, there are instances where you want to incorporate data or 
 
 #Object Oriented Programming II
 
-#Need-to-know Basis
+##Need-to-know Basis
 
 Ruby allows you to explicitly make some methods public and others private. Public methods allow for an interface with the rest of the program; they say, "Hey! Ask me if you need to know something about my class or its instances."
 
