@@ -93,3 +93,9 @@ Usually we need to write a method to access an attribute from a class
 We can use **attr_reader** to access a variable and **attr_writer** to change it.
 
 attr_accessor to make a variable readable and writeable in one fell swoop.
+
+##Modules
+
+It doesn't make sense to include variables in modules, since variables (by definition) change (or vary). Constants, however, are supposed to always stay the same, so including helpful constants in modules is a great idea.
+
+Ruby doesn't make you keep the same value for a constant once it's initialized, but it will warn you if you try to change it. Ruby constants are written in ALL_CAPS and are separated with underscores if there's more than one word.
