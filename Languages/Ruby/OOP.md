@@ -71,3 +71,5 @@ You can directly access the attributes or methods of a superclass with Ruby's bu
 When you call super from inside a method, that tells Ruby to look in the superclass of the current class and find a method with the same name as the one from which super is called. If it finds it, Ruby will use the superclass' version of the method.
 
 ##Multiple inheritance
+
+Not allowed. However, there are instances where you want to incorporate data or behavior from several classes into a single class, and Ruby allows this through the use of mixins. 
