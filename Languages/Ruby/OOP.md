@@ -83,3 +83,5 @@ Ruby allows you to explicitly make some methods public and others private. Publi
 Private methods, on the other hand, are for your classes to do their own work undisturbed. They don't want anyone asking them anything, so they make themselves unreachable!
 
 This means you can only call these methods from other code inside the object.
+
+We can use **attr_reader** to access a variable and **attr_writer** to change it.
