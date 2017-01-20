@@ -81,3 +81,5 @@ Not allowed. However, there are instances where you want to incorporate data or 
 Ruby allows you to explicitly make some methods public and others private. Public methods allow for an interface with the rest of the program; they say, "Hey! Ask me if you need to know something about my class or its instances."
 
 Private methods, on the other hand, are for your classes to do their own work undisturbed. They don't want anyone asking them anything, so they make themselves unreachable!
+
+This means you can only call these methods from other code inside the object.
