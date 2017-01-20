@@ -62,6 +62,12 @@ Sometimes we want one class that inherits from another to not only take on the m
 
 Writing a method with same name as a method you will inherit will **overrride** it and allow you to use the method you wrote instead.
 
-##
+##Subclass Revision
+
+Sometimes working with subclass you override a method or attribute defined in that class' base class (also called a parent or superclass).
+
+You can directly access the attributes or methods of a superclass with Ruby's built-in super keyword.
+
+When you call super from inside a method, that tells Ruby to look in the superclass of the current class and find a method with the same name as the one from which super is called. If it finds it, Ruby will use the superclass' version of the method.
 
 ##Multiple inheritance
