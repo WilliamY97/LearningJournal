@@ -86,6 +86,10 @@ This means you can only call these methods from other code inside the object.
 
 ##attr_reader, attr_writer
 
+**Basically help replace getter and setter methods**
+
 Usually we need to write a method to access an attribute from a class
 
 We can use **attr_reader** to access a variable and **attr_writer** to change it.
+
+attr_accessor to make a variable readable and writeable in one fell swoop.
