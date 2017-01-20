@@ -84,4 +84,8 @@ Private methods, on the other hand, are for your classes to do their own work un
 
 This means you can only call these methods from other code inside the object.
 
+##attr_reader, attr_writer
+
+Usually we need to write a method to access an attribute from a class
+
 We can use **attr_reader** to access a variable and **attr_writer** to change it.
