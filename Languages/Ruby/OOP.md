@@ -101,3 +101,5 @@ It doesn't make sense to include variables in modules, since variables (by defin
 Ruby doesn't make you keep the same value for a constant once it's initialized, but it will warn you if you try to change it. Ruby constants are written in ALL_CAPS and are separated with underscores if there's more than one word.
 
 If we require a module we can provide it with ```require ModuleName```
+
+If we want to include a module we can use ```include ModuleName```
