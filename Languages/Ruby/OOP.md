@@ -107,3 +107,8 @@ If we want to include a module we can use ```include ModuleName```
 Any class that includes a certain module can use those module's methods.
 
 ```Ex. Math::PI``` pulls the PI constant from the Math module.
+
+##Mixing Together Behaviour of Modules and Classes
+
+- **Mixins** allow us to customize a class without having to rewrite code
+
