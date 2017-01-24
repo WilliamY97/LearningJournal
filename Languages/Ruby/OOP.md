@@ -103,3 +103,7 @@ Ruby doesn't make you keep the same value for a constant once it's initialized, 
 If we require a module we can provide it with ```require ModuleName```
 
 If we want to include a module we can use ```include ModuleName```
+
+Any class that includes a certain module can use those module's methods.
+
+```Ex. Math::PI``` pulls the PI constant from the Math module.
