@@ -5,3 +5,9 @@
 ##Collect Method
 
 - Takes a block and applies the expression in the block to every element in an array.
+
+```
+my_nums = [1, 2, 3]
+my_nums.collect { |num| num ** 2 }
+# ==> [1, 4, 9]
+```
