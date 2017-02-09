@@ -10,4 +10,4 @@ Good Source - http://stackoverflow.com/questions/2665812/what-is-mocking
 
 You can force a method to return what YOU want
 
-Ex. ```Maintenance::SyncShopVariantsTask.stubs(:shop_ids).returns(@shop_ids)```
+Ex. ```Namespace(Maybe)::SomeClass.stubs(:shop_ids).returns(@shop_ids) where @shop_ids I make as [1,2,3]```
