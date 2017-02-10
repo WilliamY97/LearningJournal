@@ -11,3 +11,15 @@ database increases exponentially
 
 - Example: Split a customer database geographically. Customers on the East Coast can be placed in one server, while customers on the
 West Coast can be placed in another. Assuming there is no costumer with multiple locations, the split is easy to maintain and build rules around.
+
+##Disadvantages of Sharding
+
+- Sharding should only be used when all other optimizations prove inadequate
+
+1. Increased complexity of SQL Queries: Developer may cause more bugs because they must write more complicated sql logic to handle shard logic.
+
+2. Backups are more complex: Database backups of individual shards must be coordinated w/ backups of other shards.
+
+3. Operational complexity added: Added/removing columns, indexes, and modifying schema is more difficult.
+
+These problems and many more have now been addressed by independent software vendors who do autosharding
