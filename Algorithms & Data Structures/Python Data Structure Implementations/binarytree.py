@@ -6,18 +6,13 @@ class Node(object):
 		self.left = None
 
 def insertNode(root,key):
-	if root is None:
-		return None
+	if root is None: return None
 	elif key > root.val:
-		if root.right:
-			insertNode(root.right,key)
-		else:
-			root.right = Node(key)
+		if root.right: insertNode(root.right,key)
+		else: root.right = Node(key)
 	elif key < root.val:
-		if root.left:
-			insertNode(root.left,key)
-		else:
-			root.left = Node(key)
+		if root.left: insertNode(root.left,key)
+		else: root.left = Node(key)
 
 def inOrderSearch(root):
 	if root is None: return None
