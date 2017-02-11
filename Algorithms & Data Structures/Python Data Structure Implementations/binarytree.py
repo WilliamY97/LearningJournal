@@ -18,7 +18,9 @@ def deleteNode(root,key):
 	if root is None: return None
 
 def binarySearch(root,key):
-	if root is None: return None
+	if root is None:
+		print "Nothing Found."
+		return None
 	if root.val == key:
 		print root.val
 		return root
@@ -32,6 +34,19 @@ def inOrderSearch(root):
 	inOrderSearch(root.left)
 	print root.val
 	inOrderSearch(root.right)
+
+def preOrderSearch(root):
+    if root is None: return None
+    print root.val
+    preOrderSearch(root.left)
+    preOrderSearch(root.right)
+
+def postOrderSearch(root):
+    #Write your code here
+    if root is None: return None
+    postOrderSearch(root.left)
+    postOrderSearch(root.right)
+    print root.val,
 
 def findMin(node):
 	while node.left is not None: node = node.left
@@ -52,5 +67,9 @@ binarySearch(tree,9)
 
 print "Performing In Order Search..."
 inOrderSearch(tree)
+
+print "Performing Pre Order Search..."
+preOrderSearch(tree)
+
 print "Performing Successor..."
 successor(tree)
