@@ -17,6 +17,17 @@ class LinkedList :
 			node.next.prev = node
 			self.head = node
 
+	def search( self, k ) :
+		p = self.head
+		if p != None :
+			while p.next != None :
+				if ( p.data == k ) :
+					return p
+				p = p.next
+			if ( p.data == k ) :
+				return p
+		return None
+
 def has_cycle(head):
     slow = head
     fast = head
