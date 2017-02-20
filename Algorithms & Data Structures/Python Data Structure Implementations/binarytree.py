@@ -46,7 +46,6 @@ def preOrderSearch(root):
     preOrderSearch(root.right)
 
 def postOrderSearch(root):
-    #Write your code here
     if root is None: return None
     postOrderSearch(root.left)
     postOrderSearch(root.right)
