@@ -5,8 +5,16 @@ class Node :
 		self.prev = None
 
 class LinkedList :
+
+	count = 0
+
+	@classmethod
+	def increaseCount (cls):
+		cls.count = cls.count + 1
+
 	def __init__( self ) :
 		self.head = None
+		self.increaseCount()
 
 	def add( self, data ) :
 		node = Node( data )
@@ -51,5 +59,7 @@ l.add( 'b' )
 l.add( 'c' )
 
 l.head.next.next.next = l.head
+
+print LinkedList.count
 
 print has_cycle(l.head)

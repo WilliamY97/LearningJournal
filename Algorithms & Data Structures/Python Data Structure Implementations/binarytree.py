@@ -1,9 +1,17 @@
 
 class Node(object):
+
+	count = 0
+
+	@classmethod
+	def increaseCount (cls):
+		cls.count = cls.count + 1
+
 	def __init__(self, val):
 		self.val = val
 		self.right = None
 		self.left = None
+		self.increaseCount()
 
 def insertNode(root,key):
 	if root is None: return None
@@ -64,6 +72,9 @@ insertNode(tree,7)
 insertNode(tree,3)
 insertNode(tree,8)
 insertNode(tree,9)
+
+print "How Many Nodes..."
+print Node.count
 
 print "Performing Binary Search..."
 binarySearch(tree,9)
