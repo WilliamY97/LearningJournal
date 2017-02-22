@@ -34,4 +34,25 @@ Ex. Ubuntu has various versions, some made for desktop, mobile, and servers.
 
 **bin** - Executable binaries: applications that you would run (Ex. LS command is in it)
 
+#Linux Security
+
+- Putting out a computer accessible by anyone on the internet means we need security.
+
+- If someone malicious gets access to this computer they can perform acts such as sending spam, launch DDOS attacks, and much more.
+
+##Rule of Least Privilege
+
+- A user or application only has enough permission to its job - nothing extra.
+
+##Super User
+
+- User named Root, can do anything they want on machine.
+
+**sudo vs. su**
+
+- Typicall regarded that you should not use su command. Do you need to change entire working context to su just to make commands? It might lead you you to perform harmful operations without prompt.
+
+##Package Source Lists
+
+- All of available package sources are listed in /etc/app/sources.list
 
