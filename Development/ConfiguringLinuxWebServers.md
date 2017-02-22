@@ -26,3 +26,12 @@ Ex. Ubuntu has various versions, some made for desktop, mobile, and servers.
 
 **Core OS** - Clustered, containerized deployment of apps
 
+##Important Directories
+
+**etc** - Configuration files live
+
+**var** - Variable files: simply files that grow / change in size ex. system and application logs
+
+**bin** - Executable binaries: applications that you would run (Ex. LS command is in it)
+
+
