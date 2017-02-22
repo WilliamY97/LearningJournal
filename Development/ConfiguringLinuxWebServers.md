@@ -25,3 +25,4 @@ Ex. Ubuntu has various versions, some made for desktop, mobile, and servers.
 **Linux Mint** - Desktop users with proprietary media support
 
 **Core OS** - Clustered, containerized deployment of apps
+
