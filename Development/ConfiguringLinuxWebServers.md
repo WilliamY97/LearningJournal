@@ -76,3 +76,5 @@ Ex. Ubuntu has various versions, some made for desktop, mobile, and servers.
 WARNING: Don't generate it on your server or then it's not private
 
 Then you must put the public key on the server 
+
+Add it to the .ssh/authorized_keys file
