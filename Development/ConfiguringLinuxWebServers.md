@@ -70,3 +70,6 @@ Ex. Ubuntu has various versions, some made for desktop, mobile, and servers.
 
 - The server will decrypt this message with their public key and if that vlue equals the same value they sent, then everything checks out and the client has authenticated
 
+##Generating Key Pairs
+
+- You can generate a RSA key (there are other types) with ssh keygen
