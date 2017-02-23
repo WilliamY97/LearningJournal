@@ -116,3 +116,16 @@ SMTP: 25
 
 ##Intro to Firewalls
 
+- We can configure which ports we want our server to listen to using an application called a firewall
+
+##Intro to UFW
+
+- Ubuntu comes with a firewall pre-installed called ufw
+- You can verify if it's active with ```sudo ufw status```
+
+```sudo ufw default deny incoming```
+
+```sudo ufw default allow incoming```
+
+If we turned it on now we would not be able to ssh into our server as all incoming connections are denied
+
