@@ -96,3 +96,13 @@ Now you login to your account on the server using something like Ex. **ssh stude
 ##Octal Permissions
 
 r = 4, w = 2 , x = 1
+
+Ex. To represent execute permissions and read then you need 4 + 1 = 5 
+
+User value is thus 5
+
+```chown``` - Changes owner of file which changes permissions to rwx
+
+##Intro to Ports
+
+
