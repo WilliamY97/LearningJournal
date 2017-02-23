@@ -79,4 +79,12 @@ Then you must put the public key on the server
 
 Add it to the .ssh/authorized_keys file after you do **chmod 700 .ssh** and **chmod 644 .ssh/authorized_keys**
 
-Now you login to your account on the server using something like Ex. **ssh student@127.0.0.1 -p 2200 -i ~/.ssh/linuxcourse** without needing to 
+Now you login to your account on the server using something like Ex. **ssh student@127.0.0.1 -p 2200 -i ~/.ssh/linuxcourse** without needing to provide remote password for user
+
+##Forcing Key Based Authentication 
+
+- For security we need to disable the password base logins and allow people to only login with a key pair.
+
+- Edit configuration file for SSHD by sudo /etc/ssh/sshd_config
+
+- Restart server to have configuration made ```sudo service ssh restart```
