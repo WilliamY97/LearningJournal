@@ -56,3 +56,17 @@ Ex. Ubuntu has various versions, some made for desktop, mobile, and servers.
 
 - All of available package sources are listed in /etc/app/sources.list
 
+##Connecting as a New User
+
+- SSH is what we use to remotely connect to the server
+- Example: ssh student@127.0.0.1 -p 2222
+- student is the user we are logging in with
+- 127.0.0.1 is the standard IP address or local host (same computer as I am on)
+- **-p 2222** shows to connect to port 2222
+
+#Public Key Encryption
+
+- Server will send random message to the client and they will encrypt that message with their private key and then send that encrypted message back to the server.
+
+- The server will decrypt this message with their public key and if that vlue equals the same value they sent, then everything checks out and the client has authenticated
+
