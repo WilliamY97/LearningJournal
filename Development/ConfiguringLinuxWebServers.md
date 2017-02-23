@@ -105,4 +105,14 @@ User value is thus 5
 
 ##Intro to Ports
 
+**Default Ports for Popular Services**
+
+HTTP: 80
+HTTPS: 443
+SSH: 22
+FTP: 21
+POP3: 110
+SMTP: 25
+
+##Intro to Firewalls
 
