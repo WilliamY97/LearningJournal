@@ -73,3 +73,6 @@ Ex. Ubuntu has various versions, some made for desktop, mobile, and servers.
 ##Generating Key Pairs
 
 - You can generate a RSA key (there are other types) with ssh keygen
+WARNING: Don't generate it on your server or then it's not private
+
+Then you must put the public key on the server 
