@@ -129,3 +129,8 @@ SMTP: 25
 
 If we turned it on now we would not be able to ssh into our server as all incoming connections are denied
 
+```sudo ufw allow 2200/tcp to allow port 2200```
+
+Allow basic http server: ```sudo ufw allow www```
+
+Turn on firewall which is ```sudo ufw enable```
