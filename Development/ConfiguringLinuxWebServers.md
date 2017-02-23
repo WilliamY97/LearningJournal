@@ -77,4 +77,6 @@ WARNING: Don't generate it on your server or then it's not private
 
 Then you must put the public key on the server 
 
-Add it to the .ssh/authorized_keys file
+Add it to the .ssh/authorized_keys file after you do **chmod 700 .ssh** and **chmod 644 .ssh/authorized_keys**
+
+Now you login to your account on the server using something like Ex. **ssh student@127.0.0.1 -p 2200 -i ~/.ssh/linuxcourse** without needing to 
