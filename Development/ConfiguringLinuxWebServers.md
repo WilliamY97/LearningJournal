@@ -92,3 +92,5 @@ Now you login to your account on the server using something like Ex. **ssh stude
 ##File Permissions in Linux
 
 - r w x, read write and execute when you do ls -al it shows you which user has access to these options
+
+##Octal Permissions
