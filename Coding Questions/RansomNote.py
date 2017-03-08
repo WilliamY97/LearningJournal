@@ -6,7 +6,7 @@
 # Given the words in the magazine and the words in the ransom note, print Yes if he can replicate his ransom note
 # exactly using whole words from the magazine; otherwise, print No.
 
-#TIP: Careful when multiples of the same word occur in the ransom. You need to make sure to check for that by
+#Note to Self: Careful when multiples of the same word occur in the ransom. You need to make sure to check for that by
 #increment/decrementing value of hashtable from magazine values.
 
 def ransom_note(magazine, ransom):
