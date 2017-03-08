@@ -9,6 +9,10 @@ The pair of square brackets encloses a single, unbalanced opening bracket, (, an
  single, unbalanced closing square bracket, ].
 """
 
+"""
+Watch out for edge cases. Also consider when there's still stuff in stack at the end.
+"""
+
 def is_matched(expression):
     e = {'(': ')', '{': '}', '[': ']'}
     s = []
