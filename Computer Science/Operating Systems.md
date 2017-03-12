@@ -16,6 +16,12 @@ hard disks, SSDs, and flash devices like USB drives. **All of these components a
 
 - Provide isolation and protection, make application's not access each other's memory, 
 
-##Threads 
+#Process 
 
 - Instance of an executing program (synonomous with "task" or "job")
+
+##What Is A Process
+
+- An application is a program on a disk, flash memory (static entity). A **process** is a state of a program when executing loaded in memory (active entity).
+
+Ex. A process can be one instance of the word editor program 
