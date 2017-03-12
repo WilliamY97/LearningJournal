@@ -15,3 +15,7 @@ hard disks, SSDs, and flash devices like USB drives. **All of these components a
 - Resource Management, helps figure out which one of the hardware resources each application uses and how much. (Ex. Allocates memory)
 
 - Provide isolation and protection, make application's not access each other's memory, 
+
+##Threads 
+
+- Instance of an executing program (synonomous with "task" or "job")
