@@ -19,9 +19,14 @@ hard disks, SSDs, and flash devices like USB drives. **All of these components a
 #Process 
 
 - Instance of an executing program (synonomous with "task" or "job")
+- Has 3 major components: 1. Executable Program, 2. data created/needed by the program, 3. execution context of the program (files opened, resources allocated)
 
 ##What Is A Process
 
 - An application is a program on a disk, flash memory (static entity). A **process** is a state of a program when executing loaded in memory (active entity).
 
 Ex. A process can be one instance of the word editor program 
+
+#Threads
+
+- 
