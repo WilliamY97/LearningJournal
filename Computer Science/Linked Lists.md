@@ -19,7 +19,7 @@ a reference to the linked list, and then the head of the linked list changes... 
 the head **Node**. This would largely resolve the earlier issue. Remember that when you're discussing a linked list in an interview,
 you must understand whether it is a singly linked list or a doubly linked list. 
 
-##Deleteing a Node form a Singly Linked List
+##Deleting a Node from a Singly Linked List
 
 - Given a node **N**, we find the previous node **prev** and set **prev.next** equal to **n.next**. If the list is doubly linked,
 we must also update **n.next** to set **n.next.prev** equal to **n.prev**.
