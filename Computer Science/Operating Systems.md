@@ -29,4 +29,15 @@ Ex. A process can be one instance of the word editor program
 
 #Threads
 
-- 
+- A short form for **Thread of Execution**. A sequence of executable commands that can be schedule to run on the CPU. With one thread
+you are executing one statement at a time.
+
+##Motivation for Threads
+
+- Why choose threads rather than a new process? The primary, but not sole, motivation is performance.
+
+1. Creating a thread is faster than creating a process (10x faster)
+2. Terminating/cleaning up a thread is faster than cleaning up a process
+3. Takes less time to switch between two threads within same process (less data needs to be stored/restored).
+4. Threads share same memory space, for two threads to communicate, they do not use any of the IPC mechanisms, they can communicate directly.
+5. Use of threads allows program to be responsive even when a part of the program is blocked
