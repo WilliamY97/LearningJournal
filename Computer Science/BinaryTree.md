@@ -1,4 +1,4 @@
-#Binary Tree
+# Binary Tree
 
 ![Reference Image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Binary_tree.svg/192px-Binary_tree.svg.png)
 
@@ -33,7 +33,7 @@ Linked lists would too have the O(n log n) plus more O(n log n) for traversing u
 **Conclusion:** Arrays are better and you also get the benefit of better caching than linked lists. Derivatives of a binary search tree
 such as a **heap** are commonly represented as arrays.
 
-##Binary Search Trees
+## Binary Search Trees
 
 ![Reference Image](http://2.bp.blogspot.com/-3eyinMSgNi4/Vio9pd_tdYI/AAAAAAAAD-8/zT2D0lgWa8s/s1600/binary%2BSearch%2BTree%2Bin%2BJava.png)
 
@@ -43,13 +43,13 @@ such as a **heap** are commonly represented as arrays.
 
 - Keys stored at nodes in the right subtree are greater than (or equal) to k
 
-##Searching in a BST
+## Searching in a BST
 
 - compare k with T.key()
 - if k < T.key(), search for k in T.left()
 - otherwise, search for k in T.right()
 
-##Pseudocode for BST Search
+## Pseudocode for BST Search
 
 - Recursive
 ```
@@ -74,7 +74,7 @@ Search(T,k)
 
 - Running time on tree of height h is O(h)
 
-##BST Minimum (Maximum)
+## BST Minimum (Maximum)
 
 - Find the minimum key in a tree root at x (far left sub tree)
 
@@ -87,7 +87,7 @@ TreeMinimum(x)
 03 return x
 ```
 
-##BST Successsor
+## BST Successsor
 
 - Given x, find the node with the smallest key greater than x.key()
 
@@ -95,13 +95,13 @@ TreeMinimum(x)
 
 - This can be done by returning TreeMinimum(x.right())
 
-##BST Successor - Case 2
+## BST Successor - Case 2
 
 - The right subtree of x is empty
 
 - Successor is the lowest ancestor of x whose left child is also an ancestor of x
 
-#Successor Pseudocode
+# Successor Pseudocode
 
 ```
 TreeSuccessor(x)
