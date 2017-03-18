@@ -1,4 +1,4 @@
-#Sharding
+# Sharding
 
 ![Reference Image](https://docs.mongodb.com/v3.0/_images/sharded-collection.png)
 
@@ -12,7 +12,7 @@ database increases exponentially
 - Example: Split a customer database geographically. Customers on the East Coast can be placed in one server, while customers on the
 West Coast can be placed in another. Assuming there is no costumer with multiple locations, the split is easy to maintain and build rules around.
 
-##Disadvantages of Sharding
+## Disadvantages of Sharding
 
 - Sharding should only be used when all other optimizations prove inadequate
 
