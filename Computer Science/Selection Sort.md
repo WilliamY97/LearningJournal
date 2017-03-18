@@ -1,4 +1,4 @@
-#Selection Sort
+# Selection Sort
 
 - Basic idea behind selection sort is to divide list into sorted and unsorted portions.
 
