@@ -1,4 +1,4 @@
-#B-Trees
+# B-Trees
 
 ![Reference Image](http://www.cs.cornell.edu/courses/cs3110/2011sp/recitations/rec24-B-trees/images/B-trees-insert3.gif)
 
@@ -7,7 +7,7 @@ same distance from the base and all nonterminal nodes have n - 2n subtrees
 
 - Often used in database systems or other applications where data is stored externally on disks and keeping tree shallow is important
 
-##Disk Based Data Structures
+## Disk Based Data Structures
 
 - So far searchtrees were limited to main memory structures
 
@@ -15,11 +15,11 @@ same distance from the base and all nonterminal nodes have n - 2n subtrees
 
 - Consequence: make a search tree structure secondary-storage-enabled
 
-##Binary Trees vs. B-trees
+## Binary Trees vs. B-trees
 
 - Size of B-tree is determined by the page size. One page - one node.
 
-##B-Tree Definitions
+## B-Tree Definitions
 
 - Every leaf has the same depth which is the tree's height h
 
@@ -45,7 +45,7 @@ Root:   Children
 2t-1 -> 2t
 ```
 
-##Height of a B-tree
+## Height of a B-tree
 
 - B-tree T if height h, containing n >= 1 keys and minimm degree t >= 2, the follwing restriction on the height holds: h <= log_t (n+1)/2
 
@@ -67,11 +67,11 @@ n >= 1 + 2t^n - 2
 2t^n <= n+1 -> t^n <= (n+1)/2 -> h <= log_t (n+1)/2
 ```
 
-##Searching
+## Searching
 
 - Straightforward generalization of tree search (e.g. binary search trees)
 
-##Splitting nodes
+## Splitting nodes
 
 - Nodes fill up and reach their maximum capacity 2t-1
 
