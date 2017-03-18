@@ -1,18 +1,18 @@
-#Database Design
+# Database Design
 
 These are steps to help design both small and large databases.
 
-##Step 1: Handle Ambiguity
+## Step 1: Handle Ambiguity
 
 - Before you proceed with your design, you must understand exactly what you need to design.
 
 - Ex. Design system for apartment rental agency. You will need to know whether this agency has multiple locations or just one. Should the person be able to rent out two apartments in the same building? **Some very rare conditions might be best handled through a work around (like duplicating the person's contact information in the database)**
 
-##Step 2: Define the Core Objects
+## Step 2: Define the Core Objects
 
 - Now we should look at core objects of our system. Each of these core objects typically translates into a table. In the case above, this would be: **Property, Building, Apartment, Tenant, and Manager**
 
-##Step 3: Analyze Relationships
+## Step 3: Analyze Relationships
 
 - Outlining the core objects should give us a good sense of what the tables should be. The important question is how do these tables
 relate to each other? Are they **many-to-many** or **one-to-many**
@@ -27,11 +27,11 @@ If we want to allow for the possibility that one person rents more than one apar
 
 - This would be achieved by creating a new table called **TenantApartments** that stores relationship between Tenants and Apartments by holding the TenantID and ApartmentID.
 
-##Step 4: Investigate Actions
+## Step 4: Investigate Actions
 
 - Finally, walk through some of the common actions  that will be taken and understand how to store and retrieve the relevant data. We'll need to handle lease terms, moving out, rent payments, etc. Each of these actions requires new tables and columns.
 
-##Large Database Design
+## Large Database Design
 
 - When designing a large, scalable database, joins (which are required in the above examples) are generally very slow... You have to **denormalize** your data. Think carefully about how data will be used - you'll have to duplicate the data in many tables.
 
