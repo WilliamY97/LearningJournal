@@ -8,7 +8,7 @@ Good Source - http://stackoverflow.com/questions/2665812/what-is-mocking
 
 Ex. object.expects(:expected_method).at_least_once
 
-##Stubbing
+## Stubbing
 
 You can force a method to return what YOU want
 
