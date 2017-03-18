@@ -1,12 +1,12 @@
-#Basic Unix Commands
+# Basic Unix Commands
 
-##What is Bash?
+## What is Bash?
 
 - Bash is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell.
 
 - Unix is not a programming language but an operating system which OS X is based on. See here for more info.
 
-##Essential Unix Commands
+## Essential Unix Commands
 
 1. ls - lists files in current directory (ex. ls -aIF)
 
@@ -26,6 +26,6 @@
 
 9. man - Online manual (help) about command 
 
-##Valuable Unix Commands
+## Valuable Unix Commands
 
 5. Kill <opt> <ID> - Kill process (ex. kill -9 8453, kills process with ID #8453)
