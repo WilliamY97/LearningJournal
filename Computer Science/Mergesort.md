@@ -1,4 +1,4 @@
-##Mergesort
+## Mergesort
 
 ```
 Merge-Sort A[1..n]
