@@ -1,4 +1,4 @@
-#Linked Lists
+# Linked Lists
 
 ![Reference Image](http://www.cs.usfca.edu/~srollins/courses/cs112-f08/web/notes/linkedlists/ll2.gif)
 
@@ -19,7 +19,7 @@ a reference to the linked list, and then the head of the linked list changes... 
 the head **Node**. This would largely resolve the earlier issue. Remember that when you're discussing a linked list in an interview,
 you must understand whether it is a singly linked list or a doubly linked list. 
 
-##Deleting a Node from a Singly Linked List
+## Deleting a Node from a Singly Linked List
 
 - Given a node **N**, we find the previous node **prev** and set **prev.next** equal to **n.next**. If the list is doubly linked,
 we must also update **n.next** to set **n.next.prev** equal to **n.prev**.
@@ -38,7 +38,7 @@ number)
 - **Solution**: You could have one pointer p1 (the fast pointer) move every two elements for every one move that p2 makes. When p1 hits the end of the linked list, p2 will be at the midpoint. Then, move p1 back to the front and begin **weaving** the elements. On each
 iteration, p2 selects an elements and inserts it after p1.
 
-##Recursive Problems
+## Recursive Problems
 
 - A number of linked list problems rely on recursion. If you're having trouble solving a linked list problem, you should explore if a
 recursive approach will work. We won't go into depth on recursion, since a later chapter is devoted to it. 
