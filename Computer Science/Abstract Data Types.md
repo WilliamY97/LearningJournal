@@ -1,4 +1,4 @@
-#Abstract Data Types
+# Abstract Data Types
 
 - Allows work to be broken into pieces that can be worked on independently without compromising correctness
 
@@ -9,25 +9,25 @@
 **ex.** A dictionary is a ADT that can be realized with different data structures such as Arrays, Binary Trees, Linked Lists, AVL Trees, Queues,
 B-Trees, Stacks, Heaps, and Hash Tables
 
-##Data Storage for ADT
+## Data Storage for ADT
 
 - Data Storage can be classified as either Contiguous Storage / Node-based Storage
 
 Examples: Contiguous Storage is the array / node-based is linked list
 
-##Contiguous Storage
+## Contiguous Storage
 - An array stores n objects in a single contiguous space of memory
 - Unfortunately, if more memory is required, a request for new memory usually
 requires copying all information into the new memory.
 
-##Node-Based Storage
+## Node-Based Storage
 
 - Node-based storage such as a linked list associates two pieces of data with each item
 being stored:
 
 The object itself, and a reference to the next item.
 
-##Linked List ADT
+## Linked List ADT
 
 - A data structure in which the objects are arranged in a linear order with dynamic
 allocation
@@ -36,12 +36,12 @@ allocation
 
 The before(p), insertBefore() commands take O(n) time and remove(p) takes O(n) time.
 
-##Doubly Linked Lists
+## Doubly Linked Lists
 
 - To implement all of the linked list operations in constant time we use doubly linked lists
 - A node of a doubly linekd list has a next and a prev link
 
-##Stack ADT
+## Stack ADT
 
 - A stack is a container of objects that are insert and removed according to the last-in-first
 out (LIFO) principle.
@@ -67,7 +67,7 @@ S[t] = o
 - There is an upper bound, N, on the size of the stack. The arbitrary value N may be
 too small for a given application, or a waste of memory.
 
-##Queue ADT
+## Queue ADT
 
 - A queue differs from a stack in that its insertion and removal routines follows the
 first-in-first-out (FIFO) principle.
