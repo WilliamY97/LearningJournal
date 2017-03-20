@@ -26,7 +26,7 @@ Formal Definition of SMP:
 - We often refer to logical processing units as a **core**. The term CPU may refer to a physical chip that has one or more
 logical processing units (cores).
 
-##What to do when more processes and threads than available cores?
+## What to do when more processes and threads than available cores?
 
 - We can hope that the processes get blocked frequently enough and long enough that all processes get to run, but this is not
 somethign we can count on.
