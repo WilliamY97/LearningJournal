@@ -15,3 +15,20 @@ child that is an "A". And is that child a complete word or just a prefix. So eac
 (Ex. **boolean isCompleteWord**) that represents a complete word. 
 
 ## When Is It Used?
+
+- Often helpful in questions pertaining to word validation. (Ex. **Check if this is you know..., walk through this table and find all
+the..., walk through this board and find all the words, or given list of strings, find all celebrity names.
+
+- When you see something that has some word list validation think about whether or not a trie may be useful.
+
+Ex. Somebody is typing a word and when it is not found, underline it - a Trie would be good for this.
+
+## Keeping State
+
+- We can store where we are in the tree. So when the user types the very next character, an A, we just look immediately is A a child
+rather of last look up than starting from scratch.
+
+Two Ways To Implement This:
+
+1. Keeping state within trie
+2. Return node reference
