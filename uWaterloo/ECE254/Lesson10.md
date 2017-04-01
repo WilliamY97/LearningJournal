@@ -37,6 +37,4 @@ somethign we can count on.
 for a designated period, such as 20 ms, then thread 2 for 20 ms, then thread 3 for 20 ms, then back to thread 1 for 20 ms. To
 the user it seems like they're running parallel.
 
-## Parallelism and Speedup
-
 
