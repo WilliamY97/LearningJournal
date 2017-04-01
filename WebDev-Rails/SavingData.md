@@ -1,9 +1,9 @@
-#Saving Data
+# Saving Data
 
 For a basic rails application, we need to use a controller, route, and view. The **request/response cycle** is a useful
 guide to see how all the app's files and folders fit together.
 
-##Request/Response Cycle
+## Request/Response Cycle
 
 ![Reference Image](https://s3.amazonaws.com/codecademy-content/projects/3/request-response-cycle-static.svg)
 
@@ -14,7 +14,7 @@ guide to see how all the app's files and folders fit together.
 5. View renders in HTML
 6. Controller sends the HTML back to browser. Page loads and the user sees it.
 
-##Routing
+## Routing
 
 In the routes file, add a new route that maps requests to /tags to the Tags controller's index action.
 
@@ -26,7 +26,7 @@ end
 This will lead to /tags in the url to route to the index method of the tags controller
 
 
-##Part 1: Model
+## Part 1: Model
 
 ```
 rails generate model Message
@@ -83,7 +83,7 @@ Putting this under the index.html.erb file under the views/messages to make the 
 
 This file is known as a **web template**. Web templates are HTML files that contain variables and control flow statements. We use them to display data from the database.
 
-##Creating a new/create action
+## Creating a new/create action
 
 ```
 def new
@@ -97,7 +97,7 @@ post 'messages' => 'messages#create'
 ```
 in routes
 
-##Rails App With Form
+## Rails App With Form
 
 - The methods above help create a new route that leads to a form which we use to take input for submitting data.
 
