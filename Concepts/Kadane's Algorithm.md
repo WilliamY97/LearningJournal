@@ -19,3 +19,17 @@ For each sub-array
     total_sum = cur_sum
 ```
 Time Complexity: O(n^3)
+
+## Process of Algorithm
+
+1. Initialize current_max = array[0] and total_max = array[0]
+
+2. For i=1 to n-1 (0-indexing)
+     {
+     current_max = max(a[i],array[i]+current_max)
+     total_max = max(current_max, total_max)
+     }
+
+3. Print total_max as your final result
+
+Time Complexity: O(n)
