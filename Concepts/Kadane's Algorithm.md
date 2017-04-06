@@ -1,6 +1,6 @@
 # Kadan's Algorithm
 
-A solution to the maximum subarray problem. This is the task of find the adjoining subarray in a 1-D array of numbers which has
+A solution to the **maximum subarray problem**. This is the task of find the adjoining subarray in a 1-D array of numbers which has
 the largest sum.
 
 Example
