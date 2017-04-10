@@ -7,6 +7,8 @@ The following questions can thus be categorized into each topic:
 
 ## Tree
 
+Often a Binary Tree
+
 111. Minimum Depth of Binary Tree
 2. Binary Tree Level Order Traversal
 3. Binary Tree Level Order Traversal II
