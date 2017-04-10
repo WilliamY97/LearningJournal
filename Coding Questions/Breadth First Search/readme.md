@@ -22,7 +22,11 @@ while queue:
       queue.append(node.left)
       
     if node.right:
-      queue.append(node.right)      
+      queue.append(node.right)
+     
+  level += 1
+
+return level
 ```
 
 **111. Minimum Depth of Binary Tree**
