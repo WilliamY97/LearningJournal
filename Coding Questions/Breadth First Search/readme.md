@@ -7,7 +7,23 @@ The following questions can thus be categorized into each topic:
 
 ## Tree
 
-Often a Binary Tree
+Template Code:
+
+```
+queue = [root]
+level = 1
+
+while queue:
+  size = len(queue)
+  for i in range(size):
+    node = queue.pop(0)
+    
+    if node.left:
+      queue.append(node.left)
+      
+    if node.right:
+      queue.append(node.right)      
+```
 
 **111. Minimum Depth of Binary Tree**
 
