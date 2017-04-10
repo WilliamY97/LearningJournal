@@ -34,6 +34,10 @@ populating the queue with the children of each node added.
 
 **111. Minimum Depth of Binary Tree**
 
+Solution: To find the minimum depth of a binary tree we need to find the most shallow node. A shallow node is one defined
+to have no children. To do this we can perform a BFS on the tree and when we find a node without children we return the
+level we're on. If we don't find anything we can simply return the level we're on once we finish the BFS aka lowest level.
+
 **2. Binary Tree Level Order Traversal**
 
 **3. Binary Tree Level Order Traversal II**
