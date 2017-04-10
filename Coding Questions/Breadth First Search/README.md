@@ -65,6 +65,8 @@ doing a rotation might make it faster.
 
 **103. Binary Tree Right Zigzag Level Order Traversal**
 
+Have a flag that identifies whether or not the level list needs to be reversed or not and then append it to the result
+
 **199. Binary Tree Right Side View**
 
 **15. Populating Next Right Pointers in Each Node**
