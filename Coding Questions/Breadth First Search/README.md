@@ -40,6 +40,24 @@ level we're on. If we don't find anything we can simply return the level we're o
 
 **2. Binary Tree Level Order Traversal**
 
+Template Code For Level Order
+```
+queue = [root]
+
+while queue:
+  size = len(queue)
+  for i in range(size):
+    node = queue.pop(0)
+    if node.left: queue add left
+    if node.right: queue add right
+    level.append(node.val)
+  res.append(level)
+return res
+```
+Key to this question is to store the value of the nodes in a complete set of the for loop to a temporary list. Then
+afterwards append that list to a res. This works naturally as the nodes from a set of the for loop are the nodes of
+a level.
+
 **3. Binary Tree Level Order Traversal II**
 
 **4. Binary Tree Right Zigzag Level Order Traversal**
