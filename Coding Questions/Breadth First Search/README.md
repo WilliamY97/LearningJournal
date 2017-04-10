@@ -38,7 +38,7 @@ populating the queue with the children of each node added.
 to have no children. To do this we can perform a BFS on the tree and when we find a node without children we return the
 level we're on. If we don't find anything we can simply return the level we're on once we finish the BFS aka lowest level.
 
-**2. Binary Tree Level Order Traversal**
+**102. Binary Tree Level Order Traversal**
 
 Template Code For Level Order
 ```
@@ -58,7 +58,9 @@ Key to this question is to store the value of the nodes in a complete set of the
 afterwards append that list to a res. This works naturally as the nodes from a set of the for loop are the nodes of
 a level.
 
-**3. Binary Tree Level Order Traversal II**
+**107. Binary Tree Level Order Traversal II**
+
+
 
 **4. Binary Tree Right Zigzag Level Order Traversal**
 
