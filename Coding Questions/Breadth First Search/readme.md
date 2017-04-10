@@ -29,6 +29,9 @@ while queue:
 return level
 ```
 
+Leverage the Queue data structure's FIFO attribute. Start with the root in the queue and then pop it off to continue
+populating the queue with the children of each node added. 
+
 **111. Minimum Depth of Binary Tree**
 
 **2. Binary Tree Level Order Traversal**
