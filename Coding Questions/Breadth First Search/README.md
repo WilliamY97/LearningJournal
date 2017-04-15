@@ -113,6 +113,10 @@ return dic[node]
 
 **133. Clone Graph**
 
+Simply re-creating the graph in this question. A BFS will help track down all the nodes and then store them into a dictionary and
+also update current nodes neighbors to have it. If a neighbor already exists in the dictionary then we simply need to update the 
+current nodes neighbours to have it. The purpose of the dictionary is to have a reference to every node at the end.
+
 **261. Graph Valid Tree**
 
 **323. Number of Connected Components in an Undirected Graph**
