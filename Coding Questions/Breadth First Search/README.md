@@ -80,6 +80,7 @@ level the last node will simply be set to point to None.
 
 **117. Populating Next Right Pointers in Each Node II**
 
+By using level order traversal, it is the same strategy as 116. even when it's incomplete tree.
 
 ## Graph
 **133. Clone Graph**
