@@ -83,14 +83,20 @@ level the last node will simply be set to point to None.
 By using level order traversal, it is the same strategy as 116. even when it's incomplete tree.
 
 ## Graph
+
+The first three questions are graph-based whereas the last three are topological sorts
+
 **133. Clone Graph**
 
 **261. Graph Valid Tree**
 
-**207. Couse Schedule**
+**323. Number of Connected Components in an Undirected Graph**
+
+**207. Course Schedule**
 
 **210. Course Schedule II**
 
+**310. Minimum Height Trees**
 
 ## Array
 **200. Number of Islands**
