@@ -86,6 +86,31 @@ By using level order traversal, it is the same strategy as 116. even when it's i
 
 The first three questions are graph-based whereas the last three are topological sorts
 
+The Template Code for Graph based BFS requires a dictionary to track what has been visited already:
+
+```
+#UGN is UndirectedGraphNode object
+if node is None: return None
+
+copyNode = UGN(node.label)
+dic = {}
+dic[node] = copyNode
+queue = [node]
+
+while queue:
+  cur = queue.pop(0)
+  
+  for n in cur.neighbors:
+    if n in dic:
+      dic[cur].neighbour.append(dic[n])
+    else:
+      nCopy = UGN(n.label)
+      dic[n] = nCopy
+      dic[cur].neighbors.append(nCopy)
+      queue.append(n)
+return dic[node]
+```
+
 **133. Clone Graph**
 
 **261. Graph Valid Tree**
