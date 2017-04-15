@@ -72,9 +72,9 @@ Have a flag that identifies whether or not the level list needs to be reversed o
 The strategy here is to add new nodes to the queue from right to left. Then we only add to the result when the length of the result
 is equal to the level we're on. This allows the first node of every level to be added to the result - good in the case that the rightmost node is missing.
 
-**15. Populating Next Right Pointers in Each Node**
+**116. Populating Next Right Pointers in Each Node**
 
-**16. Populating Next Right Pointers in Each Node II**
+**117. Populating Next Right Pointers in Each Node II**
 
 
 ## Graph
