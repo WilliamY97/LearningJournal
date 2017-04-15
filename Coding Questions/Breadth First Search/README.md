@@ -74,6 +74,10 @@ is equal to the level we're on. This allows the first node of every level to be 
 
 **116. Populating Next Right Pointers in Each Node**
 
+The question here really is to generate a linked list from each level of the binary tree. To do this we have a variable that holds
+the previous node and when we go to the next node we can set that last nodes pointer to point to the current one. At the end of the
+level the last node will simply be set to point to None.
+
 **117. Populating Next Right Pointers in Each Node II**
 
 
