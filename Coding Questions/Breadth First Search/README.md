@@ -115,7 +115,7 @@ return dic[node]
 
 Simply re-creating the graph in this question. A BFS will help track down all the nodes and then store them into a dictionary and
 also update current nodes neighbors to have it. If a neighbor already exists in the dictionary then we simply need to update the 
-current nodes neighbours to have it. The purpose of the dictionary is to have a reference to every node at the end.
+current nodes neighbours to have it. The purpose of the dictionary is to know which nodes have been visited (thus what to enqueue).
 
 **261. Graph Valid Tree**
 
