@@ -24,6 +24,8 @@ pointer. Two while loops, one for each pointer can accomplish this. This ensures
 
 **16. 3Sum Closest**
 
+We're trying to find the closest value to the target here. It's the same as three sum, but now we're not looking for all sets of solutions so we don't need to avoid re-occuring values with while loops. Simply we find the sum and compare it with the current result value and see which one is closer to the target. If the sum is the target then return it - otherwise move left or right pointer
+
 **16. 3Sum Smaller**
 
 **16. Triangle Count**
