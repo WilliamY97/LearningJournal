@@ -8,7 +8,7 @@ Two pointer questions can be seperated into three categories with subcategories:
 
 ## Meeting
 
-**Sum Subcategory**
+### Sum Subcategory
 
 **167. Two Sum II - Input Array is Sorted**
 
