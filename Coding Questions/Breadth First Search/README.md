@@ -145,7 +145,63 @@ are part of the component and mark them as visited so they are not checked again
 **310. Minimum Height Trees**
 
 ## Array
+
+Array based BFS is similar to Graphs in that we need to be concerned if we have visited a certain node before. In this case we don't
+have a neighbours dictionary as the graph would have or children like a tree would. We instead check the adjacent array slots to the
+array slot we are currently on and see if they have been visited or not. If not we mark it as visited and put it into the queue.
+
+```
+res = []
+queue = [[a,b]]
+
+while queue:
+    if [a,b] not visited:
+      [a,b] = queue.pop(0)
+      grid[a,b] = visited
+      res.append([a,b])
+      if [a,b] right up down left node isn't visited
+      go and put them into queue
+```
+```
+       m = len(grid)
+        if m == 0: return 0
+        n = len(grid[0])
+        if n == 0: return 0
+        
+        res = 0
+        queue = []
+        
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j] == '1':
+                    queue.append([i,j])
+                    grid[i][j] = '0'
+                    while queue:
+                        [a,b] = queue.pop(0)
+
+                        if a+1 < m and grid[a+1][b] == '1':
+                            queue.append([a+1,b])
+                            grid[a+1][b] = '0'
+                        
+                        if b+1 < n and grid[a][b+1] == '1':
+                            queue.append([a,b+1])
+                            grid[a][b+1] = '0'                        
+                        
+                        if a-1 >= 0 and grid[a-1][b] == '1':
+                            queue.append([a-1,b])
+                            grid[a-1][b] = '0'
+                            
+                        if b-1 >= 0 and grid[a][b-1] == '1':
+                            queue.append([a,b-1])
+                            grid[a][b-1] = '0'
+                    res += 1
+        return res
+```
+
 **200. Number of Islands**
+
+Traverse through grid and if you find an island with '1' then go and do a BFS on it to find the entirety of that island and mark them as
+0's. Once you're done and there is no more nodes in the queue add 1 to result and keep going through grid to find more islands with 1 and doing BFS's on them.
 
 **11. Word Ladder**
 
