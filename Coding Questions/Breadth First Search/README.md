@@ -119,6 +119,14 @@ current nodes neighbours to have it. The purpose of the dictionary is to know wh
 
 **261. Graph Valid Tree**
 
+This question asks to check if a graph is a valid tree. So in a tree there must be n-1 edges (one edge case). We take the edges
+given to us and populate the neighbors of each node with the corresponding node they are connected to. Then we go through the nodes
+and pop their neighbors into the queue. If by the end of it the neighbors dict is not empty - then there is a node that's not connected
+and therefore it's not a tree - otherwise it is.
+
+NOTE: The extend() method does this [1,2,3].extend([4,5]) -> [1,2,3,4,5]
+Pop(a,b) is used on a dict and the b value is the default return value if a isn't found
+
 **323. Number of Connected Components in an Undirected Graph**
 
 **207. Course Schedule**
