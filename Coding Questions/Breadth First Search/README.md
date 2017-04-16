@@ -129,6 +129,13 @@ Pop(a,b) is used on a dict and the b value is the default return value if a isn'
 
 **323. Number of Connected Components in an Undirected Graph**
 
+First, set up a dictionary that holds the neighbours of the nodes in the graph and populate it from edges. Then we define a visited
+variable that keeps track of nodes already visited before - if they have then they were in a component we've seen already before and do
+not need to be BFS'd - also implement a res = 0. After we iterate through the nodes and see if they have been visited - if not then
+we mark it visited and increase result (there is a component). We initialize a queue with the i'th node in it and perform a BFS on it.
+If the neighbor has not been visited then add it to the queue and mark it as visited. This BFS will essentially expose all nodes that
+are part of the component and mark them as visited so they are not checked again when iterating through all nodes.
+
 **207. Course Schedule**
 
 **210. Course Schedule II**
