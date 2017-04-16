@@ -136,6 +136,8 @@ we mark it visited and increase result (there is a component). We initialize a q
 If the neighbor has not been visited then add it to the queue and mark it as visited. This BFS will essentially expose all nodes that
 are part of the component and mark them as visited so they are not checked again when iterating through all nodes.
 
+TOPOLOGICAL SORT BASED QUESTIONS
+
 **207. Course Schedule**
 
 **210. Course Schedule II**
