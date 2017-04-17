@@ -33,3 +33,9 @@ We're trying to find the closest value to the target here. It's the same as thre
 **16. 4Sum**
 
 ### Array Subcategory
+
+**11. Container with Most Water**
+
+**42. Trapping Rain Water**
+
+**125. Valid Palindrome**
