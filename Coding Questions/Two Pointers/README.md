@@ -36,6 +36,11 @@ We're trying to find the closest value to the target here. It's the same as thre
 
 **11. Container with Most Water**
 
+This is a two pointer based question - the strategy is that knowing when we have two heights - we will only be able to hold water based
+on the height of the lower one. This being known we should always move the pointer that has the smaller height as it may point to a greater height.
+
 **42. Trapping Rain Water**
+
+
 
 **125. Valid Palindrome**
