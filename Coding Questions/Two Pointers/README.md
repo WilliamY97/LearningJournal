@@ -8,6 +8,21 @@ Two pointer questions can be seperated into three categories with subcategories:
 
 ## Meeting
 
+Template Code:
+
+```
+Given some array A:
+
+r,l = 0, len(A)-1
+
+while l<r:
+  some logic
+  r += 1
+  l -= 1
+return something
+
+```
+
 ### Sum Subcategory
 
 **167. Two Sum II - Input Array is Sorted**
