@@ -72,6 +72,15 @@ move both pointers. If left < right at the end, then we know it's a palindrome
 
 ### List Subcategory
 
+**1. Partition List**
+
+**2. Rotate List**
+
+**3. Palindrome Linked List**
+
+**4. Remove Nth Node From End of List**
+
+
 ### Tail Subcategory
 
 ### Window Subcategory
