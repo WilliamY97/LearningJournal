@@ -41,6 +41,10 @@ on the height of the lower one. This being known we should always move the point
 
 **42. Trapping Rain Water**
 
-
+Core logic is that when one wall is greater then the other we know that anything coming after the lower wall that is more lower will
+have water that can be retained (because whatever comes after we know there will be a wall tall enough to hold it). We only stop a
+pointer when it is at a height greater than the original. Then we re-check which wall is higher again and iterate the lower pointer to
+see how much water we can collect before reaching a higher wall again. When the two pointers meet we have collected all water from both
+sides. NOTE: Remember to keep track of when we re-valuate which wall is higher and when we're moving the walls to collect water that l is smaller than r pointer index.
 
 **125. Valid Palindrome**
