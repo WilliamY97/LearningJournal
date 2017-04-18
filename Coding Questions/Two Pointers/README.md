@@ -79,6 +79,11 @@ two lists by taking the smaller value of x list and attach it's final pointer to
 
 **2. Rotate List**
 
+One pointer to be dummy on head. Find length of list using helper function. Modulus the k value by length. Move the head by k amount
+after. Then move k to end of list and move current pointer from dummy. Then move current pointer one more time (could this be changed
+to just start from head?). Then head points to dummy.next. Dummy.next points to current.next. Current.next points to none. List is
+rotated.
+
 **3. Palindrome Linked List**
 
 **4. Remove Nth Node From End of List**
