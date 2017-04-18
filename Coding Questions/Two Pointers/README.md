@@ -67,3 +67,15 @@ sides. NOTE: Remember to keep track of when we re-valuate which wall is higher a
 
 Strategy is to have two pointers. Any thing that isn't alphanumeric we skip. Check if they're equal - if not it's not palindrome. Then
 move both pointers. If left < right at the end, then we know it's a palindrome
+
+## Forwarding
+
+### List Subcategory
+
+### Tail Subcategory
+
+### Window Subcategory
+
+### Fast&Slow Subcategory
+
+
