@@ -48,3 +48,6 @@ see how much water we can collect before reaching a higher wall again. When the 
 sides. NOTE: Remember to keep track of when we re-valuate which wall is higher and when we're moving the walls to collect water that l is smaller than r pointer index.
 
 **125. Valid Palindrome**
+
+Strategy is to have two pointers. Any thing that isn't alphanumeric we skip. Check if they're equal - if not it's not palindrome. Then
+move both pointers. If left < right at the end, then we know it's a palindrome
