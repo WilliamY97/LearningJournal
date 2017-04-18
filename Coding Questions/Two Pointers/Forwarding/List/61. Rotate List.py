@@ -7,9 +7,10 @@
 class Solution(object):
     def rotateRight(self, head, k):
         if head == None or head.next == None: return head
-        k%= self.getLen(head)
+        k %= self.getLen(head)
         
         current = dummy = ListNode(0)
+        dummy.next = head
         
         for i in range(k):
             head = head.next
@@ -29,7 +30,7 @@ class Solution(object):
         
     def getLen(self,head):
         len = 0
-        while head.next:
+        while head:
             len += 1
             head = head.next
-            
+        return len
