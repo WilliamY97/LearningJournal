@@ -3,6 +3,7 @@
 Two pointer questions can be seperated into three categories with subcategories:
 
 ### 1. Meeting (Sum or Array)
+Having two pointers approach each other from left and right side
 ### 2. Forwarding (List, Tail, Window, or Fast&Slow)
 ### 3. Two Arrays
 
