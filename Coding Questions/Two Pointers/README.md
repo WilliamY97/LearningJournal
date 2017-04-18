@@ -74,6 +74,9 @@ move both pointers. If left < right at the end, then we know it's a palindrome
 
 **1. Partition List**
 
+Set up 4 pointers, 2 for each node list. If value is greater or less than x - add it to the appropriate list. At the end link the
+two lists by taking the smaller value of x list and attach it's final pointer to the head of the other list.
+
 **2. Rotate List**
 
 **3. Palindrome Linked List**
