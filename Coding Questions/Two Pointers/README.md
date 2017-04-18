@@ -12,9 +12,9 @@ Template Code:
 
 ```
 Given some array A:
-
+if height is None or len(height) == 0:
+    return 0
 r,l = 0, len(A)-1
-
 while l<r:
   some logic
   r += 1
