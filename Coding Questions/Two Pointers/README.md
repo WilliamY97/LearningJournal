@@ -86,6 +86,9 @@ rotated.
 
 **3. Palindrome Linked List**
 
+This question can be seperated into three steps. First step is to find the middle node. Detach the LL before that middle node. Then perform a rotation on the linked list on the right. Finally compare the two LL's and they should be the same to be a palindrome. If not
+then it is not valid.
+
 **4. Remove Nth Node From End of List**
 
 
