@@ -91,6 +91,9 @@ then it is not valid.
 
 **4. Remove Nth Node From End of List**
 
+This question is a matter of using two pointers and traversing them both so that one pointer may be in position to point to the next next node that it will need to to remove the node in between. This is accomplished by moving one pointer n times. Then setting one
+pointer to be before the head and traversing them both. Once the later pointer hits None then the first pointer will be in position
+and we can point it to its next, next node.
 
 ### Tail Subcategory
 
