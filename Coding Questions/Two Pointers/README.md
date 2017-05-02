@@ -97,6 +97,15 @@ and we can point it to its next, next node.
 
 ### Tail Subcategory
 
+**1. Remove Element**
+
+**2. Remove Duplicates from Sorted Array**
+
+**3. Remove Duplicates from Sorted Array II**
+
+**4. Partition Array**
+
+
 ### Window Subcategory
 
 ### Fast&Slow Subcategory
