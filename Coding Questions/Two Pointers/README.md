@@ -99,6 +99,21 @@ and we can point it to its next, next node.
 
 **1. Remove Element**
 
+Template Code:
+
+```
+if nums == None or len(nums) == 0:
+    return len(nums)
+
+tail = 0
+
+for i in range(len(nums)):
+    if nums[i] != val:
+        nums[tail] = nums[i]
+        tail += 1
+return tail
+```
+
 Keep a tail that moves and has the head value stored at the tail everytime the value at the head equals something that is not the
 value that is being removed. Return the tail indice at the end as it will be the number of unique elements not with the person
 
