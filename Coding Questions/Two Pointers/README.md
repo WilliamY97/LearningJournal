@@ -114,8 +114,9 @@ doesn't matter just as the question states.
 
 **3. Remove Duplicates from Sorted Array II**
 
-**4. Partition Array**
+**4. Sort Colors**
 
+**5. Move Zeroes**
 
 ### Window Subcategory
 
