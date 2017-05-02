@@ -99,6 +99,9 @@ and we can point it to its next, next node.
 
 **1. Remove Element**
 
+Keep a tail that moves and has the head value stored at the tail everytime the value at the head equals something that is not the
+value that is being removed. Return the tail indice at the end as it will be the number of unique elements not with the person
+
 **2. Remove Duplicates from Sorted Array**
 
 **3. Remove Duplicates from Sorted Array II**
