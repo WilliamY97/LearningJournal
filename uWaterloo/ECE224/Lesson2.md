@@ -63,4 +63,27 @@ Device demands immediate service to reduce device latency
 
 - Poll the device, wait until data is available, and then read the input data.
 
+## Polling Loop Synchronization - Outputting Data
+
+Conservative Option: Assume the device is not initially ready, poll the device, wait
+until the device is ready and then output the data.
+
+Ex. Tight polling loop example
+
+```
+while (not ready_to_output) loop
+clear ready_to_output
+output data
+return
+```
+
+Optimistic Option: Assume the device is initially ready, output the data, poll the device
+and wait until device is ready.
+
+```
+clear ready_to_output
+output data
+while (not ready_to_output) loop
+return
+```
 
