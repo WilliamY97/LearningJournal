@@ -23,3 +23,44 @@ Initialize device configuration, read or write data, synchronize using polling o
 request and the initiation of service. Latency can involve both hardware/softwar delays.
 
 **Real-Time System:** A system that guarantees a worst-case latency for critical events.
+
+## Performance, Latency, and Throughput
+
+Latency: Delay between arrival of request and completion of service. One could also
+consider the average latency or the maximum latency by considering more results.
+
+Throughput: A measure of how many items can be processed per unit of time.
+Ex. A system could have a very high latency (5 years for Waterloo Engineering) but
+still have a throughput of 900 graduates per year.
+
+## Synchronization Mechanisms
+
+**Blind Cycle**: Software waits for some amount of time and then acts on data whether
+or not the device is ready (Dont sync at all)
+
+**Occasional Polling**: Device status is checked at the convenience of the designer
+
+**Periodic Polling**: Device status is checked after a pre-determined amount of time
+and this repeats until the device is done. Usually implemented with time-interrupt
+
+**Tight Polling Loop (Gadfly or Busy Waiting)**: Software continously checks the I/O
+status, waiting for the device to be done. Although this is implemented as a very tight
+loop (i.e. continously testing one status register and looping until the device is ready),
+it could be implemented as a sequence of tests (i.e. continously testing a set of status
+registers and looping until a device in the set is ready).
+
+**Interrupt Handling**: Device generates a hardware interrupt to request service immediately
+
+## Performance of Synchronization Mechanisms
+
+- First three sync mechanisms (Blind cycle, Occasional Polling, and Periodic Polling) are CPU-oriented.
+This means device waits for CPU to initiate synchronization
+
+- Last two sync mechanisms (Tight Polling Loop and Interrupt Handling) are device-oriented:
+Device demands immediate service to reduce device latency
+
+## Polling Loop Synchronization - Processing Input Data
+
+- Poll the device, wait until data is available, and then read the input data.
+
+
