@@ -36,3 +36,54 @@ Hard real-time: A timing violation leads to total system failure
 Real-time requirements typically emerge from control constraints:
 
 Ex. system must send a command to an actuator 100 times a second
+
+## Board-level / PC-like architecture
+
+Microprocessor: A chip that implements the CPU only.
+
+- CPU can compromise one or multiple cores (Processors)
+- Also typically includes (some levels of) caches.
+
+All other functional blocks (I/O, main memory) are implemented using seperate chips.
+
+Chips are connected to a printed circuit board (motherboard) which implements the
+interconnection network.
+
+Motherboards come in different **form factors**
+
+## Microcontroller
+
+Microcontroller: A complete embedded computer on a single chip.
+
+This term commonly refers to system incorporating low-power processor.
+
+- Small / cost-effective / built-in main memory (SRAM) and storage (flash memory)
+- Specialized built-in interface support generally includes: analog inputs / general digital inputs/outputs
+- Designed to meet the needs of a wide range of applications
+
+## System-on-a-Chip
+
+**System-on-a-Chip (SoC):** A complete computer (possibly excluding main memory) on a single chip.
+
+This term commonly refers to systems incorporating higher performance processors / complex interfaces.
+
+- Multiple cores, heterogeneous processors (ex. graphic processing units).
+- Large amount of DRAM main memory, generally on a seperate chip
+- Interfaces might include Ethernet, Wi-Fi, Serial ATA...
+- Designed to meet needs of specific class of devices (ex. smartphones)
+
+## Circuit Technology
+
+**Application Specific Integrated (ASIC)**
+
+- A chip designed for a specific hardware system
+- High to extremely high fixed cost, relatively lower variable cost
+- Higher performance and lower power consumption
+
+**Programmable Logic Device (PLD)**
+
+- A chip that can be configured after production to implemenet a specific hardware system
+
+- The configuration is stored in a memory. Alternatives:
+1. One-time programmable vs reconfigurable
+2. Volatile memory vs non-volatile
