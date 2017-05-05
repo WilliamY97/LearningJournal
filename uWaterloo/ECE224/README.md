@@ -87,3 +87,26 @@ This term commonly refers to systems incorporating higher performance processors
 - The configuration is stored in a memory. Alternatives:
 1. One-time programmable vs reconfigurable
 2. Volatile memory vs non-volatile
+
+## The Lab Project
+
+- Creating System-on-a-Programmable-Chip (SoPC): A SoC implemeneted using PLD
+- Specific PLD we use is a Field Programmable Gate Array (FPGA).
+SRAM-based device
+The configuraton data for a hardware system is called a **bitstream**
+
+You will use tools to specify configuration (including processor and I/O) and automatically
+generate a bitstream
+
+Internally, the tool uses a hardware description language (VHDL) to model the functionality of the implemented hardware
+
+## Introduction to FPGA
+
+- An array of **Configurable Logic Blocks (CLB)** with configurable connections
+- Each CLB implements both sequential logic (register) and combinational logic (**lookup table**)
+
+## Connections
+
+- Each CLB has horizontal and vertical conenctions with neighbouring blocks and general purpose (long) wires.
+
+- The FPGA comprises columsn of CLBS, connections between distant nodes can use general purpose wires.
