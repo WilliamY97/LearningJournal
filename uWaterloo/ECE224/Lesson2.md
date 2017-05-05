@@ -129,4 +129,26 @@ Vectored Interrupts
 6. Restore registers (interrupts may need to be disabled during this step)
 7. Return from interrupt
 
+## Interrupt Initialization
+
+Following steps taken with initializing software system using interrupts:
+
+1. Disable all interrupts
+2. Enable device interface interrupts by setting appropriate device interface registers
+3. Set interrupt mask to allow interrupts from device
+4. Initialize interrupt vecotr with address of ISR
+5. Enable interrupts as required
+
+## Device Drivers
+
+A device driver is the software associated with a particular device. The device driver includes:
+
+- Data Structures (variables need to access device interface registers, state of device, and data buffers)
+
+- Initialization Functions: device initialization, synchronization, initialization of driver variables
+
+- I/O Functions: Functions to input from the device/or output to the device
+
+- Interrupt Service Routine(s)
+
 
