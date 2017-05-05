@@ -103,3 +103,8 @@ return
 ## CPU Notification
 
 - Interrupts must be handled from multiple sources
+
+## Interrupt Service Routine (ISR) Selection
+
+- Non-vectored interrupts: - devices are polled to determine source
+- priority must be determined (in software)
