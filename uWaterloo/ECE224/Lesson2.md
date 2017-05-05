@@ -99,3 +99,7 @@ return
 9. Registers are restored, if required, including the program counter
 10. Interrupts are enabled (processor specific)
 11. Execution of the main program resumes
+
+## CPU Notification
+
+- Interrupts must be handled from multiple sources
