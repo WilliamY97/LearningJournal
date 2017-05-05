@@ -108,3 +108,25 @@ return
 
 - Non-vectored interrupts: - devices are polled to determine source
 - priority must be determined (in software)
+
+## ISR Selection
+
+Vectored Interrupts
+- requests are associated with an interrupt vector
+- fixed priority associated with the interrupt vector
+- interrupt service route (ISR) at vector address is executed
+
+## Interrupt Service Routine (ISR)
+
+- ISRs should execute as fast as possible since they are interrupting other tasks
+- ISRs must avoid blocking (synchronous) I/O functions
+- An ISR is typically structured as follows:
+1. Save registers modified by ISR
+2. Acknowledge the device
+3. Re-enable interrupts to allow higher or same priority interrupts (if desired)
+4. Test for a valid interrupt and/or determine the exact source of the interrupt
+5. Complete desired action
+6. Restore registers (interrupts may need to be disabled during this step)
+7. Return from interrupt
+
+
