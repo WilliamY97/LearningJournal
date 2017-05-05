@@ -109,4 +109,8 @@ Internally, the tool uses a hardware description language (VHDL) to model the fu
 
 - Each CLB has horizontal and vertical conenctions with neighbouring blocks and general purpose (long) wires.
 
-- The FPGA comprises columsn of CLBS, connections between distant nodes can use general purpose wires.
+- The FPGA comprises columns of CLBS, connections between distant nodes can use general purpose wires.
+
+## Summary
+
+- Embedded design is multidisciplinary and systems come in all shapes/sizes.
