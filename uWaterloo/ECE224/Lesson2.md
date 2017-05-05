@@ -86,4 +86,16 @@ output data
 while (not ready_to_output) loop
 return
 ```
+## Interrupt Synchronization
 
+1. Device notifies CPU of interrupt request
+2. CPU completes execution of current instruction
+3. Execution of the main program is suspended
+4. Interrupts are disabled (processor specific)
+5. Some internal registers are saved (including program counter)
+6. Device may be acknowledged
+7. Interrupt service routine is selected
+8. Interrupt service routine is executed
+9. Registers are restored, if required, including the program counter
+10. Interrupts are enabled (processor specific)
+11. Execution of the main program resumes
