@@ -60,7 +60,7 @@ could be implemented as an interrupt.
 **Passive, request-oriented service** The event at one of the pers may be serviced. One
 side keeps testing the other to see if an event has occured.
 
-## Generation
+## 1) Generation
 
 Data generation requires action by producer - creation can be initiated by producer/consumer
 
@@ -72,3 +72,39 @@ has been consumed by the consumer.
 
 **Consumer Responsive Sources** Data is produced by the device only after requested by the
 consumer
+
+## 2) Notification / Initiation of Transfer
+
+Notification / Initiation of transfer may be initiated by either producer/consumer
+
+**Consumer Initiated Scenarios** The consumer requests data and then the data becomes
+ready (or is ready) and the request is completed
+
+- Polling for a key to be pressed and once it is pressed, the data is consumed (Passive
+Synchronization)
+
+- An interrupt from a printer to indicated that it is ready for the next item to be printed
+(Active Synchronization)
+
+**Producer Initiated Scenarios** The data is available and then the data is accepted by
+the consumer and the transfer is completed
+
+- Polling for a printer to become ready for the next character and one it is ready, the
+data is transferred and consumed (Passive Sync)
+
+- An interrupt from keyboard indicated that it has the next character ready for consumption
+(Active Sync)
+
+## 1) Impact of Data Generation
+
+Interdata: Generation of data
+
+Consumer S: t = 1/t(interdata) + t(transfer)
+
+S: t = 1/t(interdata)
+
+CR (at one point the consumer needs to ask to create data)
+
+## Data Transfer Terminology
+
+Definitions for all data transfer types
