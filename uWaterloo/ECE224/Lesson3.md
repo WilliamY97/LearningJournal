@@ -40,3 +40,35 @@ alternatively how does the consumer request the data?
 3) **Data Transfer** Once the producer has the data and the consumer is ready for the
 data, how is the timing (synchronization) of the transfer handled?
 
+## Synchronization
+
+**Synchronization** For our purposes, synchronization refers to the interaction required to
+make two entities (with different views of time) interact.
+
+**Active Synchronization** One of the entities is capable of **forcing** a change in the
+operational characteristics of the other. Ex. Setting an interrupt signal can force the
+processor to execute the interrupt service routine.
+
+**Passive Synchronization** One of the communicating entities signals a request for
+service, however the entity receiving the request is not forced to respond.
+
+## Synchronization Needs
+
+**Active, demand-oriented service** The event at one of the peers must be serviced. This
+could be implemented as an interrupt.
+
+**Passive, request-oriented service** The event at one of the pers may be serviced. One
+side keeps testing the other to see if an event has occured.
+
+## Generation
+
+Data generation requires action by producer - creation can be initiated by producer/consumer
+
+**Spontaneous Sources** Data is produced in the device independent of the actions of the
+consumer accepting the data.
+
+**Consumer Sensitive Sources** Data is produced by the device only after the previous data
+has been consumed by the consumer.
+
+**Consumer Responsive Sources** Data is produced by the device only after requested by the
+consumer
