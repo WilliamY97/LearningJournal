@@ -131,5 +131,7 @@ for OS to keep track of what processes are in which state separetly.
 - If a process is waiting for a disk operation, when the disk becomes available, it would
 be convenient to know quickly what process(es) are waiting for the disk.
 
+- A common way of looking at the way processes move around is in a queueing diagram.
 
-
+- Process initially goes into ready queue until it is selected to run, then it is executed
+on cPU. 
