@@ -109,3 +109,15 @@ data is transferred and consumed (Passive Sync)
 
 Definitions for all data transfer types
 
+## Estimating Syncrhonization Times for Block Transfers
+
+Consider the transfer of a block of 256 data units. Let n be the number of datau units that
+are in one block. Synchronization occurs after every block transfer.
+
+n = 1 implies sync occurs once after thr transfer of 1 data unit for 256 syncs
+n = 256 implies sync occurs once after the transfer of a block of 256 data units for a
+total of 1 sync
+
+t(transfer) = max(t(transfer producer), t(transfer consumer))
+t(wait) = 1. t(sync-poll) Polling
+          2. t(sync-inter) + t(interdata) Interrupts
