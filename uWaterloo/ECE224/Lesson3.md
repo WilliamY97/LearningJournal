@@ -119,5 +119,6 @@ n = 256 implies sync occurs once after the transfer of a block of 256 data units
 total of 1 sync
 
 t(transfer) = max(t(transfer producer), t(transfer consumer))
-t(wait) = 1. t(sync-poll) Polling
+t(wait) = 
+1. t(sync-poll) Polling
 2. t(sync-inter) + t(interdata) Interrupts
