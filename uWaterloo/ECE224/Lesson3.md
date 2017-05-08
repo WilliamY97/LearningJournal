@@ -73,6 +73,16 @@ has been consumed by the consumer.
 **Consumer Responsive Sources** Data is produced by the device only after requested by the
 consumer
 
+## 1) Impact of Data Generation
+
+Interdata: Generation of data
+
+Consumer S: t = 1/t(interdata) + t(transfer)
+
+S: t = 1/t(interdata)
+
+CR (at one point the consumer needs to ask to create data)
+
 ## 2) Notification / Initiation of Transfer
 
 Notification / Initiation of transfer may be initiated by either producer/consumer
@@ -95,16 +105,7 @@ data is transferred and consumed (Passive Sync)
 - An interrupt from keyboard indicated that it has the next character ready for consumption
 (Active Sync)
 
-## 1) Impact of Data Generation
-
-Interdata: Generation of data
-
-Consumer S: t = 1/t(interdata) + t(transfer)
-
-S: t = 1/t(interdata)
-
-CR (at one point the consumer needs to ask to create data)
-
 ## Data Transfer Terminology
 
 Definitions for all data transfer types
+
