@@ -109,7 +109,7 @@ data is transferred and consumed (Passive Sync)
 
 Definitions for all data transfer types
 
-## Estimating Syncrhonization Times for Block Transfers
+## Estimating Synchronization Times for Block Transfers
 
 Consider the transfer of a block of 256 data units. Let n be the number of datau units that
 are in one block. Synchronization occurs after every block transfer.
