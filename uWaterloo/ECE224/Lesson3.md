@@ -107,7 +107,21 @@ data is transferred and consumed (Passive Sync)
 
 ## Data Transfer Terminology
 
-Definitions for all data transfer types
+**Data Transfer**: The exchange of information between two entities that have (potentially) different views of time.
+
+Data transfer considerations include data persistence, time synchronization and clocking, and control signalling:
+
+**Data Persistance**: How long data is valid for the purpose of transferring between communicating entities
+**Time Synchronization and Cloaking**: How signals representing any data are enabled to make a transfer happen
+**Control Signalling**: How control information is exchanged between communication entities
+
+## Introduction to Data Persistence
+
+**Persistent Data:** Information remains valdi until consumer signals that the data has been consumed (processed)
+**Transient Data:** Information is made available to the consumer and only remains valid for a period of time.
+In most cases, the minimum period of time the data will remain valid is known by the designer.
+
+- Most input data falls into the category of transient data
 
 ## Estimating Synchronization Times for Block Transfers
 
