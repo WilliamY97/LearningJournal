@@ -61,3 +61,59 @@ Other way of getting something to run in the background is to use ```screen``` c
 great for interactive processes. Suppose you are working on some code in ```vi``` and you would like to pause that for a minute
 and write an e-mail (with ```pine```). A approach would be to save and exit ```vi``` and open up ```pine```. The other would
 be to start up each of these in ```screen``` and switch between them.
+
+## Spawning Child Processes
+
+When a process spawns a child, the child will need resources (memory, files, etc.). The child may request them from the OS directly
+or the parent can give some of its resources to the child. The parent may partition resources amongst children or allow children
+to share them instead.
+
+Restricting a child process to only be able to use some subset of its parent resources means that a process cannot overload the
+system by spawning too many children.
+
+At time of initialization the parent can give child some data. When a new process is created, the child process may be a duplicate
+of the parent process, or it may have a new program loaded into it.
+
+## Show Me The Code!
+
+Workflow in UNIX is as follows. First, parent spawns the child process with the ```fork``` system call. If it is interested in
+waiting for the child process to finish, it will use the system call ```wait```, in which case the parent will be awaiting the
+completion of the child process. When child process is finished, it returns a value with the ```exit``` system call.
+
+The parent process will then get this as the return value of ```wait``` call and may proceed.
+
+What does ```fork``` do? It creates a new process; it makes a copy of itself. The parent and child continue execution after
+```fork``` statement. If ```fork``` returns a negative number, the ```fork``` failed. If it returns 0 then the process that
+got 0 back is the child. If it returns positive value, that is the process ID of the child.
+
+After the ```fork```, one of the processes may use the ```exec``` system call, or one of its variants, to replace its memory
+space with a new program. No rule that says this needs to happen; a child can continue to be a clone of its parent if it wishes.
+The ```exec``` invocation loads the binary file into memory and starts execution.
+
+At this point, the programs can go their seperate ways, or the parent might want to wait for the child to finish. The parent is
+then blocked, waiting for the child process to execute.
+
+Actual C-Code Example:
+
+```
+int main()
+{
+pid_t pid;
+int childStatus;
+/* fork a child process */
+pid = fork();
+if (pid < 0) {
+/* error occurred */
+fprintf(stderr, "Fork Failed");
+return 1;
+} else if (pid == 0) {
+/* child process */
+execlp("/bin/ls","ls",NULL);
+} else {
+/* parent process */
+/* parent will wait for the child to complete */
+wait(&childStatus);
+printf("Child Complete with status: %i \n", childStatus);
+}
+return
+```
