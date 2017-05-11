@@ -40,3 +40,10 @@ update, looking something like:
 
 ```Done gcc fork.c```
 
+Notably, any console output that the ```gc```` command would generate will still appear on the console where the
+background task was created. Maybe you want that but maybe you want to put the output in a log file with a command like
+```cat fork.c > logfile.txt &```.
+
+The semantics of ```&``` are not just saying "run in background" it is actually the parent process (the shell) disowning
+its child (the ```cat``` or ```gc``` process) so that process will get adopted by ```init``` and can run to completion even
+if the user logs out.
