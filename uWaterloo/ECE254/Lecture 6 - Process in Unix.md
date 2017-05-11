@@ -117,5 +117,106 @@ int main()
     wait(&childStatus);
     printf("Child Complete with status: %i \n", childStatus);
   }
-return
+return 0;
 ```
+
+When executed, this code starts up and attempts to spawn a child process. Let us assume that the ```fork``` command succeeds and 
+we do not enter the error block. After the fork there are now two processes at the statement ```if (pid<0)```. The child process
+calls ```execlp```, replacing itself with the ```ls``` (list directory contents) command.
+
+The parent process wil go the ```wait``` statement and wait for the child process to complete. The child process runs ```ls```,
+listing the contents of the directory. Then it finishes. The parent process finally prints "Child complete" to console.
+
+Thus the output is:
+
+```
+jz@Freyja:~/fork$ ./fork
+fork fork.c
+Child Complete with status: 0
+jz@Freyja:~/fork$
+```
+
+What about termination? On the assumption that the process is terminating normally and not being killed, the
+system call for that is ```exit```. Modify code above to fork off a child process that will exit “abnormally”
+with an exit code of 1. The wait function also returns the process ID of the child so that the parent can identify
+which of its children has terminated, though it is not used in this example.
+
+```
+int main()
+{
+pid_t pid;
+int childStatus;
+/* fork a child process */
+pid = fork();
+if (pid < 0) {
+/* error occurred */
+fprintf(stderr, "Fork Failed");
+return 1;
+} else if (pid == 0) {
+/* child process */
+exit( 1 );
+} else {
+/* parent process */
+/* parent will wait for the child to complete */
+wait(&childStatus);
+printf("Child Complete with status: %i \n", childStatus);
+}
+return 0;
+}
+```
+If the program itself has no explicit call to ```exit```, the ```return``` statement at the end of the ```main``` will have
+the same effect.
+
+## UNIX System V Process Management
+
+Unix divides processes into two categories: system processes that run in kernal mode and user processes that run in user mode.
+There are nin different states a process can be in:
+
+1. User Running: Executing in user mode.
+2. Kernel Running: Executing in kernel mode.
+3. Ready to Run, in Memory: Ready to run; in memory.
+4. Asleep in Memory: Blocked; in memory.
+5. Ready to Run, Swapped: Ready to run; not in memory.
+6. Sleeping, Swapped: Blocked; not in memory.
+7. Preempted: Process is returning from kernel to user mode, but the kernel decides to run another process at this time.
+8. Created: Newly created and not yet ready to run.
+9. Zombie: Process is done, but the parent has not yet collected the return information.
+
+Very like the sevenp-state model we saw earlier. The two major differences:
+
+(1) The running in user mode vs. running in kernel mode
+(2) The preempted state. It's like ready to run in memory, but the difference is how the process got to be in that state.
+
+When a process is running in kernel mode as a result of system call, ex. when control is about to go back to the user
+program, this is as good a time as any to swap to another process. So that would put the process in the preempted state
+rather than ready to run, in memory. But these two states are really the same, logically.
+
+## Process Creation
+
+Process creation takes places when ```fork``` is called. When that happens, the OS takes the following steps:
+
+1. Allocates slot in process table for new process
+2. Assigns unique process ID to child process
+3. Makes copy of process image of the parent, with exception of shared memory.
+4. Increments counters for any files owned by the parent (shows additional process referencing those files)
+5. The new process is in the state Ready to Run
+6. A return value of 0 goes to child process, and unique process ID of child is returned to parent
+
+All of above happens in kernel mode in the parent process. When it is done, the system will need to choose which process is gonna run:
+
+1. Parent Process. The child is in the ready to run state.
+2. Child Process. The parent is in the ready to run state.
+3. Another Process. Both parent and child are in the ready to run state.
+
+Seems strange that to spawn a process, the parent most make clone of self and continue from same point. Branching only if the
+return value of the ID is tested.
+
+## Fork Bomb
+
+Call ```fork``` repeatedly until the number of processes spawned is too high for system to manage and it crashes/ or is so slow
+that no useful work can get done. Two both call fork and so on causing 2^n invocations and this exponential growth crashes it.
+
+A system configured to stop this may:
+1. Limit total # of processes a user may create
+2. Limit rate at which user may spawn a new process
+
