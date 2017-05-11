@@ -47,3 +47,17 @@ background task was created. Maybe you want that but maybe you want to put the o
 The semantics of ```&``` are not just saying "run in background" it is actually the parent process (the shell) disowning
 its child (the ```cat``` or ```gc``` process) so that process will get adopted by ```init``` and can run to completion even
 if the user logs out.
+
+A common example of a command I use involving the ```&```:
+
+```sudo service xyz start &```
+
+This will (with super user permissions aka sudo) start up the service ```xyz``` but return control to the console so I don't have
+to wait for the ```xyz``` service to be started to enter my next command. This is good, because the next thing I'd like to is
+```tail -f /var/log/xyz/console.log``` which will allow me to watch the console log of the xyz as it starts up to see if there
+are any errors.
+
+Other way of getting something to run in the background is to use ```screen``` command. Running something in the background isn't
+great for interactive processes. Suppose you are working on some code in ```vi``` and you would like to pause that for a minute
+and write an e-mail (with ```pine```). A approach would be to save and exit ```vi``` and open up ```pine```. The other would
+be to start up each of these in ```screen``` and switch between them.
