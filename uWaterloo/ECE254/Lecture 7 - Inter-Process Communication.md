@@ -7,7 +7,7 @@ provide some facilities to make this possible.
 The motivations for inter-process communication are fairly obvious - examples include breaking a lrage tasks into smaller subtasks,
 allowing multiple users to edit the same data, and system modularity.
 
-Before proceeding, we nee to define some idea about what communication is: transfer of data from one process to another.
+Before proceeding, we need to define some idea about what communication is: transfer of data from one process to another.
 
 Data being transferred is typically referred to as the *message*. The process sending that message is the *sender* and
 the process receiving it will be the *receiver*.
@@ -39,4 +39,9 @@ a message to continue.
 
 4. Asynchronous send, Asynchronous receive: Sender can continue as soon as it sends the message, and the receiver will
 check for a message but will continue whether or not the message is available.
+
+Common in async receive for reciever to send back another message confirming receipt of the message. When that happens
+just reverse labels: receiver of initial message is sender of acknowledgement.
+
+## Implementation Strategies
 
