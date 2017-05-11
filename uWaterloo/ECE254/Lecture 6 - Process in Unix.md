@@ -40,7 +40,7 @@ update, looking something like:
 
 ```Done gcc fork.c```
 
-Notably, any console output that the ```gc```` command would generate will still appear on the console where the
+Notably, any console output that the ```gc``` command would generate will still appear on the console where the
 background task was created. Maybe you want that but maybe you want to put the output in a log file with a command like
 ```cat fork.c > logfile.txt &```.
 
