@@ -45,3 +45,18 @@ just reverse labels: receiver of initial message is sender of acknowledgement.
 
 ## Implementation Strategies
 
+Three approaches we consider on how to accomplish IPC:
+
+1. Shared memory
+2. The file system
+3. Message passing
+
+All of these methods are quite common and a system can easily implement them all. There is no single option that is optimal
+in every situation, but each method has some areas of strength and weakness.
+
+## Shared Memory
+
+Conceptually, the idea of shared memory is very simple. A particular region of memory is designated as being shared between
+multiple processes, all of whom may read and write to that location. To share an area of memory, the OS must be notified.
+
+
