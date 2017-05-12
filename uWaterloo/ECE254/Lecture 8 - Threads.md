@@ -67,3 +67,31 @@ multiple thrads and they share the same process, then any thread encountering an
 
 ## Thread States
 
+Each thread has their own state. Model for thread is simpler five-state model. If a process
+is swapped out of memory, all its threads will be swapped out. When the process is swapped
+in to memory, all the threads will be swapped in. Therefore we do not need to worry about
+whether thread is in memory/swapped. 
+
+The transitions work the same way as the state transitions for a process. As with a process,
+a thread in any state can transition to terminated even though that is not shown. When a process
+is terminated, all its threads are terminated, regardless of state.
+
+## Thread Cancellation
+
+Thread cancellation is when a running thread will be terminated before it has finished its work.
+Once the user presses the cancel button on the file upload, we want to stop the upload task.
+
+The thread that we are going to cancel is called the **target** and there are two ways a thread
+might get canceled:
+
+1. **Asynchronous Cancellation:** One thread immedietly terminates the target
+2. **Deferred Cancellation:** The target is informed it is cancelled. The target is responsible 
+for checking regularly if it is terminated, allowing it to clean itself up properly.
+
+A thread can ignore a cancellation if it is deferred cancellation type - why do we choose this?
+Suppose thread canceled has some resources. If thread is poorly terminated, the OS may not reclaim
+all resources from that thread. Thus a resource might look like it's in use when it's not.
+
+## Thread Types
+
+
