@@ -91,4 +91,10 @@ the file and imports the data contained therein. The imported data is then shown
 reads, there is no possibility for overwriting of data. As long as sender chooses distinct file names, it will not overwrite
 a message if a second message is created before the receive picks up the first.
 
+## Message Passing
+
+A service provided by the operating system where the sender will give message to OS and ask for it to be delivered to a recipient.
+There are two basic operations: sending and receiving. Messages can be of fixed or variable size.
+
+
 
