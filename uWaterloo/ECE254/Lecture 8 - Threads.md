@@ -57,3 +57,13 @@ OS can run a different program when the executing program gets blocked (on a dis
 thread is blocked, another thread may execute.
 4. *Modular Structure:* A program that does several different things may be given structure through threads
 
+## Drawbacks
+
+- No protection between threads in same process: one thread could easily mess with memory being used
+by another thread.
+- If any thread encounters error, the whole process might be terminated by the OS. If the program has multiple
+processes for different parts, then the other processes will not be affected. If the program has
+multiple thrads and they share the same process, then any thread encountering an error might halt all.
+
+## Thread States
+
