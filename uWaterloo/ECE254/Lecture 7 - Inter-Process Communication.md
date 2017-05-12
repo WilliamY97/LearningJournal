@@ -96,5 +96,14 @@ a message if a second message is created before the receive picks up the first.
 A service provided by the operating system where the sender will give message to OS and ask for it to be delivered to a recipient.
 There are two basic operations: sending and receiving. Messages can be of fixed or variable size.
 
+Under *direct communication*, each process that wants to communicate needs to name the recipient or sender of
+communication, makingthe send/receive functions:
+
+```send(A, message)``` - Send a message to process A
+```receive(B, message)``` - Receive a message from process B
+
+**Symmetric Addressing**: The sender and receiever have to know one another to communicate
+
+
 
 
