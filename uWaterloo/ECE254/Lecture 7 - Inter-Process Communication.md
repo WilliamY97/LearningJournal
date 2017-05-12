@@ -120,4 +120,67 @@ process B with some alternative sftware, do we have to change the identifier in 
 ```send(M, message)``` - Send a message to mailbox M.
 ```receive(M, message)``` - Receive a message from mailbox M
 
+A mailbox may belong specifically to one process or may be set up by the operating system. If mailbox belongs
+to the process, then anyone can send to this mailbox, but only the owning process may receive messages from
+that mailbox. If the owner process has not started / terminated, attempt to send to mailbox will be error
+for sender.
+
+If the mailbox is owned by OS, it is persistent/independent of any particular process. When we used direct
+communication, the communication relationship is 1:1 - one sender / receiver. There is no reason that an
+OS mailbox can't belong to more than one process. If mailbox M belongs to the OS and processes P1 and P2
+have access to it, which process gets message sent to mailbox?
+
+Two ways to deal with this problem:
+
+1. OS should allow only one process at a time to pick up items from the mailbox, thus preventing the problem altogether.
+
+2. The other solution is that the OS may have some scheme: whichever process gets there first, alternation (take turns)
+or any other system of deciding whose turn it is.
+
+## Message Queues
+
+Thus far we have dealt with messages one at a time: if sender wants to send a second message before first message
+is received, the sender will have three choices, regardless of whether the communication is synchronous:
+
+1. Wait for the last message to be picked up (block)
+2. Overwrite the last message (seomtimes this is what you want)
+3. Discard the current message (let the old one remain)
+
+A message queue may alleviate the problem or just "kick the can down the road". If a queue exists, when sending
+a message, that message is put in queue and when receiving message, the first message is taken. If queue is infinite
+size, then the problem can be ignored. If the queue is fixed size, then the problem is put off but not solved:
+the sender can keep adding messages to queue until queue is full. If queue is full: sender must choose to block,
+overwrite, or discard.
+
+## Unix Pipes
+
+In UNIX, we can create a ```pipe``` to set up communication between producer and consumer. The producer writes in
+one end of pipe and the consumer receives it on the other. This is unidirectional, so if you want bidirectional
+communication, two pipes needed. The UNIX method for creating a pipe is ```pipe``` and is constructed with the
+```pipe( int fileDescriptors[])``` where ```fileDescriptors[0]``` is the read-end and ```fileDescriptors[1]```
+is the write-end.
+
+```fileDescriptors``` means that UNIX thinks of pipe as a file (UNIX thinks everything is file) even though it is
+in memory.
+
+The pipe itself is a block of main memory that is interpreted as a circular queue, and each entry in the queue is
+fixed in size and usually one character. The sender may place message in queue as small chunks, but the receiver gets
+data one character at a time. Thus, sender and receiver need to know when the message is finished. This may be
+through the use of a designated termination character (e.g., the line feed or null character), or the message
+may begin with an explicit value of the number of characters the message will be. 
+
+A UNIX pipe may be stored on disk. When this happens, we call it a **named pipe**. Unless we make it a named pipe, a pipe
+exists only as long as the processes are communicating. Regular pipes depend on file descriptors, so if a parent-child
+relationship is required to get the descriptors from one process to another. The named pipe, however, might be used
+by any process and will persist even after the creating process has terminated. 
+
+Another bonus of named pipes is that they are bidirectional, so we do not need two pipes for communication to go in
+both directions. With that said, communication can only go in one direction at a time; if concurrent communication
+is required, a second pipe is needed after all.
+
+A command like ```cat fork.c | less``` creates a pipe that takes the output of the ```cat``` program and delivers it as
+input to the program ```less``` which allows for scrolling and pagination of that data.
+
+## UNIX Pipes: Code Example
+
 
