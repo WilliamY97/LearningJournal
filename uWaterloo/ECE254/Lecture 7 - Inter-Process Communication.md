@@ -59,4 +59,36 @@ in every situation, but each method has some areas of strength and weakness.
 Conceptually, the idea of shared memory is very simple. A particular region of memory is designated as being shared between
 multiple processes, all of whom may read and write to that location. To share an area of memory, the OS must be notified.
 
+A region of memory is associated with exactly one process (its owner) and that process may read and write that location, but
+other processes may not. If another tries to do so, the OS will stop it and make an error. If a process wants to designate
+memory as shared, it tells operating system iti s okay fro the other process to have access to that area.
+
+OS needs to know the memory is referenced by two processes: if the first one terminates and is reaped, the memory may still
+be in use by the second process, so that previously-shared region should not be considered free as long as the second process
+is still using it. Once the area of memory is shared, when either process attempts to access it, it is just a normal memory
+access. The kernel is only involved in the setup and cleanup of that shared area.
+
+Shared memory is created in block for the process that creates it. Process A will request the memory from operating system
+and then ask the OS to consider a particular block A already owns to be shared.
+
+When a section of memory is shared, there exists possibility that one process will overwrite another's changes. To prevent
+this sort of problem, we will need a mechanism for co-ordination...
+
+## File System
+
+Another way to communicate is through file system. Unlike share memory, messages stored in the file system will be persistent
+and survive a reboot. Also useable when the sender and receiver know nothing about one another (and the programmer knows nothing
+about proper IPC mechanisms).
+
+Rather than have OS get involved, the producer may write to a file in an agreed upon location and consumer may read from location.
+The OS is involved in its role in file creation and manipulation (also permissions for read/write).
+
+If one file is being used then we still have problem with co-ordination: make sure one process does not overwrite the changes
+of another. We can get around this, however, by using multiple files with unique IDs.
+
+Consider when producer generates XML data and writes to import/ directory. Consumer scans directory and when it finds it, reads
+the file and imports the data contained therein. The imported data is then shown in the program. When one file writes and another
+reads, there is no possibility for overwriting of data. As long as sender chooses distinct file names, it will not overwrite
+a message if a second message is created before the receive picks up the first.
+
 
