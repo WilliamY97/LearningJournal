@@ -102,8 +102,22 @@ communication, makingthe send/receive functions:
 ```send(A, message)``` - Send a message to process A
 ```receive(B, message)``` - Receive a message from process B
 
-**Symmetric Addressing**: The sender and receiever have to know one another to communicate
+**Symmetric Addressing**: The sender and receiver have to know one another to communicate
 
+This deviates from the example of postal mail: receiving an item does not require foreknowledge of the sender.
 
+**Asymmetric Addressing**: The sender names the recipient, but the receiver can pick up items from anyone. System
+calls for the scheme are:
+
+```send(A, message)``` - Send a message to Process A
+```receive(id, message)``` - Receieve a message from any process; the variable id is set to the sender
+
+- In either case we have to know some identifier for the other processes. Not very flexile; if we want to replace
+process B with some alternative sftware, do we have to change the identifier in A, recompile it, and reinstall it?
+
+**Indirect Communication** - Where messages are sent to mailboxes. This makes our send and receive functions:
+
+```send(M, message)``` - Send a message to mailbox M.
+```receive(M, message)``` - Receive a message from mailbox M
 
 
