@@ -94,4 +94,5 @@ all resources from that thread. Thus a resource might look like it's in use when
 
 ## Thread Types
 
-
+Two categories of threads in implementation: *user-level* threads (ULTs) and *kernel-level* threads (KLTs - aka lightweight
+process). ULTs run at the user level and KLTs run at kernel level.
