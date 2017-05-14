@@ -135,6 +135,14 @@ doesn't matter just as the question states.
 
 ### Window Subcategory
 
+**1. Minimum Size Subarray Question**
+
+**2. Largest Substring Without Repating Characters**
+
+**3. Largest Substring With at most two distinct characters**
+
+**4. Minimum Window Substring**
+
 ### Fast&Slow Subcategory
 
 
