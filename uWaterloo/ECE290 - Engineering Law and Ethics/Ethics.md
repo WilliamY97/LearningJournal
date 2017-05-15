@@ -487,7 +487,3 @@ iii) devotion to high ideals of personal honour and professional integrity
 iv) knowledge of developments in the area of professional engineering relevant to any services that are undertaken, and
 v) competence in the performance of any professional engineering servicesthat are undertaken
 
-## Standards of Behaviour
-
-
-
