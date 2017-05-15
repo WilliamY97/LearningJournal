@@ -74,3 +74,8 @@ typedef struct {
 } return_t;
 ```
 
+The function that is to run in the new thread must expect a pointer to the arguments rather than
+explicity arguments: ```void* function( void *args ) ``` which can then be cast to the appropriate type:
+```parameters_t * arguments = (parameters_t*) args;```
+
+
