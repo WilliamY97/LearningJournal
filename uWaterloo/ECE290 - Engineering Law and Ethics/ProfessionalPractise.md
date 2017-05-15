@@ -1,8 +1,8 @@
-#Professional Practise
+# Professional Practise
 
-##L23: Professional Engineers & Ontario Regulation 941
+## L23: Professional Engineers & Ontario Regulation 941
 
-##The Act
+## The Act
 
 - Professional Engineers Act is a provincial law (statute that governs the practise of engineering
 
@@ -13,14 +13,14 @@ act to regulate the practise in Ontario
 
 - The Act, in section 2, officially recognizes PEO as the official regulator.
 
-##Principal Object of the Association
+## Principal Object of the Association
 
 - Section (3) of Act says: "The principal object of the Association is to regulate the practice of professional engineering and to 
 govern its members, holders of certificates of authorization, holders of temporary licences, holders of provisional licences and 
 holders of limited licences in accordance withthis Act, the regulations and the by-laws in order that the public interest may be served 
 and protected.
 
-##Additional Objects
+## Additional Objects
 
 - For the purpose of carrying out its principal object, the Association has the following additional objects:
 
@@ -32,7 +32,7 @@ professional engineering.
 5. Perform such other duties and exercise such other powers as are imposed or conferred on the association
 by or under any act.
 
-##PEO Structure
+## PEO Structure
 
 Act defines:
 - Objectives of association and council
@@ -43,7 +43,7 @@ Act defines:
 - The requirements for insurance
 - Details regarding discipline and enforcement
 
-##Law Vs. Regulations
+## Law Vs. Regulations
 
 - The legislative branch of parliament enacts statutes
 - Only an act of parliamenty can compel the government to spend money.
@@ -54,7 +54,7 @@ make regulations through the approval of the Lieutenant Governor.
 - The Attorney Genreal is the chief legal advisor to the government with the responsibility
 for the oversight of the justice system within the province.
 
-##Why Provincial?
+## Why Provincial?
 
 - The reason that this is a provincial act and not an act of the federal Parliament of Canada
 is that the Constitution of Canada prescribes:
@@ -64,7 +64,7 @@ the Classes of Subjects next hereinafter enumerated, that is to say, 10. Local W
 
 - The practise of professional engineering falls, at least, under that clause.
 
-##How does Regulation Work?
+## How does Regulation Work?
 
 - Section 7(10 of the Professional Engineers Act specifies those items with respect to which PEO may make
 regulations.
@@ -77,7 +77,7 @@ regulations.
 
 - Each of the 88 sections must in some way regulate at least one aspect of one of the items in the act.
 
-##How Does Peo Regulate?
+## How Does Peo Regulate?
 
 - PEO regulates the practise of professional engineering through:
 
@@ -86,7 +86,7 @@ regulations.
 2. Issuing of Certificates of Authorization for to organizations wishing to do business offering
 professional engineering services to the public.
 
-##Licenses
+## Licenses
 
 - License (n): A formal, usually a printed or written permission from a constituted authority to do something
 e.g. to marry, to print/publish a book, to preach, to carry on some trade, etc; a permit
