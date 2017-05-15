@@ -1,7 +1,7 @@
-##Synopsis:
+##  Synopsis:
 There exist a number of prescription drugs called nootropics, which are intended to improve concentration, fo-cus, and general cognitive (brain) function. These have legitimate medical uses as treatments for conditions likenarcolepsy. In recent years, students have been acquiring these medications without a prescription, not to treatany condition, but in the hopes of improving studying, assignment, and test-taking performance. The term “studydrugs” is sometimes used to refer to the various medications in question.Is the use of study drugs (without a diagnosis and appropriate prescription) ethical? Your answer should reference **the values in the compass discussed in lectures. You should also evaluate this question using at least one of the ethical theories discussed in the lectures**. It is permitted to use ethical theories not discussed in class to evaluatethis question. Please note that nothing will be read into your answer; you need not personally believe the position you choose to support in your essay and neither markers nor anyone else will make any assumptions.
 
-##Lecture 30 - Ethics: Introduction
+## Lecture 30 - Ethics: Introduction
 
 - Ethics sare about moral principles; about how we know what is "right" and what is "wrong"
 
@@ -9,7 +9,7 @@ There exist a number of prescription drugs called nootropics, which are intended
 
 - In all of them, we must make a decision.
 
-##The Runaway Train Car, Scenario 1
+## The Runaway Train Car, Scenario 1
 
 In the first example, our decision is binary:
 A. Do nothing B. Pull the lever
@@ -22,7 +22,7 @@ A. Do nothing B. Pull the lever
 
 Also an example from a car crash where one person may be sacrificed to save five severely injured people.
 
-##Professional Engineering Ethics
+## Professional Engineering Ethics
 
 - The definition of professional misconduct includes those behaviours that a professional engineer in Ontario must not engage in.
 
@@ -32,7 +32,7 @@ Also an example from a car crash where one person may be sacrificed to save five
 
 - In general, however, complaints are a result of an action or behaviour having a negative consequence.
 
-##Big Questions
+## Big Questions
 
 - Should we regulate how professional engineers interact with other professionals?
 - Should P. Eng.'s exaggerate their abilities or the abilities of the profession?
@@ -41,7 +41,7 @@ Also an example from a car crash where one person may be sacrificed to save five
 sufficient to fix the mistake but not tell anyone about it?
 - Is it right to take credit for the work done by your subordinates and co-op students working under you?
 
-##Morals
+## Morals
 
 - A moral, meaning a custom or a habit is an action, behaviour, character trait or desire that has been determined to be:
 1. Right or wrong
@@ -52,7 +52,7 @@ sufficient to fix the mistake but not tell anyone about it?
 
 - It is based on a general consensus of society. They are not based in law or regulations; there are immoral rules and immoral orders.
 
-##Ethics
+## Ethics
 
 - The study of ethics or moral philosophy is the study of human interactions.
 - It is for determining or recommending whether an actions, behaviours, conduct, or desires is right or wrong, including:
@@ -63,7 +63,7 @@ ex. actions, behaviours, characteristics, desires
 1. A collection or system of moral principles or rules of conduct by which a person or association is guided.
 2. The science of morals; the department of study concerned with the principles of human duty.
 
-##Hippocratic Oath
+## Hippocratic Oath
 
 - The Hippocratic Oath and Professional Engineers Ontario Code of Ethics are two examples of collections of rules of conduct
 - In many jurisdictions, a code of ethics defines the boundary between professional conduct and misconduct.
@@ -71,7 +71,7 @@ ex. actions, behaviours, characteristics, desires
 - We will see later, that PEO's Code of Ethics provide a guide to conduct while, as we've seen, misconduct is explicitly
 defined in the regulations.
 
-##Ethics: The Science of Morals
+## Ethics: The Science of Morals
 
 Ethics is itself broken into numerous categories:
 
@@ -81,7 +81,7 @@ Ethics is itself broken into numerous categories:
 - **Descriptive Ethics:** The study of extant ethical behaviour and comparative analysis
 - **Moral Psychology:** The scientific study of the development and evolution of ethical behaviour
 
-##Normative Ethics
+## Normative Ethics
 
 We will focus entirely on normative ethics:
 
@@ -89,7 +89,7 @@ We will focus entirely on normative ethics:
 - Normative ethics tends to be prescriptive: it prescribes how to deal with a particular ethical situation
 - Descriptive ethics is empirical: it investigates a society's response in dealing with a particular ethical situation
 
-##Virtue Ethics
+## Virtue Ethics
 
 - Asks how a response to a situation will affect the percieved character of the person
 - Helping a person in need would be charitable, and viewed positively.
@@ -98,7 +98,7 @@ We will focus entirely on normative ethics:
 - Plato lists four cardinal moral virtues: courage, temperance, justice, prudence.
 - Each is the golden mean between two extremes.
 
-##Role Ethics
+## Role Ethics
 
 - Morality is derived from people's relationship with their community and is not individualistic.
 
@@ -108,9 +108,9 @@ We will focus entirely on normative ethics:
 he takes anxious care of them in sickeness; he shows great sorrow over their death; and he sacrifices to them with solemnity"
 
 
-##Lecture 31 - Ethics: Modern Ethical Theories
+## Lecture 31 - Ethics: Modern Ethical Theories
 
-##Agree to Disagree
+## Agree to Disagree
 
 - In this course you will be exposed to different ethical theories and different points of view. So far we have already seen
 the opinions of others...
@@ -122,7 +122,7 @@ the opinions of others...
 - This is not a natural science where there are correct answers ("the world is round, not flat"); reasonable people
 can agree to disagree civilly.
 
-##With Support
+## With Support
 
 - Therefore, we must understand that you know how to make an ethical decision by making a reason decision based on underlying assumptions.
 
@@ -132,7 +132,7 @@ can agree to disagree civilly.
 
 - "Because I said so" -type argumens and "I feel like this is true" are not adequate reasoons to support the assertions
 
-##Deontology
+## Deontology
 
 - The science of duty; the branch of knowledge that deals with moral obligations; ethics.
 
@@ -157,7 +157,7 @@ rules one is ethical.
 
 - This led him to introduce the idea of a **categorical imperative**
 
-##Deontology Cont.
+## Deontology Cont.
 - An action can only be moral if it is a consequence of following a categorical imperative (i.e, a universally applicable principle)
 
 1. It is performed out of a sense of moral duty.
@@ -174,13 +174,13 @@ Kant formulated three maxims:
 
 One possible way that this duty based morality can be abused is "I was only following orders"
 
-##Deontology Cont. 2
+## Deontology Cont. 2
 
 Deontology has continued to evolve as a theory of normative ethics
 
 Frances Kamm of Harvard continues to use this approach
 
-##Necessity and Sufficiency
+## Necessity and Sufficiency
 
 A little formal logic for you
 
@@ -223,7 +223,7 @@ If both a -> z and !a -> !z then it follows that z -> a and we say a is necessar
 
 We can also say a if and only if z (or a iff b).
 
-##Frances Kamm
+## Frances Kamm
 
 - Frances Kamm introduced the The Principle of Permissable Harm.
 
@@ -238,7 +238,7 @@ a wrong or harm to them.
 
 2. In order for an act to be permissible, it should be possible for any evil side effect (except possibly indirect side effects) of what we do, or evil causal means that we must use (given our act) to bring about the greater good, to be at least the effect of a [greater good that] is working itself out (or the effect of means that are noncausally related to that greater good that is working itself out).
 
-##Consequentialism
+## Consequentialism
 
 - After Immanuel Kant described his ethical philosophies, others began using a different approach: they focused on the consequences of the action.
 
@@ -254,7 +254,7 @@ How do we define consequences?
 
 - There may be vastly different short and long term consequences...
 
-##State Consequentialism
+## State Consequentialism
 
 - Consider Mozi, a Chinese philosopher from the 5th century BCE
 
@@ -262,7 +262,7 @@ He introduced the idea of state consequentialism:
 
 "It is the business of the benevolent man to seek to promote what is beneficial to the world and to eliminate what is harmful, and to provide a model for the world. What benefits he will carry out; what does not benefit men he will leave alone"
 
-##Utilitarianism
+## Utilitarianism
 
 More recently, Jeremy Bentham (1748-1832) introduced the concept of **utilitarianism**.
 
@@ -272,7 +272,7 @@ More recently, Jeremy Bentham (1748-1832) introduced the concept of **utilitaria
 
 - He advocated for animal rights, gender equality, and acceptance of homosexuality (all ideas very much ahead of the times in which he lived)
 
-##Math Problem
+## Math Problem
 
 - Bentham introduced the concept of felicific calculus
 
@@ -287,19 +287,19 @@ The happiness of a consequence can be judged by:
 
 In simple terms, the greatest increase in good for the greatest number.
 
-##Final Frontier
+## Final Frontier
 
 “The needs of the many outweigh the needs of the few.”
 
 "Or the one."
 
-##Incorrect Utilitarianism
+## Incorrect Utilitarianism
 
 One way that utilitarianism can be simplified, incorrectly, is the argument that “the ends justify the means”
 
-##L32: Ethics: A Psychological Basis
+## L32: Ethics: A Psychological Basis
 
-##Ethics and Science
+## Ethics and Science
 
 - Ethics used to be entirely in the domain of philosohy.
 
@@ -310,7 +310,7 @@ One way that utilitarianism can be simplified, incorrectly, is the argument that
 Consider light:
 *See slides for context*
 
-##Ethics and Science Cont.
+## Ethics and Science Cont.
 Values supporting it: care and loyalty to the family.
 
 In some countries it would be a serious betrayal not to hire your relatives.
@@ -322,13 +322,13 @@ In some countries it would be a serious betrayal not to hire your relatives.
 
 - There is still much we do not understand about how the brain works, but research continues.
 
-##Probing the Brain
+## Probing the Brain
 
 - A part of the brain is associated with counting small numbers.
 
 - In the intraparietal sulcus, different neurons will become excited if you view one, two, three, four or more subjects.
 
-## Ethics are Societal and Biological
+##  Ethics are Societal and Biological
 
 Ethics is an evolved trait and depends on:
 - Human species and the characteristics of the human species
@@ -342,13 +342,13 @@ Contact with a stranger's face is unacceptable; too high a risk of damage. It ta
 
 If humans had thicker skin, greater protection around the eyes, such contact might be acceptable/normal.
 
-## Ethics and Science Cont.
+##  Ethics and Science Cont.
 
 Drinking alcohol is not immoral and neither is driving. However a combination of them is.
 
 Alcohol adversely affects human performance and that degradation can and will adversely affect others (e.g. car crash)
 
-## We are but mortal...
+##  We are but mortal...
 
 - Killing another human is seen as unacceptable, but there are circumstances in which is it seen as permitted
 
@@ -359,7 +359,7 @@ You may agree or disagree with some or all of the following examples:
 - It is acceptable to execute prisoners convicted of heinous crimes.
 - Some see killing as an acceptable response to blasphemy or apostasy.
 
-## The Moral Compass
+##  The Moral Compass
 
 Based on examinations of the brain with fMRI technology, scientists posit thathumans all have the following basic moral evaluation scale:
 
@@ -368,7 +368,7 @@ Based on examinations of the brain with fMRI technology, scientists posit thathu
 
 One may consider ehtics as the interconnections between these values.
 
-##Nepotism
+## Nepotism
 
 Consider nepotism – the idea of giving favour to one’s relatives – comes fromthe Italian word for nephew (hiring practices back then were not like now).
 
@@ -384,7 +384,7 @@ Everyone else is affected by it: the company, the employees of the company,and u
 
 Values of fairness to others and preventing harm to others/society are seen as more important than looking after family members.
 
-##Five Whys
+## Five Whys
 
 All of these values have evolutionary advantage.
 
@@ -394,7 +394,7 @@ Nor does it mean that all values are equally important.
 
 As an engineer, when you consider any ethical situation, you must consideryour choices and why you are taking those choices.
 
-##Empathy
+## Empathy
 Primates, including humans, have empathy for others in their species.
 
 Mirror neurons will fire when certain activities occur either to oneself or whileone is watching someone else.
@@ -411,7 +411,7 @@ Most of you will feel pain when others do.How would you feel if your best friend
 
 Consider a picture of a Dalit, covered in excrement, coming up from having cleared a blockage in the sewers of an Indian city.
 
-##Sympathy vs Empathy
+## Sympathy vs Empathy
 
 There is a distinction between sympathy and empathy, even though the wordsare sometimes incorrectly used interchangeably.
 
@@ -419,7 +419,7 @@ Sympathy is acknowledgment of another person’s suffering and providing comfort
 
 Empathy is understanding how others are feeling (and may be from personal experience or imagining oneself in the other person’s place).
 
-##Liberals vs. Conservatives
+## Liberals vs. Conservatives
 
 For all the fighting we see in politics about liberals vs. conservatives, both groups have morals and attempt to have them enshrined in society.
 
@@ -429,7 +429,7 @@ We will draw a distinction here between small-l liberal and the Liberal Party;eq
 
 Just because the party calls itself something does not mean it follows thosevalues, nor do such parties necessarily take the same stances on all issues...
 
-##A Question of Values
+## A Question of Values
 
 Traditional liberal values include care, fairness, liberty...
 
@@ -439,7 +439,7 @@ Traditional conservative values include authority, loyalty, sanctity (that gener
 
 Fascist values put even more emphasis on authority and loyalty.
 
-##Me Good them bad
+## Me Good them bad
 
 - When you reach a different ethical conclusion from someone else, it’s not thatthey’re immoral – they simply have different values.
 
@@ -451,15 +451,15 @@ Fascist values put even more emphasis on authority and loyalty.
 
 - In Canada, voting along party lines is considered much more essential due to non-confidence votes.
 
-##Ethics and Professional Misconduct
+## Ethics and Professional Misconduct
 
 - There is an official PEO Code of Ethics.
 
 - We will now examine it, and the definition of professional misconduct, in the light of the value compass.
 
-##L33: Ethics: PEO Code of Ethics
+## L33: Ethics: PEO Code of Ethics
 
-##Enforceable Codes of Ethics
+## Enforceable Codes of Ethics
 
 - In most jurisdictions, the Code of Ethics is enforceable.
 - A violation of the code of ethics is professional misconduct.
@@ -469,7 +469,7 @@ Instead, it lists items considered to be best practices.
 
 Professional misconduct is defined in section 72 of the regulations.
 
-##Always Seven, There Are
+## Always Seven, There Are
 
 The Code of Ethics focuses on seven areas (most of which are about interactions with others):
 
@@ -477,7 +477,7 @@ The Code of Ethics focuses on seven areas (most of which are about interactions 
 
 The code of ethics is written into the Regulations (section 77)
 
-##Personal Conduct
+## Personal Conduct
 
 1. It is the duty of a practitioner to the public, to the practitioner’s employer, tothe practitioner’s clients, to other members of the practitioner’s profession,and to the practitioner to act at all times with,
 
@@ -487,7 +487,7 @@ iii) devotion to high ideals of personal honour and professional integrity
 iv) knowledge of developments in the area of professional engineering relevant to any services that are undertaken, and
 v) competence in the performance of any professional engineering servicesthat are undertaken
 
-##Standards of Behaviour
+## Standards of Behaviour
 
 
 
