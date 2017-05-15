@@ -96,3 +96,51 @@ all resources from that thread. Thus a resource might look like it's in use when
 
 Two categories of threads in implementation: *user-level* threads (ULTs) and *kernel-level* threads (KLTs - aka lightweight
 process). ULTs run at the user level and KLTs run at kernel level.
+
+There are three possible approaches:
+
+1. All threads are user level
+2. All threaDs are kernel level
+3. A combination of both approaches
+
+If the operating system in question does not support threads, we can still do multithread programming through user level threads in some sort of threads library. The library does creation, management, and cleanup of threads.
+
+The kernel is unaware of the existence of the user level threads and it is therefore the responsibility of the threads library or the
+application to manage the threads.
+
+Three advantages of using user-level threads:
+
+1. Threads switches do not require kernel privileges, because the thread library is in the user-side. We don't need to switch to kernel
+mode and back for each thread switch.
+2. Scheduling can be something the program decides rather than leaving it to the operating system policy.
+3. Portability: the program can run in a multithreaded way even if the kernel does not support multiple threads.
+
+As far the kernel is concerned, there is only one thread for that process. Thus, if any of the threads in the process block (such as 
+making I/O request), the whole process will be blocked. There is a solution to this called **jacketing** which is the conversion of a
+blocking system call into a non blocking system call.
+
+Instead of calling the system call directly, the program calls the thread library's version of the system call. The jacket routine checks if the request will result in the application being blocked and can decide instead to consider the requesting thread blocked
+and switch to another one, preventing the OS from blocking the whole process.
+
+The kernel level threads approach is taken by Windows, for example. The kernel is responsible for all thread management and it overcomes
+one of the weaknesses of the ULT approach. If one thread in a process is blocked, the others may continue. Another positive feature is that the kernel routines themselves may be multithreaded.
+
+Disadvantage of this is the opposite of the advantage of the ULT: A thread switch involves entering kernel mode with a ```trap``` and then returning from kernel mode to user mode (takes time).
+
+We can combine both approaches where user/kernel level threads co-exist in the system. This is common as any system that has kernel
+level threads can still run applications that use a thread library.
+
+To look at this from another angle, we can consider the relationships between user and kernel level threads, of which we will consider
+three: Many To-One, One-To-One, and Many-to-Many.
+
+**Many To-One Model:** In this model, many user level threads are mapped to one kernel thread. Thread management is done in the user space; we see this with ULTs only. 
+
+**One-To-One Model:** This is what happens when there is only KLTs. Creating a new user level thread results immediately in creating
+kernel level thread to correspond to it.
+
+**Many-To-Many Model:** This maps many ULTs to smaller or equal number of kernel threads. This approach provides maximal concurrency
+in executing a single program.
+
+No **One-To-Many** model because it makes no sense for one user thread to be mapped to multiple kernel threads. It is wasteful for 
+a user thread to be served by multipled kernel threads.
+
