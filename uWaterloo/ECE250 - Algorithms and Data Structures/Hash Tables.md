@@ -11,10 +11,10 @@ that performs this is called a hash function.
 ### Properties of Hash Functions
 
 1. It must be fast - ideally O(1)
-1. It must be deterministic: it must always return the same value for the same object
-1. If two objects x and y are considered equal, their hash values must be equal, i.e. h(x) = h(y)
-1. If two objects are chosen at random, there should be a very low probability that they have the same hash value
-1. The distribution of hash values in 0 to 2^32-1 should be approximately even (that is the distribution of values
+2. It must be deterministic: it must always return the same value for the same object
+3. If two objects x and y are considered equal, their hash values must be equal, i.e. h(x) = h(y)
+4. If two objects are chosen at random, there should be a very low probability that they have the same hash value
+5. The distribution of hash values in 0 to 2^32-1 should be approximately even (that is the distribution of values
 is either uniform distribution or a Poisson distribution)
 
 
