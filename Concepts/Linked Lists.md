@@ -24,7 +24,7 @@ you must understand whether it is a singly linked list or a doubly linked list.
 - Given a node **N**, we find the previous node **prev** and set **prev.next** equal to **n.next**. If the list is doubly linked,
 we must also update **n.next** to set **n.next.prev** equal to **n.prev**.
 
-##The Runner Technique
+## The Runner Technique
 
 - The runner technique is used in many linked list problems.
 
