@@ -1,6 +1,6 @@
-##MorseCode Assembly Project
+## MorseCode Assembly Project
 
-##Related Knowledge
+## Related Knowledge
 
 - Branch & Link: Used to call subroutine - return address of the next instruction - loaded into R14 - acting as link register.
 
