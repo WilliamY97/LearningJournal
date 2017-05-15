@@ -40,3 +40,10 @@ pthread_create( pthread_t *thread,
                 void *(*start_routine)( void * ),
                 void *argument );
 ```
+
+```Thread``` is a pointer to a ```pthread``` identifier and will be assigned a value when the thread is created.
+
+The attributes ```attr``` may contain various characteristics (you may supply NULL if you want the defaults). The
+```start_routine``` is any function that takes a single untyped pointer and returns an untyped pointer.
+
+Finally, the last parameter, ```arguments``` is the argument passed to the ```start_routine```
