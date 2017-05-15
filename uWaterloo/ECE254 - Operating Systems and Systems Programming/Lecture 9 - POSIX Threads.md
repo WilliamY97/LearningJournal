@@ -51,3 +51,26 @@ Finally, the last parameter, ```arguments``` is the argument passed to the ```st
 After the new thread has been created, the process has two threads in it. The OS makes no guarantee about
 which thread will be executing after the new one is created; this is matter of scheduling. It could be
 either of the threads of the process, or a different process entirely.
+
+It is normal to have a single return value from a function, but it seems limiting to be able
+to put in just one parameter. There are two ways to get around this: with an array or with structures
+```struct```. In the case of array, the argument provided to ```pthread_create``` is just a pointer to
+the array.
+
+This is also, how you get multiple return values out of a function in JAVA / C#, but not recommended.
+
+The other way is to use the ```struct``` as below, defining a structure for the parameter type and one
+for the return type. In the example, all four variables are integers, but they could be of any type.
+
+```
+typedef struct {
+  int parameter1;
+  int parameter2;
+} parameters_t;
+
+typedef struct {
+  int return1;
+  int return2;
+} return_t;
+```
+
