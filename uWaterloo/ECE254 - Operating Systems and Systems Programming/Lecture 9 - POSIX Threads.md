@@ -47,3 +47,7 @@ The attributes ```attr``` may contain various characteristics (you may supply NU
 ```start_routine``` is any function that takes a single untyped pointer and returns an untyped pointer.
 
 Finally, the last parameter, ```arguments``` is the argument passed to the ```start_routine```
+
+After the new thread has been created, the process has two threads in it. The OS makes no guarantee about
+which thread will be executing after the new one is created; this is matter of scheduling. It could be
+either of the threads of the process, or a different process entirely.
