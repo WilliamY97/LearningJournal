@@ -78,4 +78,9 @@ The function that is to run in the new thread must expect a pointer to the argum
 explicity arguments: ```void* function( void *args ) ``` which can then be cast to the appropriate type:
 ```parameters_t * arguments = (parameters_t*) args;```
 
+What about the thread attributes? They can be used to query or set specific attributes of the thread, such as:
 
+- Detached or joinable state
+- Scheduling data (policy, parameters, etc...)
+- Stack size
+- Stack address
