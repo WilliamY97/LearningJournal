@@ -1,4 +1,4 @@
-#Tort Law
+# Tort Law
 
 - Key idea of tort law is in the idea of a harm suffered by someone
 
@@ -20,7 +20,7 @@ end of the matter
 have offended
 Crime is an **offence** against the state
 
-##Private Persons
+## Private Persons
 
 - When a person causes harm to another, the harm may not have broken a law or a contract,
 but nevertheless, a person has been harmed
@@ -38,7 +38,7 @@ need to show damages (in assignment 2 I guess it's the additional payment requir
 - A corporation or other form of business organization is a **"legal person" (not a "natural person")**
 and can be a party in tort law.
 
-##Punitive Damages
+## Punitive Damages
 
 - Under rare circumstances - the court will award **punitive damages**. This is another way of punishing the 
 **tortfeasor (wrongdoer)**.
@@ -47,7 +47,7 @@ and can be a party in tort law.
 
 - Usually only award when tortfeasor is especailly malicious, egregious, intentional... etc
 
-##Development of the Tort Concept
+## Development of the Tort Concept
 
 - In early days of tort law, it was very simple: anyone who caused violent injury to another had to pay
 
@@ -69,7 +69,7 @@ indirectly, and this allowed B to recover damages.
 
 - So now the law accounts for both fault and **causation**.
 
-##Elements of Tort Action
+## Elements of Tort Action
 
 - To establish the right to recover compensation, the plaintiff must prove:
 
@@ -79,7 +79,7 @@ indirectly, and this allowed B to recover damages.
 
 - If any one of those elements is absent, the action will fail.
 
-##Duty of Care
+## Duty of Care
 
 **Duty of Care:** a duty that a person has to ensure that others do not suffer a harm or loss
 
@@ -91,7 +91,7 @@ driving or providing engineering consulting services.
 - The courts will usually hold parties to the standard of **"the conduct expected of a reasonable
 person under the circumstances"** 
 
-##Causation
+## Causation
 
 - The third element in the list requires the plaintiff to establish causation
 
@@ -115,7 +115,7 @@ Another idea: crash could have occured due to carelessness on the part of Beth o
 **General Rule**: The closer a person is to the event in question, the less chance there is of an
 intervening event.
 
-##Burden of Proof
+## Burden of Proof
 
 - The burden of proof in tort law is somewhat complex... in tort law - **the injured party need only
 demonstrate the defendant's product caused the injury; not the exact details of how**
@@ -123,7 +123,7 @@ demonstrate the defendant's product caused the injury; not the exact details of 
 - Then the defendant must prove that they are not responsible for the injury. The burden has shifted to the
 defendant in that case.
 
-##Intentional Torts
+## Intentional Torts
 
 - Torts can be classified based on intent
 
@@ -145,7 +145,7 @@ to one's duty or business; lack of necessary or ordinary care in doing something
 Or: a failure to take action that a reasonable or prudent person would take to protect another
 person/property from harm (**Appeal for Case 1 of Assignment 2**)
 
-##Forseeability
+## Forseeability
 
 - An important component of negligence is **forseeability**
 
@@ -159,7 +159,7 @@ harmed somoone?
 
 - **Courts have held** that if harmful results are unforseeable, A is not held responsible.
 
-##Standard of Care
+## Standard of Care
 
 - Much debate in any tort law case is about the standard of care.
 
@@ -183,7 +183,7 @@ Architects and engineers are bound to possess a reasonable amount of skill in th
 ```
 - For this reason, liability insurance is **highly** recommended.
 
-##Negligence and Mistake (**Importance for Assignment 2**)
+## Negligence and Mistake (**Importance for Assignment 2**)
 
 - Consider the 1952 case of **Ramsay and Penno v. The King[4]**
 
@@ -205,7 +205,7 @@ Whether or not there was negligence in regard to design and construction of the 
 
 #Product Liability
 
-##Who is at Fault?
+## Who is at Fault?
 
 Case **1932:Donoghue v. Stevenson.**
 
@@ -228,7 +228,7 @@ and even the friend herself.
 
 - Where multiple parties in the wrong, this situation is said to have **concurrent tortfeasors**.
 
-##Digression: Strict Liability
+## Digression: Strict Liability
 
 - The courts sometimes find that the idea of fault is unnecessary in tort.
 
@@ -239,7 +239,7 @@ and even the friend herself.
 - In the USA, product liability case law has trended towards strict liability: a manufacturer is liable even if not
 negligent.
 
-##Duty to Warn
+## Duty to Warn
 
 - Manufacturers, sellers, distributors, et cetera, have a duty to warn consumers or users of any dangerous potential
 of a product
@@ -264,7 +264,7 @@ the floor needed to be replaced, materials moved out, profits lost, due to busin
 
 - Defendant found liable.
 
-##Occupier's Liability
+## Occupier's Liability
 
 - Common sense makes us believe owner of land would be liable for injuries according to the rules of negligence.
 
