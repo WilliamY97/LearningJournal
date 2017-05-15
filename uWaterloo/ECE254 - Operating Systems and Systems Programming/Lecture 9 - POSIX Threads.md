@@ -100,5 +100,18 @@ we need it to exit. Like the ```wait``` system call, the ```pthread_join``` is h
 out of the spawned thread:
 
 ```
+pthread_create( &thread_id, NULL, function_name, &args );
 
+// This function and the created function are now running in parallel
+void *void_ret;
+
+pthread_join( thread_id, &void_ret );
+
+return_t *returnValue = (return_t *) void_ret;
 ```
+
+If a thread has no return values, it can just ```return``` NULL; which will have same
+effect as ```pthread_exit``` and send NULL back to thread that has joined it. If the function
+that is called as a task returns normally rather than calling the ```exit``` routine, the
+thread will still be terminated.
+
