@@ -9,7 +9,7 @@
 - Making deals or bargains is fundamental to society, BUT there needs
 to be rules to ensure fairness and consistency.
 
-##What is a contract?
+## What is a contract?
 
 - Mutual agreement between two parties that somethingg is done - a
 compact, agreement, bargain; Especially such as has legal effects,
@@ -20,7 +20,7 @@ performance of specified work at a certain price, rate, or commission.
 
 - An agreement enforeable by **law**
 
-##Why Contracts?
+## Why Contracts?
 
 - Contracts expand a person's freedom of choice.
 
@@ -35,7 +35,7 @@ exchange for pay (co-op contract)
 
 - Money does **NOT** have to be involved
 
-##Trust
+## Trust
 
 - We need trust that the other party will uphold his/her end of bargain or
 else we won't enter into contracts.
@@ -46,7 +46,7 @@ and bargain on their own
 - Importantly, trust in the other party is replaced with trust in the legal system:
 If the other party does not uphold his/her end, the law provides recourse.
 
-##Good and Bad Deals
+## Good and Bad Deals
 
 - Law does not prevent people from making bad deals
 
@@ -54,7 +54,7 @@ If the other party does not uphold his/her end, the law provides recourse.
 
 - All that matters is a contract is legally enforceable.
 
-##Components of a Legal Contract
+## Components of a Legal Contract
 
 - Over time, common law became the following essential elements for an 
 agreement to be legally enforeable:
@@ -86,7 +86,7 @@ Ex. **Quid pro quo**: Something for something / this for that
 - If any one of those items is absent, the contract will not be legally 
 enforceable
 
-##Legally Enforceable
+## Legally Enforceable
 
 - Any agreement, even one not in writing, that possesses all five elements
 is enforceable.
@@ -98,7 +98,7 @@ but it may still be formed
 
 - if one element is absent, the courts will decline to intervene
 
-##Intervention
+## Intervention
 
 - The terms in a contract include any benefits and obligations usually arrived
 at through negotiation and then agreement
@@ -111,7 +111,7 @@ or just terms than those that were decided upon.
 
 - The courts may, however, declare a contract void, voidable, or unenforceable.
 
-##Changing a Contract
+## Changing a Contract
 
 - A contract can be, through mutual agreement, altered (up to a point).
 
