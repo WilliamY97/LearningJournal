@@ -1,14 +1,14 @@
-#Methods for Solving Reccurrences
+# Methods for Solving Reccurrences
 
 http://www.cs.cornell.edu/courses/cs3110/2012sp/lectures/lec20-master/lec20.html
 
 - A recurrence is an equation or inequality that describes a function in terms of its value on smaller inputs.
 
-##Recursion-Tree Method 
+## Recursion-Tree Method 
 
 - A recursion tree is useful for visualizing what happens when a recurrence is iterated. It diagrams the tree of recursive calls and the amount of work done at each call.
 
-##Repeated Substitution
+## Repeated Substitution
 
 - Substitute a few times until you see a pattern
 
@@ -20,7 +20,7 @@ case
 
 - Solve the resulting summation
 
-##Master Method
+## Master Method
 
 ![alt tag](https://acrocontext.files.wordpress.com/2014/01/master-method.png)
 
@@ -35,7 +35,7 @@ leaves = n^(log_b(a))
 
 - Running time **dominated by cost at the root**
 
-###Master Method Strategy
+### Master Method Strategy
 
 1. Extract a, b, and f(n) from a given recurrence
 2. Determine nlog_b(a)
