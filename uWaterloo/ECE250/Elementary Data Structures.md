@@ -1,22 +1,22 @@
-##Elementary Data Structures
+## Elementary Data Structures
 
-##Data Type
+## Data Type
 
 - The set of allowed values for a variable
 
-##Data Structure
+## Data Structure
 
 - Systematic way of organizing and accessing data
 
-##Principle of Abstraction
+## Principle of Abstraction
 
 - Focus on what not how when solving a problem
 
-##Abstract Data Type
+## Abstract Data Type
 
 - Set of elements together with a well-defined set of operations on these elements
 
-#Abstract Data Types (ADTs)
+# Abstract Data Types (ADTs)
 
 - Allow to break work into pieces that can be work on independently without compromising correctness
 
@@ -26,7 +26,7 @@
 
 - Provide a language to talk on a higher level of abstraction
 
-#Dictionary
+# Dictionary
 
 - An element has a key part and a data part
 
@@ -48,7 +48,7 @@
 
 ex. Google search is very powerful because it uses hash tables (search comes back very quickly)
 
-#Data Storage for ADT
+# Data Storage for ADT
 
 - Data storage can be classified as either:
 
