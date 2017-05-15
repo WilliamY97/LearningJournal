@@ -84,3 +84,21 @@ What about the thread attributes? They can be used to query or set specific attr
 - Scheduling data (policy, parameters, etc...)
 - Stack size
 - Stack address
+
+The first item in that list indicates if a thread is joinable or detached. By default,
+new threads are usually joinable (other thread can call ```pthread_join``` on them).
+
+As noted before, it is a logical error to attempt multiple joins on the same thread. To
+prevent a thread from ever being joined, it can be created in detached state (or the method
+```pthread_detach``` can be called on a joinable thread).
+
+Trying to join a detached thread is also a logical erorr.
+
+The use of ```pthread_exit``` is not the only way a thread may be terminated. Sometimes we
+want the thread to persist (hang around), but if we want to get a return value form the thread, then
+we need it to exit. Like the ```wait``` system call, the ```pthread_join``` is how we get a value
+out of the spawned thread:
+
+```
+
+```
