@@ -3,6 +3,14 @@
 A hash table is a data structure that can map **keys** to **values**. A **hash function** is used to compute an index into an array of
 *buckets*, from where the value can be found.
 
+
+Algorithm |  Average     | Worst Case
+---- | ----- | ----
+Space   |     O(n)          | O(n)
+Search   |     O(1)          | O(n)
+Insert   |     O(1)          | O(n)
+Delete   |     O(1)          | O(n)
+
 ## Hash Functions
 
 A hash is a *restatement of something that is already known*. The ultimate goal will be to *hash* any object to a value. Any function
