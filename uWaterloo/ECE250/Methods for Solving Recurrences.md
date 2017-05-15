@@ -1,4 +1,4 @@
-# Methods for Solving Reccurrences
+# Methods for Solving Recurrences
 
 http://www.cs.cornell.edu/courses/cs3110/2012sp/lectures/lec20-master/lec20.html
 
