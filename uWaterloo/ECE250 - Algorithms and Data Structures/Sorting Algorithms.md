@@ -9,3 +9,5 @@ whether they aere smaller than or larger than this pivot.
 ---- | ----- | ----
 Average Case   |     O(nlog(n))          | O(log(n))
 Worst Case   |     O(n^2)          | O(n)
+
+### Demonstration
