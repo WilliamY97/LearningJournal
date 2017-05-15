@@ -97,7 +97,7 @@ all resources from that thread. Thus a resource might look like it's in use when
 Two categories of threads in implementation: *user-level* threads (ULTs) and *kernel-level* threads (KLTs - aka lightweight
 process). ULTs run at the user level and KLTs run at kernel level.
 
-There are three possible approaches:
+**There are three possible approaches:**
 
 1. All threads are user level
 2. All threaDs are kernel level
@@ -108,7 +108,7 @@ If the operating system in question does not support threads, we can still do mu
 The kernel is unaware of the existence of the user level threads and it is therefore the responsibility of the threads library or the
 application to manage the threads.
 
-Three advantages of using user-level threads:
+**Three advantages of using user-level threads:**
 
 1. Threads switches do not require kernel privileges, because the thread library is in the user-side. We don't need to switch to kernel
 mode and back for each thread switch.
@@ -122,8 +122,7 @@ blocking system call into a non blocking system call.
 Instead of calling the system call directly, the program calls the thread library's version of the system call. The jacket routine checks if the request will result in the application being blocked and can decide instead to consider the requesting thread blocked
 and switch to another one, preventing the OS from blocking the whole process.
 
-The kernel level threads approach is taken by Windows, for example. The kernel is responsible for all thread management and it overcomes
-one of the weaknesses of the ULT approach. If one thread in a process is blocked, the others may continue. Another positive feature is that the kernel routines themselves may be multithreaded.
+The kernel level threads approach is taken by Windows, for example. The kernel is responsible **for all thread management** and it overcomes one of the weaknesses of the ULT approach. If one thread in a process is blocked, the others may continue. Another positive feature is that the kernel routines themselves may be multithreaded.
 
 Disadvantage of this is the opposite of the advantage of the ULT: A thread switch involves entering kernel mode with a ```trap``` and then returning from kernel mode to user mode (takes time).
 
