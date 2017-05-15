@@ -297,7 +297,3 @@ CONCLUSION: You must be extremely careful about giving professional advice!
 - If an employee commits a tort in the course of employment, the employer,through the principle of vicarious liability, is also liable for damage in tort
 
 - A party hiring an independent contractor is generally NOT VICARIOUSLY LIABLE for the wrongful acts of the independent contractor.
-
-#Lecture 18 -  Tort: Concurrent Tortfeasors & Contributory Negligence
-
-- 
