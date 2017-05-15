@@ -1,4 +1,4 @@
-## MorseCode Assembly Project
+## Morse Code Assembly Project
 
 ## Related Knowledge
 
