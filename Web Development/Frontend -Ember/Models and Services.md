@@ -22,3 +22,12 @@ export default Ember.service.extend({
   }
 });
 ```
+
+Service objects are made available within another object using Ember.inject.service()
+
+```
+export default Ember.Route.extend({
+  model() {
+  store: Ember.inject.service('store')
+});
+```
