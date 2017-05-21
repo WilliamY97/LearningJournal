@@ -63,3 +63,19 @@ In order to link to a single item, we need a route that can load and render a si
 ## Defining Dynamic Segments in the Router
 
 Add to the router.js ```this.route('order', { path: '/orders/:order_id' });```
+
+Dynamic segments are a part of the URL path that holds variable data, like identifiers.
+
+## Using the Dynamic Segment Values
+
+The router passes the dynamic segement values to the route's model hook.
+
+We can add a params to the model hook so that it can take the hash with the id in it.
+
+```model(params) {
+return [ 
+{id:'1', name: 'Nate'} 
+].findBy('id', params.order_id);
+} 
+});
+```
