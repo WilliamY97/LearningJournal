@@ -31,3 +31,16 @@ The model hook returns the data used in the route and its template
 ```model() { return 'test' } });```
 
 Now we can call {{model}} in the orders.hbs file to load from orders route
+
+Having something like ```return { id: '1', name: 'Nate'};``` would allow us to call {{model.id}}
+
+## Working with Collections
+
+If we return a object with values like the one above in an array we can iterate through it.
+
+The {{#each}} helper iterates over a collection and renders the block once for each item.
+
+```
+{{#each model as |order|}}
+  Order {{order.id}} for {{order.name}}<br>
+{{/each}}```
