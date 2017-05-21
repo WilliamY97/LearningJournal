@@ -1,5 +1,4 @@
-#Ruby on Rails
+# Web Development
 
-Ruby on Rails is a web framework that makes it easy to build powerful web apps in a short amount of time.
-
-Ruby on Rails is written in the Ruby programming language.
+I have seperated the contents of this folder into Backend and Frontend. Currently my expertise lies in using Rails on the server-side
+and Ember.js on the client-side. If I attempt to learn more about other frameworks, I will add a specific folder for them in this section.
