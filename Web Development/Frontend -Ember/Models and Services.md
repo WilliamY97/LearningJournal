@@ -10,3 +10,14 @@ Services are good for: centralized logging, user sessions, websocket management,
 
 Create an ember service by ```ember generate service <service-name>```
 
+With a service in place, the share data can be moved from the routes into a function in services.
+
+```
+export default Ember.service.extend({
+  getOrders() {
+    return [
+      { id: '1', name: 'Nate' },
+      { id: '2', name: 'Gregg' }
+  }
+}
+```
