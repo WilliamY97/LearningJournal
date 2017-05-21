@@ -111,3 +111,8 @@ Now once again gotta go back to app/routes/orders/index.js and add
   },
 ```
 
+## Adding input helpers
+
+```{{input value=option.value class="form-input" type="text"}}```
+
+These would exist in forms to be values submitted upon an action.
