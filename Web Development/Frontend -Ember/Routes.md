@@ -43,4 +43,5 @@ The {{#each}} helper iterates over a collection and renders the block once for e
 ```
 {{#each model as |order|}}
   Order {{order.id}} for {{order.name}}<br>
-{{/each}}```
+{{/each}}
+```
