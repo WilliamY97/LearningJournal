@@ -25,6 +25,7 @@ export default Ember.service.extend({
 
 Service objects are made available within another object using Ember.inject.service()
 
+/routes/orders
 ```
 export default Ember.Route.extend({
   model() {
@@ -41,8 +42,22 @@ Now that the data is in the service, the service can be used to find and filter 
 
 Write another service method ```getOrderbyId(id)```
 
-```getOrderById(id) {
+```
+getOrderById(id) {
     const orders = this.getOrders();
     return orders.findBy('id', id);
 }
+```
+
+So now in routes/ordders/order.js we can do:
+
+```
+export default Ember.Route.extend({
+  model() {
+    const id = params.order_id
+    const store = this.get('store'); //grabs property store and assigns to variable
+    return store.getOrdersById(id);
+  },
+  store: Ember.inject.service('store')
+});
 ```
