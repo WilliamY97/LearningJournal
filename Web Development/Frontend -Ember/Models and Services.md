@@ -28,6 +28,21 @@ Service objects are made available within another object using Ember.inject.serv
 ```
 export default Ember.Route.extend({
   model() {
+    const store = this.get('store'); //grabs property store and assigns to variable
+    return store.getOrders();
+  },
   store: Ember.inject.service('store')
 });
+```
+
+## Centralize the Data Filtering
+
+Now that the data is in the service, the service can be used to find and filter the app data.
+
+Write another service method ```getOrderbyId(id)```
+
+```getOrderById(id) {
+    const orders = this.getOrders();
+    return orders.findBy('id', id);
+}
 ```
