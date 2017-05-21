@@ -96,3 +96,18 @@ To finish the order form, the design calls for a button to increment item quanti
 - This {{action}} is using the default ```on="click"``` trigger
 - Passing two arguments to the action to make this action more reusable: the item and the amount to increment
 
+## Incrementing Property Values
+
+Ember.Object provides incrementProperty and decrementProperty to quickly change numerics
+
+Now once again gotta go back to app/routes/orders/index.js and add 
+
+```
+  actions: {
+    addToItemQuantity(lineItem, amount) {
+      lineItem.incrementProperty('quantity', amount);
+      },
+      createOrder(order)
+  },
+```
+
