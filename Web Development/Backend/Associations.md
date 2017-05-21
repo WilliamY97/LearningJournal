@@ -1,4 +1,4 @@
-#Associations 1 
+# Associations 1 
 
 In the model files, we used the methods **has_many** and **belongs_to** define an association between models.
 
@@ -14,7 +14,7 @@ The has_many and belongs_to pair is used to define one-to-many relationships. A 
 
 - a Store has many Products; a Product belongs to a Store
 
-##Creating Tables
+## Creating Tables
 
 Under db/migrate/
 
@@ -37,6 +37,6 @@ Migrations are not limited to changing the schema. You can also use them to fix 
 
 Then ```rake db:migrate```
 
-##Seeding
+## Seeding
 
 In db/seeds.rb we can add items to populate the database. If we run ```rake db:seed``` it will populate it.
