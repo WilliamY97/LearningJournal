@@ -37,3 +37,22 @@ If the name of the endpoint matches the name, we can omit the path ->
 Don't use anchor tags because it full-page refreshes the page. Instead we can use the link-to helper.
 
 ```{{#link-to "orders"}}Orders{{/link-to}}```
+
+This is using a block form similar to Ruby blocks. Ember now knows clicks and intercepts them for this tag
+and handles them on the client-side which is much faster.
+
+We can also add classes into the tag like so
+
+```{{#link-to "orders" class="orders-link" tagName='div'}}Orders{{/link-to}}```
+
+Tag name can change it into a div object or something else instead of an anchor tag
+
+## Questions 
+
+**What is the name of the outermost template that is available in all Ember applications?**
+
+Application Template
+
+**Where the application template is located?**
+
+app/templates/application.hbs
