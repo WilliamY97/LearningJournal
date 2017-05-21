@@ -14,10 +14,11 @@ With a service in place, the share data can be moved from the routes into a func
 
 ```
 export default Ember.service.extend({
-  getOrders() {
-    return [
-      { id: '1', name: 'Nate' },
-      { id: '2', name: 'Gregg' }
+    getOrders() {
+      return [
+        { id: '1', name: 'Nate' },
+        { id: '2', name: 'Gregg' }
+    }
   }
-}
+});
 ```
