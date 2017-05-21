@@ -79,3 +79,50 @@ return [
 } 
 });
 ```
+
+## Linking to a Single Item
+
+So now we can add to the link-to helper which accepts one or more objects to populate the dynamic segments.
+
+```
+{{#each model as |order|}}
+  {{#link-to "order" order}}
+    Order {{order.id}} for {{order.name}}<br>
+  {{/link-to}}
+{{/each}}
+```
+
+This links to the "order" route and passes the order that we'd like to view.
+
+**The {{link-to}} helper automatically uses the given object's ID as the dynamic segment value**
+
+## Visualizing the Current Structure
+
+Everything currently just gets rendered into the {{outlet}} in application.hbs
+
+## Nesting the Order Routes
+
+```
+Router.map(function() {
+  this.route('orders', function() {
+    this.route('order', { path: '/:order_id' }):
+  });
+});
+```
+
+A nested mapping allows multiple routes and templates to be displayed
+
+A new "orders.index" route is automatically created.
+
+Index routes are always created for parent routes. They're what's rendered when you go to the parent.
+
+## Fixing Broken Links
+
+Nesting indtroduced the "orders" route namespace. Links need to get updated to match.
+
+orders -> orders.order. Also orders.hbs needs an {{outlet}} now too.
+
+## Relocating Nested Files
+
+Nesting introduced an "orders/" directory namespace. Files must move to match.
+
