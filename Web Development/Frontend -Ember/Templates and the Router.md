@@ -31,3 +31,9 @@ Ember already does this for index.hbs under the hood
 
 If the name of the endpoint matches the name, we can omit the path -> 
 ```this.route('orders');```
+
+## Navigating Between Endpoints
+
+Don't use anchor tags because it full-page refreshes the page. Instead we can use the link-to helper.
+
+```{{#link-to "orders"}}Orders{{/link-to}}```
