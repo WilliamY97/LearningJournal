@@ -1,4 +1,4 @@
-# Routing and Templating
+# Templating
 
 A template is what tells Ember to render as HTML and display in the web browser
 
