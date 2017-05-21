@@ -45,3 +45,21 @@ The {{#each}} helper iterates over a collection and renders the block once for e
   Order {{order.id}} for {{order.name}}<br>
 {{/each}}
 ```
+
+## Linking to a Single Item
+
+Now that we're displaying orders, we still need to link each one.
+
+```
+{{#each model as |order|}}
+  {{#link-to ???}}
+    Order {{order.id}} for {{order.name}}<br>
+  {{/link-to}}
+{{/each}}
+```
+
+In order to link to a single item, we need a route that can load and render a single item.
+
+## Defining Dynamic Segments in the Router
+
+Add to the router.js ```this.route('order', { path: '/orders/:order_id' });```
