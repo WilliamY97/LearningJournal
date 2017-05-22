@@ -183,6 +183,50 @@ it comes from outside of process (ex. sending signal from one process/thread to 
 
 ## Signal Examples
 
-```SIGHUP``` - Hangup detected - Value 1 - Default Action: Terminate Process
-```SIGINT``` - Keyboard Interrupt - Value 2 - Default Action: Terminate Process
-```SIGQUIT``` - Quit from Keyboard - Value 3 - Default Action: Terminate Process, dump debug info
+1. ```SIGHUP``` - Hangup detected - Value 1 - Default Action: Terminate Process
+2. ```SIGINT``` - Keyboard Interrupt - Value 2 - Default Action: Terminate Process
+3. ```SIGQUIT``` - Quit from Keyboard - Value 3 - Default Action: Terminate Process, dump debug info
+
+## Alternative to Handling Signals
+
+Process may inform the OS it is prepped to handle the signal itself (such as doing cleanup when Ctrl-C is received instead of just dying). In any event, a signal needs to be handled, even if the handling is to ignore it.
+
+Note that SIGKILL and SIGSTOP cannot be caught, blocked, or ignored.
+
+## Difficulty in Multithreaded Program
+
+Which thread should the signal be sent? In general there are the following options:
+
+1. Deliver the signal to the thread to which the signal applies
+2. Deliver to every thread in process
+3. Deliver the signal to certain threads in process
+4. Assign a specific thread to receive all signals for process
+
+Which method for signal distribution is dependant on the signal. Synchronous signals will be sent to the thread that triggered the signal, but the process could handle asynch signals in any of the four ways.
+
+UNIX threads allow a thread to say what signals it will accept. If delivered to a process, the first thread that can handle it will
+accept it. Thread can redistribute the signal to other threads if necessary.
+
+In UNIX, to deliver a signal to a process, the command is:
+```kill( pid_t pid, int signal )```
+
+Yes, to send a signal, event if it's not a kill signal, the command is kill. The equivalent in POSIX pthreads is:
+```pthread_kill( pthread_t tid, int signal )``` where it will deliver the signal to a specific thread.
+
+## Command Line Operation
+
+On command line, the command to send a signal is also ```kill``` followed by a process ID. Normally a command like ```kill 24601``` will
+send SIGHUP to a process, which will, by default, kill process.
+
+Process has opportunity to clean things up if it wants to. If it's still stuck you can force kill the process by sending SIGKILL with
+the command ```kill -9 24601```. The ```-9``` parameter says to send signal ```9``` (SIGKILL) rather than the default 1 (SIGHUP).
+
+## Cancellation
+
+Pthread command to cancel a thread is ```pthread_cancel``` and it takes one parameter (the thread identifier). By default, a pthread is
+set up for deferred cancellation. In the function tha runs as a thread, to check if the thread has been cancelled, the function call is
+```pthread_testcancel``` which takes no parameters.
+
+Suppose your background tasks is to upload a bunch of files, consecutively. It is good practise to check ```pthread-testcancel``` at the
+start or end of each iteration of the loop, and if cancellation has been signalled, clean up open files and network connections and then
+```pthread_exit```. Thus, if the thread has been told to cancel, it will do as it is told in short time.
