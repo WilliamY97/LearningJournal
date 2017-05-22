@@ -1,11 +1,15 @@
 # POSIX Threads
 
+## What are POSIX Threads?
+
 ```pthread``` refers to the POSIX standard that defines thread behaviour on UNIX/UNIX-like systems (Linux, MAC OS X, etc).
 This is a specification document that says how threads should behave. This stanrdard lets code for one UNIX-like system
 run easily on another (ex. Linux).
 
 The POSIX standard for pthreads defines something like 100 function calls, but we need not examine all of them. Let us focus
-on a few of the important ones and we can see they are, for the most part, very similar to wht we saw with parent and child processes.
+on a few of the important ones and we can see they are, for the most part, very similar to what we saw with parent and child processes.
+
+## Function Calls in POSIX Threads
 
 ```pthread_create``` - Create a new thread. This works a lot like ```fork```.
 
@@ -29,8 +33,10 @@ terminate the thread's attributes.
 
 ```pthread_cancel``` - Signal cancellation to a thread. This can be asynchronous or deferred, depending on the thread's attributes
 
+## Running Something In the Background
+
 We have examine threads on a theoretical level, but have not actually considered how to make something run in the background. Note
-that ```main``` is just a function. The way we start a thready is: run this function, but in a new thread.
+that ```main``` is just a function. The way we start a thread is: run this function, but in a new thread.
 
 System call to create a new thread is ```pthread_create``` and its use looks like:
 
