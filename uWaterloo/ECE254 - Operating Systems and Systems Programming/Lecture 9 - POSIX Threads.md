@@ -115,3 +115,8 @@ effect as ```pthread_exit``` and send NULL back to thread that has joined it. If
 that is called as a task returns normally rather than calling the ```exit``` routine, the
 thread will still be terminated.
 
+Another way a thread might terminate is if the ```pthread_cancel``` function is called with it as the target. As before, if the termination is deferred rather than asynchronous, the thread is responsible for cleaning up after itself before it stops.
+
+**A thread may be terminated indirectly:** if the entire process is terminated or if ```main``` finishes first (without calling ```pthread_exit``` itself). Indeed, ```main``` can use ```pthread_exit``` as the last thing that it does. Without that, ```main``` will
+not wait for other, unjoined threads to finish and they will all get suddenly terminated. If ```main``` calls ```pthread_exit``` then it
+will be blocked until the threads it has spawned have finished.
