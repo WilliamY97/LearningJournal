@@ -126,3 +126,41 @@ Another way a thread might terminate is if the ```pthread_cancel``` function is 
 **A thread may be terminated indirectly:** if the entire process is terminated or if ```main``` finishes first (without calling ```pthread_exit``` itself). Indeed, ```main``` can use ```pthread_exit``` as the last thing that it does. Without that, ```main``` will
 not wait for other, unjoined threads to finish and they will all get suddenly terminated. If ```main``` calls ```pthread_exit``` then it
 will be blocked until the threads it has spawned have finished.
+
+## Code Example: Summation of a non-negative integer
+
+Let us examine a slightly more complex example that invokes more of the pthread system calls. The code sample below provides an example of a multithreaded C program that uses pthreads to calculate the summation of a non-negative integer in a second thread.
+
+```
+#include <pthread.h>
+#include <stdio.h>
+int sum; /* this data is shared by the thread(s) */
+void *runner(void *param); /* threads call this function */
+int main(int argc, char *argv[]) {
+pthread_t ti; /* the thread identifier */
+pthread_attr_t attr; /* set of thread attributes */
+if (argc != 2) {
+fprintf(stderr,"usage: a.out <integer value>\n");
+return -1;
+}
+if (atoi(argv[1]) < 0) {
+fprintf(stderr, "%d must be >= 0\n", atoi(argv[1]));
+return -1;
+}
+/* get the default attributes */
+pthread_attr_init(&attr);
+/* create the thread */
+pthread_create(&tid, &attr, runner, argv[1]); /* wait for the thread to exit */
+pthread_join(tid, NULL);
+printf("sum = %d\n", sum);
+}
+/* The thread will begin control in this function */
+void *runner(void *param) {
+int i, upper = atoi(param);
+sum = 0;
+for (i = 1; i <= upper; i++) {
+sum += i;
+}
+pthread_exit(0);
+}
+```
