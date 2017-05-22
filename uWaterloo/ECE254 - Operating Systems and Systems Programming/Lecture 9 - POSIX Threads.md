@@ -175,3 +175,14 @@ of the threads of parent process. Except a child might call ```exec``` and repla
 
 ## Signals
 
+UNIX systems use signals to indicate events (ex. Ctrl-C), which is a form of event-driven programming. Signals also are things like
+exceptions (div by zero, segmentation fault), etc. A signal may be *synchronous* if it occurs by program execution or *asynchronous* if
+it comes from outside of process (ex. sending signal from one process/thread to another).
+
+**Signals are interrupts with certain interger IDs.**
+
+## Signal Examples
+
+```SIGHUP``` - Hangup detected - Value 1 - Default Action: Terminate Process
+```SIGINT``` - Keyboard Interrupt - Value 2 - Default Action: Terminate Process
+```SIGQUIT``` - Quit from Keyboard - Value 3 - Default Action: Terminate Process, dump debug info
