@@ -170,3 +170,8 @@ thread would print out the sum early. This is yet another example of that subjec
 
 ## The ```fork``` and ```exec``` System Calls
 
+```fork``` results in a parent process spawning a child that is a clone of the parent. We expect that ```fork``` makes duplicated of all
+of the threads of parent process. Except a child might call ```exec``` and replace self with another program (throwing away all the threads). Then all work to duplicate threads is wasted. Some UNIX systems approach this by having two different implementations of ```fork```, one that will copy all threads and one that will copy only the executing thread.
+
+## Signals
+
