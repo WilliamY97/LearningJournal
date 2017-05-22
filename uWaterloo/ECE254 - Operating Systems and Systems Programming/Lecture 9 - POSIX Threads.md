@@ -164,3 +164,9 @@ sum += i;
 pthread_exit(0);
 }
 ```
+
+In this example, both threads share the variable ```sum```. We have some co-ordination here because the parent thread joins the newly-spawned thread (wait until finished) before it tries to print out the value. If it did not **Join** the spawned thread, the parent
+thread would print out the sum early. This is yet another example of that subject that keeps popping up: **co-ordination**.
+
+## The ```fork``` and ```exec``` System Calls
+
