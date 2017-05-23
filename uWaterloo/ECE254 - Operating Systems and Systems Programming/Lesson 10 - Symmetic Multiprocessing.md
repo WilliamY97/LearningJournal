@@ -66,4 +66,10 @@ speedup < 1/(S + ((1-S)/N))
 - S is defined as the portion of the application that must be performed serially
 - N as the number of processing cores available
 
-If
+If a limit is taken as N approaches infinity, then the speedup converges to 1/S. Thus
+the limiting factor is the size of the S term. This makes sense because of a task is
+completely sequential then we cannot make it faster - no speedup 1/1 = 1.
+
+- We get diminishing returns as we add more processors - time speedup is less and less.
+
+
