@@ -2,7 +2,7 @@
 
 A data stucture that maps keys to values for a highly efficient lookup.
 
-![alt tag](hashtable.png)
+![Reference Image](https://cdn-images-1.medium.com/max/800/1*78wQr8-2tEPKWa0iobs8QQ.png)
 
 ## Dictionary
 
