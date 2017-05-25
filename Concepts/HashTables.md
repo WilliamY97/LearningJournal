@@ -4,7 +4,7 @@ A data stucture that maps keys to values for a highly efficient lookup.
 
 ![alt tag](hashtable.png)
 
-##Dictionary
+## Dictionary
 
 - An element has a key part and a data part. It stores elements so that
 they can be located quickly using keys.
