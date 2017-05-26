@@ -1,4 +1,11 @@
-# Hash Tables
+# Hashing
+
+A dictionary is a data structure that stores key-value pairs and supports the operations (Insert, Search, and Delete). We can implement
+dictionaries in a bunch of ways: balanced binary search tree, which supports these actions in O(logn) time. We can also use a doubly
+linked list which supports Insert/Delete in O(1) time but Search in O(n) time. But using a hash table, we can do all of this in O(1)
+time.
+
+## Hash Tables
 
 A hash table is a data structure that can map **keys** to **values**. A **hash function** is used to compute an index into an array of
 *buckets*, from where the value can be found.
