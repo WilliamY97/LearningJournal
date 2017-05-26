@@ -27,3 +27,12 @@ to whether it is a convenient or inconvenient time to run a given thread.
 there is some possibility that they both try to access the same place at the same time. If we have mutual exclusion this can't happen.
 
 ## Serialization through Messages
+
+We need serialization in the case that Event A must happen before Event B
+
+If we are certain that one happens before another - we can say that the events are **sequential** because we know order of events.
+
+In the case that some point Event A occurs and some time before Event B occurs - then we have no idea who occured first.
+
+**Concurrent:** Two events are concurrent if we cannot tell by looking at the program which will happen first.
+
