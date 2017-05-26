@@ -185,4 +185,4 @@ The while loop that is constantly checking the value with the Test-and-Set instr
 
 Thread A will not get into the critical section while thread B is in there and asking constantly does not make B get the job done any faster, just as a child asking “are we there yet?” does not improve the speed at which he or she gets to his or her destination
 
-Less wasteful of resources and effor if the while loop contains some instructions saying it should wait a little before re-checking.
+Less wasteful of resources and effort if the while loop contains some instructions saying it should wait a little before re-checking.
