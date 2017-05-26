@@ -70,6 +70,18 @@ that semaphore. This adds a small amount of extra bookkeeping to the semaphore, 
 ```semaphore_init( semaphore_t *sem, int i )```
 Initialize the semaphore to i (can be 0 or 1)
 
+```semaphore_wait( semaphore_t *sem )```
+Wait on a semaphore
 
+```semaphore_signal( semaphore_t *sem)```
+If 1 do nothing, if 0 and there is at least 1 task blocked on sema, unblock it; otherwise set the
+sema to 1
 
+## Counting Semaphores
 
+Binary semaphores are useful and we can generalize the concept to what is known as a ```counting```
+or ```general``` semaphore. 
+
+In some operating systems there is no distinction between binary and counting semaphores; the binary semaphore
+behaviour is achieved by creating a counting semaphore that will permit only one thread into the critical section
+at a time.
