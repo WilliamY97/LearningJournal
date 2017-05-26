@@ -9,6 +9,8 @@ That would mean we would be doing things one thing at a time (one process and th
 We have seen that a system with multiple processes or threads has concurrency. If the system is multicore, we can have parallelism: more than
 one thread or process actually executing on a CPU in a given instant. Either or both can lead to problems.
 
+**Difference between concurrency and parallelism**
+
 **Concurrency** is the interleaving of processes in time to give the appearance of simultaneous execution. Thus it differs from **parallelism**, which offers genuine
 simultaneous execution.
 
