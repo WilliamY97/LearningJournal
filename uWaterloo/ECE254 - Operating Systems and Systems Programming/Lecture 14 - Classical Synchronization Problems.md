@@ -174,5 +174,5 @@ Unlike the producer-consumer problem, some concurrency is allowed:
 1. Any number of readers may be in the critical section simultaneously
 2. Only one writer may be in the critical section (and when it is, no readers are allowed)
 
-## Summary
+### Summary
 
