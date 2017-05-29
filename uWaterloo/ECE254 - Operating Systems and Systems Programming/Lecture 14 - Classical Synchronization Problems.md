@@ -19,7 +19,7 @@ is the producer - it generates data and puts it in the buffer. The other is the 
 it takes data out of the buffer. This problem can be generalized to have p producers and c
 consumers, but for the sake of keep the explanation simple, we have one of each.
 
-## Rules
+### Rules
 
 - It is not possible to write into a buffer that is already full
 - If the buffer has capacity N and there are N items in it, the producer cannot
@@ -27,13 +27,13 @@ write into the buffer and must wait until there is space
 - It is not possible to read from an empty buffer - if zero elements, the consumer
 cannot read from the buffer and must wait until something in there.
 
-## How to Keep Track of Buffer?
+### How to Keep Track of Buffer?
 To keep track of the number of items in the buffer, we use a variable ```count```. This
 is a variable shared between more than one thread, and therefore access to this should
 be controlled with mutual exclusion. Let us assume the max number of elements in buffer
 is defined as ```BUFFER_SIZE```.
 
-## Busy-Waiting Solution
+### Busy-Waiting Solution
 
 If busy-waiting is permitted, we do not care if we are wasting CPU time, we can get away from
 one mutex which we can call ```mutex```. Each of the producer/consumer threads very likely run
@@ -122,14 +122,14 @@ Consumer
 6. [consume item]
 ```
 
-## Issues
+### Issues
 
 - In synch parrtern from earlier, we mentioned the possibility of deadlock: all threads
 getting stuck. The hint that there is a problem is one ```wait``` statement inside another.
 
 Not always the case but the nested wait alarms us that there might be a problem.
 
-## Analysis
+### Analysis
 
 Reading the code above, you should be able to reason out that this solution will not get stuck.
 You may choose a strategy along the lines of proof by contradiction and tyr to come up with
@@ -154,7 +154,7 @@ Consumer
 5. signal( mutex )
 6. [consume item]
 ```
-## Analysis
+### Analysis
 
 This solution is like the one we are certain works, except the order of ```wait``` has been
 swapped. It does have the deadlock problem. If buffer empty, and consumer thread runs first, it
@@ -175,4 +175,47 @@ Unlike the producer-consumer problem, some concurrency is allowed:
 2. Only one writer may be in the critical section (and when it is, no readers are allowed)
 
 ### Summary
+
+A writer cannot enter the critical section while any other thread (reader/writer) is
+there. While a writer is in the critical section, neither readers nor writers may enter.
+
+This is similar to general mutual exclusion problem and the producer-consumer problem.
+In the reader-writers problem, readers do not modify the data (consumers do take things
+out of the buffer, modifying it).
+
+If any thread could read or write the shared data structure, we would have to use the
+general mutual exclusion solution. Although it would be a serious performance reduction
+versus allowing multiple readers concurrently.
+
+### Analysis
+
+Let us keep track of the number of readers at any given time with a variable ```readers```
+
+We will need a way of protecting this variable form concurrent modifications, so there
+will have to be binary sempahore ```mutex```. We will also need another semaphore
+```roomEmpty```, as a way of indicating that the room is empty.
+
+A writer has to wait for the room to be empty before it can enter. This solution is from:
+
+```
+Writer
+1. wait( roomEmpty )
+2. [write data]
+3. signal( roomEmpty )
+
+Reader
+1. wait( mutex )
+2. readers++
+3. if readers == 1
+4. wait( roomEmpty )
+5. end if
+6. signal( mutex )
+7. [read data]
+8. wait( mutex )
+9. readers--
+10. if readers == 0
+11. signal( roomEmpty )
+12. end if
+13. signal( mutex )
+```
 
