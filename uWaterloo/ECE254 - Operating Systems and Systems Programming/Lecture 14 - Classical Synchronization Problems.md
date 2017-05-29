@@ -219,3 +219,19 @@ Reader
 13. signal( mutex )
 ```
 
+The writer may only enter into the critical if the room is empty. When it has finished,
+it signals that the room is empty. The writer can be certain that when it exits the
+critical section that there are no other threads in the room, because no thread
+may enter the room while the writer was there.
+
+The first reader that arrives encounters the situation that the room is empty, so it
+locks the room. Writers can't then enter the room. Additional readers do not check if
+roomy is empty, they just proceed to enter. When the last reader leaves hte room, it signals
+the room is empty. This pattern is called the light switch as the first in turns on lights
+and last out turns off lights.
+
+### Concern of Reader
+
+The reader code has that situation that makes us concerned about the possibility of deadlock: a
+wait on ```roomEmpty``` inside a critical section by ```mutex```. With a bit of reasoning, we
+can convince ourselves there is no risk. Deadlock is not a problem.
