@@ -32,3 +32,147 @@ To keep track of the number of items in the buffer, we use a variable ```count``
 is a variable shared between more than one thread, and therefore access to this should
 be controlled with mutual exclusion. Let us assume the max number of elements in buffer
 is defined as ```BUFFER_SIZE```.
+
+## Busy-Waiting Solution
+
+If busy-waiting is permitted, we do not care if we are wasting CPU time, we can get away from
+one mutex which we can call ```mutex```. Each of the producer/consumer threads very likely run
+in an infinite loop on their own, but code below explains one iteration.
+
+```
+Producer
+1. [produce item]
+2. added = false
+3. while added is false
+4. wait( mutex )
+5. if count < BUFFER_SIZE
+6. [add item to buffer]
+7. count++
+8. added = true
+9. end if
+10. signal( mutex )
+11. end while
+
+Consumer
+1. removed = false
+2. while removed is false
+3. wait( mutex )
+4. if count > 0
+5. [remove item from buffer]
+6. count--
+7. removed = true
+8. end if
+9. signal( mutex )
+10. end while
+11. [consume item]
+```
+
+While this accomplishes what we want, it's not efficient. With a third rule where we sa
+to avoid busy-waiting. Thus when the producer is waiting for space it will be blocked and
+just as the consumer will be when the consumer is waiting for an element.
+
+To accomplish this, we will need two general semaphores, each with maximum value of
+BUFFER_SIZE. The first is called ```items:``` it starts at 0 and represents how many spaces
+in the buffer are full.
+
+The second is the mirror image ```spaces``` it starts at BUFFER_SIZE and represents the # of
+spaces in the buffer that are currently empty.
+
+```
+Producer
+1. [produce item]
+2. wait( spaces )
+3. [add item to buffer]
+4. signal( items )
+
+Consumer
+1. wait( items )
+2. [remove item from buffer]
+3. signal( spaces )
+4. [consume item]
+```
+
+The producer can continue to produce items until the buffer is full and the consumer can
+continue to consumer items until the buffer is empty. This works okay given that:
+1. The actions of adding an item to the buffer and removing an item form the buffer add
+to and remove from the "next" space;
+2. That there is exactly one producer and one consumer in the system. If we have two
+producers, for example, they might be trying to write into the same space at the same time,
+and this would be a problem.
+
+To generalize this solution to allow multiple producers / consumers, what we need to do is
+add another binary semaphore, ```mutex``` (initialized to 1), effectively combining the
+previous solution with one before it.
+
+```
+Producer
+1. [produce item]
+2. wait( spaces )
+3. wait( mutex )
+4. [add item to buffer]
+5. signal( mutex )
+6. signal( items )
+
+Consumer
+1. wait( items )
+2. wait( mutex )
+3. [remove item from buffer]
+4. signal( mutex )
+5. signal( spaces )
+6. [consume item]
+```
+
+## Issues
+
+- In synch parrtern from earlier, we mentioned the possibility of deadlock: all threads
+getting stuck. The hint that there is a problem is one ```wait``` statement inside another.
+
+Not always the case but the nested wait alarms us that there might be a problem.
+
+## Analysis
+
+Reading the code above, you should be able to reason out that this solution will not get stuck.
+You may choose a strategy along the lines of proof by contradiction and tyr to come up with
+a scenario that leads to deadlock. This is not a substitute to mathematical proof.
+
+Consider Alternative Solution:
+
+```
+Producer
+1. [produce item]
+2. wait( mutex )
+3. wait( spaces )
+4. [add item to buffer]
+5. signal( items )
+6. signal( mutex )
+
+Consumer
+1. wait( mutex )
+2. wait( items )
+3. [remove item from buffer]
+4. signal( spaces )
+5. signal( mutex )
+6. [consume item]
+```
+## Analysis
+
+This solution is like the one we are certain works, except the order of ```wait``` has been
+swapped. It does have the deadlock problem. If buffer empty, and consumer thread runs first, it
+will wait on the ```mutex```, be allowed to proceed, and then will be blocked on ```items```
+because the buffer is initially empty. The thread is blocked.
+
+When the producer thread runs, it waits on ```mutex``` and cannot proceed because the consumer
+thread is in the critical section. The producer is blocked and can never produce any items.
+Thus we have a deadlock. This can occur any time the buffer is empty.
+
+## The Readers-Writers Porblem
+
+This is about concurrent reading and modification of a data structure or record by more than
+one thread. A writer will modify the data; a reader will read it only without modification.
+Unlike the producer-consumer problem, some concurrency is allowed:
+
+1. Any number of readers may be in the critical section simultaneously
+2. Only one writer may be in the critical section (and when it is, no readers are allowed)
+
+## Summary
+
