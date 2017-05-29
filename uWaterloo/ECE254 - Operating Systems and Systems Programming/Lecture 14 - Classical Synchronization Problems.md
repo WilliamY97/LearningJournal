@@ -235,3 +235,23 @@ and last out turns off lights.
 The reader code has that situation that makes us concerned about the possibility of deadlock: a
 wait on ```roomEmpty``` inside a critical section by ```mutex```. With a bit of reasoning, we
 can convince ourselves there is no risk. Deadlock is not a problem.
+
+### Second Problem
+
+Suppose some readers are in the room, and a writer arrives. Writer must wait until
+all the readers have left the room. When each of the readers is finished, it exits
+the room. In the meantime, more readers arrive and enter hte room.
+
+Even though each reader is in the room for a finite amount of time, there is never
+a moment when the room has no readers in it. This undesirable situation is not
+deadlock, because the reader threads are not stuck, but the writer (and any subsequent
+writers) are going to wait forever. This is a situation called ```starvation```:
+a thread never get a chance to run.
+
+It must not be possible for a thread requiring access to the critical section to be delayed
+indefinitely. Tis problem is just as bad as deadlock in that if it is discovered, it eliminates
+a proposed solution as an acceptable option, even though starvation might only be an unlikely
+event. We must thus improve solution so writer never starves.
+
+### Solution to Starving Consumers
+
