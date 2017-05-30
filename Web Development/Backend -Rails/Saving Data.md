@@ -50,7 +50,7 @@ and updated.
 
 ```rake db:seed``` commands seeds the database with sample data from db/seeds.rb
 
-##Part 2: Controller Action
+## Part 2: Controller Action
 
 ```
 def index
