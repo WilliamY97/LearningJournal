@@ -11,6 +11,39 @@ implementation of the Active Record pattern which itself is a description of an 
 Tweet.find(3)
 ```
 
+Multiple Parameters:
+
+```
+Tweet.find(3,4,5)
+```
+
+Specific Positions:
+
+```
+Tweet.first Tweet.last Tweet.all
+```
+
+Returns total number of records:
+
+```
+Tweet.count
+```
+
+Returns all records, ordered by attribute:
+```
+Tweet.order(:person)
+```
+
+Returns first 10 records
+```
+Tweet.limit(10)
+```
+
+Returns all tweets from person named 'ash'
+```
+Tweet.where(person: "ash")
+```
+
 ### CREATE
 ```
 t = Tweet.new
@@ -43,10 +76,41 @@ t.zombie = "EyeballChomper"
 t.save
 ```
 
+Alternate Syntax:
+
+```
+t = Tweet.find(3)
+t.attributes = { status: "Brains",
+  zombie = "EyeballChomper" }
+t.save
+```
+
+Update method:
+
+```
+t = Tweet.find(3)
+t.update (status: "Brains",
+  zombie = "EyeballChomper")
+```
+
 ### DELETE
 ```
 t = Tweet.find(3)
 t.destroy
+```
+
+Destroy all records:
+
+```
+Tweet.destroy_all
+```
+
+## Method Chaining (Complex Queries)
+
+We can chain queries to provide a large restriction
+
+```
+Tweet.where(person: "ash").order(:status).limit(10)
 ```
 
 
