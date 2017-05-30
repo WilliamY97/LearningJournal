@@ -12,6 +12,8 @@ class Tweet < ActiveRecord::Base
   validates_acceptance_of :zombification
   validates_length_of :password, minimum: 3
   validates_format_of :email, with: /regex/i
+  validates_inclusion_of :age, in: 21..99
+  validates_exclusion_of :age, in: 0...21, message: "Sorry you must be over 21"
 end
 ```
 
@@ -38,5 +40,7 @@ the model object can be created.
 
 **validates_format_of** - Express a regex that needs to be met
 
+**validates_inclusion_of** - Makes sure a field is between two values
 
+**validates_exclusion_of** - Makes sure something is not included from between two values
 
