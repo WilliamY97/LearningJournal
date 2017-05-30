@@ -44,3 +44,52 @@ the model object can be created.
 
 **validates_exclusion_of** - Makes sure something is not included from between two values
 
+### Shortcut Syntax
+
+```
+validates :status, presence: true
+validates :status, length: {minimum: 3}
+```
+
+Combine these two into:
+
+```
+validates :status,
+          presence: true,
+          length: { minimum: 3 },
+          uniqueness: true,
+          numericality: true,
+          length: { minimum: 0, maximum: 2000 },
+          format: { with: /.*/ },
+          acceptance: true,
+          confirmation: true,
+```
+
+## Model Relationships
+
+### Foreign Key Relationships
+
+Map two models together
+
+Go into Zombie model -> ```has_many :tweets```
+
+Go into tweets model -> ```belongs_to :zombie```
+
+Notice tweet is singular because tweet can only belong to one zombie
+
+```
+ash = Zombie.find(1)
+
+t = Tweet.create(status: "Hello", zombie: ash)
+```
+You can pass in the object that is mapped to the record and Rails will take care of the mapping (zombie_id: 1).
+
+```ash.tweets.count``` - will now return how many tweets the zombie has
+
+```ash.tweets``` - returns array of tweet records mapped to that zombie 
+
+```t.zombie``` - returns zombie record related to this tweet record
+
+```t.zombie.name``` - returns zombie's name attribute
+
+
