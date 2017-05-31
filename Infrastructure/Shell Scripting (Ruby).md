@@ -16,6 +16,4 @@ end
 
 - Opens up file and adds text into it
 
-```
-
 ```File.mtime("/Home/comics.txt")``` - Prints times file was edited
