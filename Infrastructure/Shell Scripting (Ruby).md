@@ -1,6 +1,6 @@
 # Shell Scripting (Ruby)
 
-```Dir.entries "/"```
+```Dir.entries "/"``` - Displays files in root
 
 ```Dir["/*.txt"]``` - Regex find all files w/ .txt ending
 
