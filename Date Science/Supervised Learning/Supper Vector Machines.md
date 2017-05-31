@@ -8,3 +8,10 @@ Simply speaking, the SVM model is a representation of the data as points in spac
 examples can then be added to the space and predicted to belong to a category based on which side of the gap they fall on.
 
 *Support Vector Machines are an optimization problem. They are attempting to find a hyperplane that divides the two classes with the largest margin. The support vectors are the points which fall within this margin. It's easiest to understand if you build it up from simple to more complex.*
+
+## Hard Margin Linear SVM
+
+![alt tag](https://i.stack.imgur.com/qt3CZ.png)
+
+In a training set where the data is linearly seperable, we can use a hard margin (no slack) and the support vectors are the points
+that lie along the supporting hyperplanes (the hyperplanes parallel to the dividing hyperplane at the edges of the margin). 
