@@ -14,6 +14,13 @@ examples can then be added to the space and predicted to belong to a category ba
 ### Kernel
 A kernel is a similarity function. It is a function that you, as the domain expert, provide to a machine learning algorithm. It takes two inputs and spits out how similar they are. Suppose your task is to learn to classify images. You have (image, label) pairs as training data.
 
+### Support Vectors
+
+The closest samples on either side of the margin.
+
+### Hyperplane
+
+Seperation that should have the largest perpendicular distance between the hyperplane and the closest samples on either side.
 
 ## Hard Margin Linear SVM
 
