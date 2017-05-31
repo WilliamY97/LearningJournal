@@ -9,6 +9,12 @@ examples can then be added to the space and predicted to belong to a category ba
 
 *Support Vector Machines are an optimization problem. They are attempting to find a hyperplane that divides the two classes with the largest margin. The support vectors are the points which fall within this margin. It's easiest to understand if you build it up from simple to more complex.*
 
+## Definitons
+
+### Kernel
+A kernel is a similarity function. It is a function that you, as the domain expert, provide to a machine learning algorithm. It takes two inputs and spits out how similar they are. Suppose your task is to learn to classify images. You have (image, label) pairs as training data.
+
+
 ## Hard Margin Linear SVM
 
 ![alt tag](https://i.stack.imgur.com/qt3CZ.png)
