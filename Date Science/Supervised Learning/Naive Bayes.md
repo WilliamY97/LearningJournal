@@ -17,3 +17,18 @@ P(x|c) - Likelihood which is the probability of predictor given class
 
 P(x) - Prior probability of predictor
 
+## Pros and Cons
+
+### Pros
+
+- It is easy and fast to predict class of test data set. It also performs well in multi-class predictions
+- When assumption of independence holds, a Naive Bayes classifier performs better compared to other models like logistic
+regression and you need less training data.
+
+### Cons
+
+- If categorical variable has a category (in test data set), which was not observed in training data set, then model assign
+a 0 probability and will be unable to make a prediction. This is often known as Zero Frequency.
+- Naive Bayes is known as a bad estimator, so the probability outputs from are not taken as seriously.
+- Limitation of NB is the assumption of independent predictors. In real life, it is almost impossible that we get a set
+of predictor which are completely independent.
