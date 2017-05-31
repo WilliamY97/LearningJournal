@@ -7,6 +7,10 @@ Ex. *A fruit may be considered to be an apple if it is red, round, and about 3 i
 
 ![alt tag](http://www.saedsayad.com/images/Bayes_rule.png)
 
-Simply speaking, the SVM model is a representation of the data as points in space, seperated by a gap that is as wide as possible. New
-examples can then be added to the space and predicted to belong to a category based on which side of the gap they fall on.
+### Definitions
+
+P(c|x) - Posterior probability of class given predictor
+P(c) - Prior probability of class
+P(x|c) - Likelihood which is the probability of predictor given class
+P(x) - Prior probability of predictor
 
