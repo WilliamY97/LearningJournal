@@ -100,14 +100,18 @@ message.
 ## URL Generator Methods
 
 Action -> Code -> The URL
+
 List all tweets -> tweets_path -> /tweets
+
 New tweet form -> new_tweet_path -> /tweets/new
 
 These url generators above require a tweet(record) as an argument
 
 Action -> Code -> The URL
 Show a tweet -> tweet_path -> /tweets/1
+
 Edit a tweet -> edit_tweet_path(tweet) -> /tweets/1/edit
+
 Delete a tweet -> tweet, method: :delete -> /tweets/1
 
 
