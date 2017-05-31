@@ -15,3 +15,11 @@ examples can then be added to the space and predicted to belong to a category ba
 
 In a training set where the data is linearly seperable, we can use a hard margin (no slack) and the support vectors are the points
 that lie along the supporting hyperplanes (the hyperplanes parallel to the dividing hyperplane at the edges of the margin). 
+
+## Soft-Margin Linear SVM
+
+![alt tag](https://i.stack.imgur.com/npEOk.png)
+
+In the case that the set is not linearly seperable, we use soft-margin which allows for data points to be within the margin. We use the slack parameter C to control this. (nu in nu-SVM). This gives us a wider margin and greater error on the training dataset, but improves generalization. 
+
+The soft-margin is a implementation that allows us to find a linear separation of data that is not linearly separable.
