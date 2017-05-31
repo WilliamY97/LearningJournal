@@ -10,7 +10,10 @@ Ex. *A fruit may be considered to be an apple if it is red, round, and about 3 i
 ### Definitions
 
 P(c|x) - Posterior probability of class given predictor
+
 P(c) - Prior probability of class
+
 P(x|c) - Likelihood which is the probability of predictor given class
+
 P(x) - Prior probability of predictor
 
