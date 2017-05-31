@@ -114,6 +114,7 @@ Edit a tweet -> edit_tweet_path(tweet) -> /tweets/1/edit
 
 Delete a tweet -> tweet, method: :delete -> /tweets/1
 
+Ex. <td><%= link_to "Delete", tweet, :method => :delete %></td>
 
 
 
