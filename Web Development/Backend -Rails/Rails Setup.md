@@ -1,4 +1,4 @@
-#Setup
+# Setup
 
 - Setting up new application for Rails
 
@@ -22,7 +22,7 @@ rails server
 Started the Rails development server so that we could preview the app in the browser by visiting http://localhost:8000.
 This development server is called WEBrick.
 
-##Request / Response Cycle
+## Request / Response Cycle
 
 **What Happens When You Visit http://localhost:8000 in the Browser?**
 
@@ -59,7 +59,7 @@ end
 - Inside the new Pages controller, we add a method called home. Methods in rails controllers are also referred to as
 **controller actions**, so here we add the **home** action to the pages controller
 
-##Creating Routes
+## Creating Routes
 
 Moving on to the second part of the request/response cycle and create a route.
 
@@ -85,7 +85,7 @@ In **app/views/pages/home.html.erb** we can add the view for the route we made t
 </div>
 ```
 
-##Generalizing the Setup Process
+## Generalizing the Setup Process
 
 1. Generate a new Rails app.
 2. Generate a controller and add an action.
