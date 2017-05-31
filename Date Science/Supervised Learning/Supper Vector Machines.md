@@ -23,3 +23,16 @@ that lie along the supporting hyperplanes (the hyperplanes parallel to the divid
 In the case that the set is not linearly seperable, we use soft-margin which allows for data points to be within the margin. We use the slack parameter C to control this. (nu in nu-SVM). This gives us a wider margin and greater error on the training dataset, but improves generalization. 
 
 The soft-margin is a implementation that allows us to find a linear separation of data that is not linearly separable.
+
+## Non-Linear SVM
+
+![alt tag](https://i.stack.imgur.com/1gvce.png)
+
+The data set may not have a linear relationship in a specific dimension, but we can still find a linear relationship in a higher
+dimensional space. 
+
+The number of support vectors still depends on how much slack we allow, but it also depends on the complexity of our model.
+
+The output of an SVM is the support vectors and an alpha, which is defining how much influence that specific support vector has on
+the final decision.
+
