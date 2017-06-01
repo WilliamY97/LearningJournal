@@ -25,15 +25,19 @@ We put our specifications in the /spec/ directory
   require "zombie" # requires zombie class
   
   describe Zombie do
-    it "is named Ash"
+    it "is named Ash" do
       zombie = Zombie.new
       zombie.name.should == 'Ash'
     end
     
     it "has no brains" do
       zombie = Zombie.new
-      zombie.brains.should < 1 #modifier < matcher
+      zombie.brains.should_not < 1 #modifier < matcher
     end
+    
+    if 'is hungry' do
+      zombie = Zombie.new
+      zombie.should be_hungry
   end
 ```
 
@@ -42,4 +46,6 @@ but if the lib/zombie.rb file were to be updated to have a :name then it would p
 
 An assertion would be called an expectation in RSpec
 
+## Marking as Pending
 
+You can call xit on the test to make it pending - which will run the tests one at a time.
