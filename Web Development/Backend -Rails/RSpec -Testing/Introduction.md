@@ -18,14 +18,11 @@ In Rspec we substitute test with specification.
 
 We put our specifications in the /spec/ directory
 
-### ```spec/lib/zombie_spec.rb```
+### ```spec/lib/zombie_spec.rb``` <- where tests aka specs go
 
-```require "spec_helper"
-
-describe "A zombie" do
-  # your examples (tests) go here
+```
   require "spec_helper"
-  require "zombie"
+  require "zombie" # requires zombie class
   
   describe Zombie do
     it "is named Ash"
@@ -37,8 +34,7 @@ describe "A zombie" do
       zombie = Zombie.new
       zombie.brains.should < 1 #modifier < matcher
     end
-end
-
+  end
 ```
 
 Calling ```rspec spec/lib/zombie_spec.rb``` runs tests - in this case it would fail
