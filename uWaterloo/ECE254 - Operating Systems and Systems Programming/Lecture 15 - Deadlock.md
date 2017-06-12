@@ -61,6 +61,12 @@ There are four basic approaches to dealing with deadlock, each of which we will 
 Prevent deadlock from being possible. The first three conditions for deadlock (mutual exclusion, hold and wait, and no preemption) are
 all necessary for deadlock to be possible. If we eliminate one of theses three pillars, deadlock is not possible and it is prevented from happening.
 
+## Deadlock Option 2: Deadlock Prevention
+
+This approach is a way of preventing a deadlock from being possible. The first three conditions for deadlock (mutual exclusion, hold
+and wait, and no preemption) are all necessary for deadlock to be possible. If we eliminate one of these three pillars, deadlock is
+not possible and it is prevented from happening.
+
 **Mutual Exclusion** - This pillar cannot, generally speaking, be disallowed. The purpose of mutual exclusion is to prevent errors like
 inconsistent state or crashes. Getting rid of mutual exclusion to rule out the possibility of deadlock is a cure that is worse.
 
