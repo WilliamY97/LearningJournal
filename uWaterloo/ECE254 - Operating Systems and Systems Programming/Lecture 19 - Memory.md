@@ -29,3 +29,5 @@ do not control (have the source code to) all the programs that are to execute co
 
 **Solution**: On every process switch, save the entire contents of memory to disk, and restore
 the memory contents of the next process to run.
+
+BUT this kind of swapping is, to say the least, incredibly expensive – imagine swapping out several gigabytes of memory on every process switch – but the problem is avoided because only one process is ever in memory at a time.
