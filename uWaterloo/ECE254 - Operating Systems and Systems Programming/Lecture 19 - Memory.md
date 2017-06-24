@@ -31,3 +31,8 @@ do not control (have the source code to) all the programs that are to execute co
 the memory contents of the next process to run.
 
 BUT this kind of swapping is, to say the least, incredibly expensive – imagine swapping out several gigabytes of memory on every process switch – but the problem is avoided because only one process is ever in memory at a time.
+
+- No protection for the operating system. The operating system is typically placed in either low memory (start of address) or high memory (from the end of addresses), or in some cases, a bit of both. An errant memory access might result in overwriting a part of the
+OS in memory, which can not only lead to crashes, but could also result in corrupting important files on disk.
+
+
