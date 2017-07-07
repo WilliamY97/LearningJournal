@@ -127,5 +127,15 @@ end of memory, so the largest block of free memory (typically at the end) is qui
 the other hand, first fit tends to litter the beginning of memory with small fragments. Best fit
 tends to produce free blocks that are too small to be useful.
 
+## Advanced Strategy: Binary Buddy
+
+- Initially memory is treated as a single block size of 2^U. If a request of size n occurs
+such that 2^(U-1). 
+
+- In subsequent allocations, we look through the data structure, typically a tree, to find
+either (1) a block of appropriate size; (2) a block that can be subdivided to meet the
+allocation. Whenever a pair of buddies (two blocks of equal size, split from the same parent)
+in the list are both free, they can be coalesced.
+
 
 
