@@ -64,5 +64,68 @@ also makes sense that diving memory should be a reversible operation. This solve
 a block of N contiguous bytes being unable to be allocated. Coalescence can be done periodically
 or whenver a block of memory is freed.
 
+Coalescence makes it a good idea to maintain memory blocks in a doubly-linked list. Recall
+that a linked list has "next" pointers connecting nodes and a double-linked list has a
+next and previous pointers, to make it easier to traverse the list in both directions. When
+the block is freed, it maye be in the middle of two free blocks, so it is convenient to
+have previous and nextpointers so the adjacent sections can be merged efficiently.
+
+**Where coalescence can't fix the issue**: The problem is that N free bytes exist but are
+spread apart. When free memory is spread into tiny fragments, this is called **external
+fragmentation**.
+
+## External Fragmentation Reduction
+
+One way to reduce external fragmentation is to increase internal fragmentation. When
+a request for N bytes comes in and there is a block of N+k available, where k is very
+small, it makes sense to allocate the whole N+k block for the request and just accept
+that k bytes are lost to internal fragmentation. 
+
+### Second Idea: Compaction or Relocation
+
+Goal is to move allocated sections of memory next to one another in main memory, allowing
+for a large contiguous block of free space. This is a very expensive operation; to do this
+means stopping the whole world while it reorganizes the memory.
+
+## Variable Allocation Strategies
+
+Five strategies: first fit, next fit, best fit, worst fit, quick fit
+
+As a performance optimization, we could have two linked lists: one for allocated memory
+and one for unallocated memory. that way to find a free block we do not have to look
+through the allocated blocks.
+
+**First fit** - The strategy of first fit is to start looking at the beginning of memory
+and check each block. If the block is of sufficient size, split it to allocate the memory,
+and return the balance to the unallocated memory list. This algorithm has a runtime
+of O(n) where n is the number of blocks. This algorithm is simple to implement.
+
+**Best fit** - Instead of walking through the list and splitting up the first block equal
+to or larger than N, we could instead try to make a more intelligent decision. Considering
+all blocks, we choose the smallest block that is at least as big as N. This produces the
+smallest remaining unallocated space at the end.
+
+**Worst fit** - Leftover bits of memory are likely to be too small to be useful. Rather than
+trying to find the smallest block that is of size N or greater, choose the largest block
+of free memory. When the block is split, the remaining free block is, hopefully, large
+enough to be useful
+
+**Quick fit** - Though not a solution on its own, quick fit is an optimization. If memory
+requests of a certain size are known to be common, it might be ideal to keep a seperate list of blocks
+that are of perhaps 1-1.1 MB in size, so that if the request for 1 MB does come in, it can be satified
+immediately and quickly.
+
+## Choosing a Strategy
+
+- Performance problems of worst fit can be fixed, of course, by keeping the memory blocks in a
+max heap, but that still does not address the waste space problem. First (next) and best fit are
+about equal in how well they utilize memory, but first fit tends to be faster. Even with optimization,
+given x allocated blocks, another 0.5x blocks may be lost to fragmentation.
+
+- First fit is the fastest and best algorithm. The next fit algorithm tends to do allocations at the
+end of memory, so the largest block of free memory (typically at the end) is quickly broken up. On
+the other hand, first fit tends to litter the beginning of memory with small fragments. Best fit
+tends to produce free blocks that are too small to be useful.
+
 
 
