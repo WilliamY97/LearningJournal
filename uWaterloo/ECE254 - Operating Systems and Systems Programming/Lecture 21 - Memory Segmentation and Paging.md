@@ -90,4 +90,24 @@ no state maintained by the code.
 ### Hierarchical Paging
 
 - Rather than have a big table, we have multiple levels in the page table. This means the page
-table can be broken up and need not be contiguous in memory. 
+table can be broken up and need not be contiguous in memory. Suppose we have a two level system.
+If the page number is *p*, the first *k* bits indicate the *outer page*. The outer page contains
+some information about where the *inner pages* are. The remaining p-k bits identify the inner
+page. After the inner page is identified, the displacement d is then calculated from the inner
+page.
+
+### Hashed Page Tables
+
+Instead of the page table being an array of entries, turn it into a hash table. There is a hash
+function to assign pages to "buckets" and each bucket is implemented as a linked list. Then
+each element of the list is examined to find the matching page.
+
+### Inverted Page Tables
+
+For 64-bit computers, with 4 KB pages, the page table requires 2^52 entries, ad if an entry
+is 8 bytes, then the table is over 30 million gigabytes. Unrealistic. Instead, we can have an
+inverted page table: there is one entry per frame, rather than one entry per page. The entry
+keeps track of the process and page number. This saves a huge amount of space (1 GB of ram).
+The drawback is that it is no longer possible to find a physical page by looking at the
+address; instead, we must search the entire inverted page table. Slow as this operation is; we can make it
+faster via hardware.
