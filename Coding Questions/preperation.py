@@ -64,3 +64,22 @@ def lca(root, n1, n2):
     else:
         return right.key
     
+## Largest Contiguous Sum
+
+from sys import maxint
+def maxSubArraySum(a,size):
+    max_so_far = -maxint - 1
+    max_ending_here = 0
+
+    for i in range(0, size):
+        max_ending_here = max_ending_here + a[i]
+        if (max_so_far < max_ending_here):
+            max_so_far = max_ending_here
+ 
+        if max_ending_here < 0:
+            max_ending_here = 0  
+    return max_so_far
+
+# You bring it back to zero if max_end_here is beneath it because that would mean it is contributing to future sums with a negative value
+# which can never be better then if you just start at that value itself
+
