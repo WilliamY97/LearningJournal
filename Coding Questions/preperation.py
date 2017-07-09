@@ -83,3 +83,24 @@ def maxSubArraySum(a,size):
 # You bring it back to zero if max_end_here is beneath it because that would mean it is contributing to future sums with a negative value
 # which can never be better then if you just start at that value itself
 
+## Stack using queue
+
+class Stack:
+
+    def __init__(self):
+        self._queue = collections.deque()
+
+    def push(self, x):
+        q = self._queue
+        q.append(x)
+        for _ in range(len(q) - 1):
+            q.append(q.popleft())
+        
+    def pop(self):
+        return self._queue.popleft()
+
+    def top(self):
+        return self._queue[0]
+    
+    def empty(self):
+        return not len(self._queue)
