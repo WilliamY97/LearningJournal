@@ -44,3 +44,23 @@ def is_matched(expression):
     return not s
   
 # Common ancestor
+
+def lca(root, n1, n2):
+    if (root == None): return None
+
+    if (root.key == n1 or root.key == n2): return root
+
+    left = lca(root.left,n1,n2)
+
+    right = lca(root.right,n1,n2)
+
+    if(left and right): return root.key
+
+    if(left == None and right == None):
+        return None
+
+    if left:
+        return left.key
+    else:
+        return right.key
+    
