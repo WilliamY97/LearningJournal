@@ -1,4 +1,4 @@
-# Coin Change DP
+# Coin Change DP O(k*n) types of money * amount [you have to iterate through each amount before and check each money for it]
 
 def printChange(valused,amount):
     index = amount
@@ -27,7 +27,7 @@ def coinChange(coins, amount):
     result = printChange(valused,amount)
     return [rs[amount],result]
 
-# Brackets
+# Brackets O(N)
 
 def is_matched(expression):
     e = {'(': ')', '{': '}', '[': ']'}
@@ -43,7 +43,7 @@ def is_matched(expression):
             return False
     return not s
   
-# Common ancestor
+# Common ancestor O(n)
 
 def lca(root, n1, n2):
     if (root == None): return None
@@ -64,7 +64,7 @@ def lca(root, n1, n2):
     else:
         return right.key
     
-## Largest Contiguous Sum
+## Largest Contiguous Sum O(n)
 
 from sys import maxint
 def maxSubArraySum(a,size):
@@ -83,7 +83,7 @@ def maxSubArraySum(a,size):
 # You bring it back to zero if max_end_here is beneath it because that would mean it is contributing to future sums with a negative value
 # which can never be better then if you just start at that value itself
 
-## Stack using queue
+## Stack using queue O(N) push / O(1) pop
 
 class Stack:
 
@@ -120,3 +120,18 @@ def zigzagLevelOrder(self, root):
         temp = []
         flag*= -1
     return res
+
+##
+
+def letterCombinations(digits):
+    mapping = {'2': 'abc', '3': 'def', '4': 'ghi', '5': 'jkl', 
+               '6': 'mno', '7': 'pqrs', '8': 'tuv', '9': 'wxyz'}
+    if len(digits) == 0:
+        return []
+    if len(digits) == 1:
+        return list(mapping[digits[0]])
+    prev = letterCombinations(digits[:-1])
+    additional = mapping[digits[-1]]
+    return [s + c for s in prev for c in additional]
+
+print letterCombinations('54')
