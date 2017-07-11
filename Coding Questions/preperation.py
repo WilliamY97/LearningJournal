@@ -15,6 +15,16 @@ def coinChange(coins, amount):
     result = printChange(valused,amount)
     return [dp[amount],result]
 
+## CASES
+
+'30' -> Would fail for brute force if 20,15,5
+'0' -> just no amount - could write edge case
+
+30 [25,15,5] -> 25,5 x -> 15 15
+30 [25,15,1] -> 25,1,1,1,1,1
+
+## THE ALTERNATIVE COIN CHANGE THAT COUNTS CHANGE
+
 def printChange(valused,amount):
     index = amount
     coins = []
@@ -42,9 +52,12 @@ def coinChange(coins, amount):
     result = printChange(valused,amount)
     return [dp[amount],result]
 
-# Brackets O(N)
+#######
+
+# CHECKING FOR VALID BRACKETS O(N)
 
 def is_matched(expression):
+    if expression == '': return
     e = {'(': ')', '{': '}', '[': ']'}
     s = []
     for bracket in expression:
@@ -56,7 +69,17 @@ def is_matched(expression):
             s.pop()
         else:
             return False
-    return not s
+    return not s //Checks if empty at end
+
+# EDGE CASES:
+
+'}' -> Insta fail
+'{[}' -> No closing bracket
+'' -> No value
+'{([])}' -> Success
+'{}[' -> Ends on open bracket
+
+
   
 # Common ancestor O(n)
 
@@ -79,6 +102,11 @@ def lca(root, n1, n2):
     else:
         return right.key
     
+#EDGE CASES
+n1 is a child of n2 -> Then the code will have one side return null and one side return one number so the ancestor is that one
+n1 and n2 are children of some ancestor, not of each other -> that node will get left and right value return itself
+no tree -> edge case
+    
 ## Largest Contiguous Sum O(n)
 
 from sys import maxint
@@ -94,6 +122,13 @@ def maxSubArraySum(a,size):
         if max_ending_here < 0:
             max_ending_here = 0  
     return max_so_far
+
+## EDGE CASE
+
+[4,3,2,-4,10] -> The sum needs to include -4 which will provide the largest value of total 15
+[4,3,2,-10,10] -> Needs to restart after -10 because before that it won't contribute anything valuable
+[-1,-2,-3,-4] -> all negative values
+[] -> nothing -> edge case just write return case
 
 # You bring it back to zero if max_end_here is beneath it because that would mean it is contributing to future sums with a negative value
 # which can never be better then if you just start at that value itself
@@ -120,19 +155,23 @@ class Stack:
     def empty(self):
         return not len(self._queue)
 
+    
+    
+    
 ## PHONE NUMBER LETTER COMBOS
 def letterCombinations(digits):
     mapping = {'2': 'abc', '3': 'def', '4': 'ghi', '5': 'jkl', 
                '6': 'mno', '7': 'pqrs', '8': 'tuv', '9': 'wxyz'}
     if len(digits) == 0:
         return []
-    if len(digits) == 1:
+    if len(digits) == 1: // if it's just one value return with the values it represents
         return list(mapping[digits[0]])
-    prev = letterCombinations(digits[:-1])
-    additional = mapping[digits[-1]]
-    return [s + c for s in prev for c in additional]
+    prev = letterCombinations(digits[:-1]) // take everything before the last value
+    additional = mapping[digits[-1]] // last value
+    return [s + c for s in prev for c in additional] // take every previous permutation and attach the permutations of this number to it
 
-print letterCombinations('54')
+print letterCombinations('54') -> happy case
+print letterCombinations('501') -> bad values
 
 
     
