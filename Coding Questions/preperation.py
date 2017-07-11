@@ -27,6 +27,8 @@ Basically I kept a dictionary to record the index of each character of T. Each t
 I checked the length of this window by subtracting the maximum index and the minimum index of the characters. 
 If this window is the smallest one so far, I record its beginning and ending index as "start" and "end."
 
+len(S)*len(T)
+
 # Coin Change DP O(k*n) types of money * amount [you have to iterate through each amount before and check each money for it]
 
 def coinChange(coins, amount):
