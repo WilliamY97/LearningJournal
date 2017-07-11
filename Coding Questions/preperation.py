@@ -13,15 +13,15 @@ def coinChange(coins, amount):
     MAX = float('inf')
     
     rs = [MAX] * (amount+1)
-    valused = [MAX] * (amount+1)
+    valused = [MAX] * (amount+1) //UNNEEDED
     result = []
     rs[0] = 0
     for i in xrange(1, amount+1):
         for c in coins:
             if i >= c:
                 rs[i] = min(rs[i], rs[i-c] + 1)
-                if (rs[i] == rs[i-c]+1):
-                    valused[i] = c
+                if (rs[i] == rs[i-c]+1): //UNNEEDED
+                    valused[i] = c //UNNEEDED
     if rs[amount] == MAX:
         return -1
     result = printChange(valused,amount)
