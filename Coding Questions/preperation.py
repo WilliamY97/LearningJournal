@@ -1,5 +1,20 @@
 # Coin Change DP O(k*n) types of money * amount [you have to iterate through each amount before and check each money for it]
 
+def coinChange(coins, amount):
+    MAX = float('inf')
+    
+    dp = [MAX] * (amount+1)
+    result = []
+    dp[0] = 0
+    for i in xrange(1, amount+1):
+        for c in coins:
+            if i >= c:
+                dp[i] = min(dp[i], dp[i-c] + 1)
+    if dp[amount] == MAX:
+        return -1
+    result = printChange(valused,amount)
+    return [dp[amount],result]
+
 def printChange(valused,amount):
     index = amount
     coins = []
@@ -12,20 +27,20 @@ def printChange(valused,amount):
 def coinChange(coins, amount):
     MAX = float('inf')
     
-    rs = [MAX] * (amount+1)
+    dp = [MAX] * (amount+1)
     valused = [MAX] * (amount+1) //UNNEEDED
     result = []
-    rs[0] = 0
+    dp[0] = 0
     for i in xrange(1, amount+1):
         for c in coins:
             if i >= c:
-                rs[i] = min(rs[i], rs[i-c] + 1)
-                if (rs[i] == rs[i-c]+1): //UNNEEDED
+                dp[i] = min(dp[i], dp[i-c] + 1)
+                if (dp[i] == dp[i-c]+1): //UNNEEDED
                     valused[i] = c //UNNEEDED
-    if rs[amount] == MAX:
+    if dp[amount] == MAX:
         return -1
     result = printChange(valused,amount)
-    return [rs[amount],result]
+    return [dp[amount],result]
 
 # Brackets O(N)
 
@@ -104,6 +119,22 @@ class Stack:
     
     def empty(self):
         return not len(self._queue)
+
+## PHONE NUMBER LETTER COMBOS
+def letterCombinations(digits):
+    mapping = {'2': 'abc', '3': 'def', '4': 'ghi', '5': 'jkl', 
+               '6': 'mno', '7': 'pqrs', '8': 'tuv', '9': 'wxyz'}
+    if len(digits) == 0:
+        return []
+    if len(digits) == 1:
+        return list(mapping[digits[0]])
+    prev = letterCombinations(digits[:-1])
+    additional = mapping[digits[-1]]
+    return [s + c for s in prev for c in additional]
+
+print letterCombinations('54')
+
+
     
 #zigzag
 
@@ -120,18 +151,3 @@ def zigzagLevelOrder(self, root):
         temp = []
         flag*= -1
     return res
-
-##
-
-def letterCombinations(digits):
-    mapping = {'2': 'abc', '3': 'def', '4': 'ghi', '5': 'jkl', 
-               '6': 'mno', '7': 'pqrs', '8': 'tuv', '9': 'wxyz'}
-    if len(digits) == 0:
-        return []
-    if len(digits) == 1:
-        return list(mapping[digits[0]])
-    prev = letterCombinations(digits[:-1])
-    additional = mapping[digits[-1]]
-    return [s + c for s in prev for c in additional]
-
-print letterCombinations('54')
