@@ -82,7 +82,7 @@ while l<r:
 return something
 ```
 
-## Tail
+## Tail - One pointer trails behind to take in values that moving pointer might need to place to front
 ```
 if nums == None or len(nums) == 0:
     return len(nums)
