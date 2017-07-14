@@ -5,6 +5,8 @@ class Node:
         self.next  = next
 ```
 
+## BINARY TREE - SEARCHES, findMIN, successor
+
 ## BFS
 
 ```
@@ -25,6 +27,46 @@ while queue:
   level += 1
 
 return level
+```
+
+```
+def binarySearch(root,key):
+	if root is None:
+		print "Nothing Found."
+		return None
+	if root.val == key:
+		print root.val
+		return root
+	elif key > root.val:
+		binarySearch(root.right,key)
+	else:
+		binarySearch(root.left,key)
+
+def inOrderSearch(root):
+	if root is None: return None
+	inOrderSearch(root.left)
+	print root.val
+	inOrderSearch(root.right)
+
+def preOrderSearch(root):
+    if root is None: return None
+    print root.val
+    preOrderSearch(root.left)
+    preOrderSearch(root.right)
+
+def postOrderSearch(root):
+    if root is None: return None
+    postOrderSearch(root.left)
+    postOrderSearch(root.right)
+    print root.val,
+
+def findMin(node):
+	while node.left is not None: node = node.left
+	return node
+
+def successor(node):
+	if node is None: return None
+	print findMin(node.right).val
 ```
 
 ## Meeting
@@ -74,45 +116,5 @@ return tail
 16	    return found
 ```
 
-## BINARY TREE - SEARCHES, findMIN, successor
 
-```
-def binarySearch(root,key):
-	if root is None:
-		print "Nothing Found."
-		return None
-	if root.val == key:
-		print root.val
-		return root
-	elif key > root.val:
-		binarySearch(root.right,key)
-	else:
-		binarySearch(root.left,key)
-
-def inOrderSearch(root):
-	if root is None: return None
-	inOrderSearch(root.left)
-	print root.val
-	inOrderSearch(root.right)
-
-def preOrderSearch(root):
-    if root is None: return None
-    print root.val
-    preOrderSearch(root.left)
-    preOrderSearch(root.right)
-
-def postOrderSearch(root):
-    if root is None: return None
-    postOrderSearch(root.left)
-    postOrderSearch(root.right)
-    print root.val,
-
-def findMin(node):
-	while node.left is not None: node = node.left
-	return node
-
-def successor(node):
-	if node is None: return None
-	print findMin(node.right).val
-```
 
