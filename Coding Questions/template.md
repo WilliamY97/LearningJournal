@@ -5,7 +5,7 @@ class Node:
         self.next  = next
 ```
 
-BFS
+## BFS
 
 ```
 queue = [root]
@@ -27,7 +27,7 @@ while queue:
 return level
 ```
 
-Meeting
+## Meeting
 ```
 Given some array A:
 if height is None or len(height) == 0:
@@ -40,7 +40,7 @@ while l<r:
 return something
 ```
 
-Tail
+## Tail
 ```
 if nums == None or len(nums) == 0:
     return len(nums)
@@ -54,7 +54,7 @@ for i in range(len(nums)):
 return tail
 ```
 
-ARRAY BINARY SEARCH
+## ARRAY BINARY SEARCH
 ```
 	def binarySearch(alist, item):
 2	    first = 0
@@ -74,7 +74,7 @@ ARRAY BINARY SEARCH
 16	    return found
 ```
 
-BINARY TREE - SEARCHES, findMIN, successor
+## BINARY TREE - SEARCHES, findMIN, successor
 
 ```
 def binarySearch(root,key):
