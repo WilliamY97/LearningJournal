@@ -76,6 +76,7 @@ ARRAY BINARY SEARCH
 
 BINARY TREE - SEARCHES, findMIN, successor
 
+```
 def binarySearch(root,key):
 	if root is None:
 		print "Nothing Found."
@@ -113,4 +114,5 @@ def findMin(node):
 def successor(node):
 	if node is None: return None
 	print findMin(node.right).val
+```
 
