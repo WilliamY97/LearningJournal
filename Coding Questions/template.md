@@ -69,6 +69,31 @@ def successor(node):
 	print findMin(node.right).val
 ```
 
+## Graph BFS
+
+```
+#UGN is UndirectedGraphNode object
+if node is None: return None
+
+copyNode = UGN(node.label)
+dic = {}
+dic[node] = copyNode
+queue = [node]
+
+while queue:
+  cur = queue.pop(0)
+  
+  for n in cur.neighbors:
+    if n in dic:
+      dic[cur].neighbour.append(dic[n])
+    else:
+      nCopy = UGN(n.label)
+      dic[n] = nCopy
+      dic[cur].neighbors.append(nCopy)
+      queue.append(n)
+return dic[node]
+```
+
 ## Meeting
 ```
 Given some array A:
