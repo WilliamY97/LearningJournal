@@ -72,23 +72,19 @@ def successor(node):
 ## Graph BFS
 
 ```
- def cloneGraph(self, node):
-        if node is None: return None
-        dic = {}
-        dic[node] = UndirectedGraphNode(node.label)
-        queue = [node]
-        
-        while queue:
-            curr = queue.pop(0)
-            for n in curr.neighbors:
-                if n in dic:
-                    dic[curr].neighbors.append(dic[n])
-                else:
-                    nCopy = UndirectedGraphNode(n.label)
-                    dic[n] = nCopy
-                    dic[curr].neighbors.append(nCopy)
-                    queue.append(n)
-        return dic[node]
+class Node:
+    def __init__(self, val=None, next=None):
+        self.val = val
+        self.next  = next
+
+def bfs(graph, start):
+    visited, queue = set(), [start]
+    while queue:
+        vertex = queue.pop(0)
+        if vertex not in visited:
+            visited.add(vertex)
+            queue.extend(graph[vertex] - visited)
+    return visited
 ```
 
 ## Meeting
