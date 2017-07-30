@@ -11,3 +11,26 @@ interconnection network used by the computer system and those required by the de
 
 System Side: Depends on interconnection network
 Device Side: Depends on device
+
+## Device Side: Ports
+
+- An interface connects to devices through **ports**
+
+- In the most general case, each port carries both data and control information
+
+## Ports and Direction of Transfer
+
+Unidirectional: Data/event exchanged in one direction only (input or output)
+
+Bidirectional, single-duplex: data/events can be exchanged in both directions (input/output), but only one direction at a time
+
+Bidirectional, full-duplex: Data/event exchanged in both directions at the same time. It's equivalent to having a pair of input and
+output unidirectional ports.
+
+## Ports and Interface Type
+
+**Parallel Interface**: Digital data is exchanged multiple bits at a time.
+- The device signals include a data bus (multiplew wires)
+- The device signals also usually incldue dedicated wires for control information (out-of-band signalling)
+
+**Serial Interface**:
