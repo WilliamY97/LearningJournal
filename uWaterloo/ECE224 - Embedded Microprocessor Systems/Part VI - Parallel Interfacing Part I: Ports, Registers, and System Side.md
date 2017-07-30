@@ -31,6 +31,12 @@ output unidirectional ports.
 
 **Parallel Interface**: Digital data is exchanged multiple bits at a time.
 - The device signals include a data bus (multiplew wires)
-- The device signals also usually incldue dedicated wires for control information (out-of-band signalling)
+- The device signals also usually incldue dedicated wires for control information (**out-of-band signalling**)
 
-**Serial Interface**:
+**Serial Interface**: Digital data is exchanged one bit at a time.
+- Control and data are usually exchanged through the same one-bit signal (**in-band signaling**)
+
+**Analog Interface**: Data is exchanged through an analog signal.
+- Usually no need for control information due to blind synchronization
+
+
