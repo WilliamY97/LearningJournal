@@ -34,3 +34,12 @@ One of the simplest activation functions is the **Heaviside step function**. Thi
 
 ![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5895102f_heaviside-step-function-2/heaviside-step-function-2.gif)
 
+### Getting more inputs to result in the expected output
+
+One way to get our function to return 1 for more inputs is to add a value to the results of our linear combination, called a **bias**.
+
+A bias, represented in equations as b, lets us move values in one direction or another.
+
+Of course, with neural networks we won't know in advance what values to pick for biases. That’s ok, because just like the weights, the bias can also be updated and changed by the neural network during training. So after adding a bias, we now have a complete perceptron formula:
+
+![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58951180_perceptron-equation-2/perceptron-equation-2.gif)
