@@ -27,3 +27,10 @@ The perceptron applies these weights to the inputs and sums them in a process kn
 ## Calculating the Output with an Activation Function
 
 Finally, the result of the perceptron's summation is turned into an output signal. This is done by feeding the linear combination into an **activation function**.
+
+Activation functions are functions that decide, given the inputs into the node, what should be the node's output? Because it's the activation function that decides the actual output, we often refer to the outputs of a layer as its "activations".
+
+One of the simplest activation functions is the **Heaviside step function**. This function returns a 0 if the linear combination is less than 0. It returns a 1 if the linear combination is positive or equal to zero.
+
+![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5895102f_heaviside-step-function-2/heaviside-step-function-2.gif)
+
