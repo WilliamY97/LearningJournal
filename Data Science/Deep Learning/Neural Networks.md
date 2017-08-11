@@ -5,3 +5,9 @@
 Data, like test scores and grades, is fed into a network of interconnected nodes.
 These individual nodes are called perceptrons or neurons, and they are the basic unit of a neural network.
 Each one looks at input data and decides how to categorize that data.
+
+### How a Perceptron Processes Input Data
+
+When input data comes into a perceptron, it gets multiplied by a weight value that is assigned to this particular input.
+
+These weights start out as random values, and as the neural network learns more about what kind of input data leads to a student being accepted into a university, the network adjusts the weights based on any errors in categorization that the previous weights resulted in. This is called **training** the neural network.
