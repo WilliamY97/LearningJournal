@@ -25,3 +25,5 @@ The weighted input data is then summed up and the result determines the final ou
 The perceptron applies these weights to the inputs and sums them in a process known as a **linear combination**.
 
 ## Calculating the Output with an Activation Function
+
+Finally, the result of the perceptron's summation is turned into an output signal. This is done by feeding the linear combination into an **activation function**.
