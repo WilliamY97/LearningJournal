@@ -18,3 +18,6 @@ A higher weight means the neural network considers that input more important tha
 
 So, each input to a perceptron has an associated weight that represents its importance and these weights are determined during the learning process of a neural network, called training.
 
+The weighted input data is then summed up and the result determines the final output.
+
+The perceptron applies these weights to the inputs and sums them in a process known as a **linear combination**.
