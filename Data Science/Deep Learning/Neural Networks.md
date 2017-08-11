@@ -43,3 +43,5 @@ A bias, represented in equations as b, lets us move values in one direction or a
 Of course, with neural networks we won't know in advance what values to pick for biases. That’s ok, because just like the weights, the bias can also be updated and changed by the neural network during training. So after adding a bias, we now have a complete perceptron formula:
 
 ![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58951180_perceptron-equation-2/perceptron-equation-2.gif)
+
+Then the neural network starts to learn! Initially, the weights and bias are assigned a random value, and then they are updated using a learning algorithm like gradient descent. The weights and biases change so that the next training example is more accurately categorized, and patterns in data are "learned" by the neural network.
