@@ -1,6 +1,6 @@
 # Neural Networks
 
-## Perceptron
+# Perceptron
 
 Data, like test scores and grades, is fed into a network of interconnected nodes.
 These individual nodes are called perceptrons or neurons, and they are the basic unit of a neural network.
@@ -21,3 +21,5 @@ So, each input to a perceptron has an associated weight that represents its impo
 The weighted input data is then summed up and the result determines the final output.
 
 The perceptron applies these weights to the inputs and sums them in a process known as a **linear combination**.
+
+## Calculating the Output with an Activation Function
