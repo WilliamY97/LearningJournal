@@ -19,3 +19,8 @@ C = tf.constant([ [123,456,789], [222,333,444] ])
 ## Session
 
 A "TensorFlow Session", is an environment for running a graph. The session is in charge of allocating the operations to GPU(s) and/or CPU(s), including remote machines.
+
+```
+with tf.Session() as sess:
+    output = sess.run(hello_constant)
+```
