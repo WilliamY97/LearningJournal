@@ -24,3 +24,15 @@ A "TensorFlow Session", is an environment for running a graph. The session is in
 with tf.Session() as sess:
     output = sess.run(hello_constant)
 ```
+## Session’s feed_dict and tf.placeholder()
+
+Use the feed_dict parameter in tf.session.run() to set the placeholder tensor. It's also possible to set more than one tensor using feed_dict as shown below.
+
+```
+x = tf.placeholder(tf.string)
+y = tf.placeholder(tf.int32)
+z = tf.placeholder(tf.float32)
+
+with tf.Session() as sess:
+    output = sess.run(x, feed_dict={x: 'Test String', y: 123, z: 45.67})
+```
