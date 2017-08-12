@@ -20,3 +20,14 @@ The gradient is just a derivative generalized to functions with more than one va
 
 ![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/January/587ba606_gradient-descent/gradient-descent.png)
 
+## Problems
+
+Since the weights will just go where ever the gradient takes them, they can end up where the error is low, but not the lowest. These spots are called local minima. If the weights are initialized with the wrong values, gradient descent could lead the weights into a local minimum.
+
+![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/January/587c5ebd_local-minima/local-minima.png)
+
+We can reduce this by using something called **momentum** which TLDR is 
+
+```
+The momentum term increases for dimensions whose gradients point in the same directions and reduces updates for dimensions whose gradients change directions. As a result, we gain faster convergence and reduced oscillation. - http://ruder.io/optimizing-gradient-descent/index.html#momentum
+```
