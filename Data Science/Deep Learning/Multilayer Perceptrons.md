@@ -10,3 +10,12 @@ But now, the weights need to be stored in a matrix, indexed as w(ij). Each row i
 
 <img src="https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a49908_multilayer-diagram-weights/multilayer-diagram-weights.png" width="500" height="200" />
 
+To initialize these weights in Numpy, we have to provide the shape of the matrix. If features is a 2D array containing the input data:
+
+```
+# Number of records and input units
+n_records, n_inputs = features.shape
+# Number of hidden units
+n_hidden = 2
+weights_input_to_hidden = np.random.normal(0, n_inputs**-0.5, size=(n_inputs, n_hidden))
+```
