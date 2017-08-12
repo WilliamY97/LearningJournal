@@ -20,5 +20,5 @@ n_hidden = 2
 weights_input_to_hidden = np.random.normal(0, n_inputs**-0.5, size=(n_inputs, n_hidden))
 ```
 
-<img src="https://d17h27t6h515a5.cloudfront.net/topher/2017/January/588ae392_codecogseqn-2/codecogseqn-2.png" width="200" height="100" />
+<img src="https://d17h27t6h515a5.cloudfront.net/topher/2017/January/588ae392_codecogseqn-2/codecogseqn-2.png" width="200" height="40" />
 
