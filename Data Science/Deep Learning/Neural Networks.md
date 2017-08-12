@@ -45,3 +45,7 @@ Of course, with neural networks we won't know in advance what values to pick for
 ![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58951180_perceptron-equation-2/perceptron-equation-2.gif)
 
 Then the neural network starts to learn! Initially, the weights and bias are assigned a random value, and then they are updated using a learning algorithm like gradient descent. The weights and biases change so that the next training example is more accurately categorized, and patterns in data are "learned" by the neural network.
+
+Other activation functions are the logistic (ex. the sigmoid), tanh, and softmax functions. Mostly use of the sigmoid function.
+
+```sigmoid(x)=1/(1+e^−x)```
