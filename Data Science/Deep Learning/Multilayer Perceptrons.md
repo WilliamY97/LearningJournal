@@ -4,7 +4,7 @@ Before, dealing with only one output node which made the code straightforward. H
 
 <img src="https://d17h27t6h515a5.cloudfront.net/topher/2017/February/589978f4_network-with-labeled-weights/network-with-labeled-weights.png" width="500" height="400" />
 
-An XOR perceptron is a logic gate that outputs 0 if the inputs are the same and 1 if the inputs are different. 
-Unlike previous perceptrons, this graph isn't linearly separable. To handle more complex problems like this, 
-we can chain perceptrons together.
+But now, the weights need to be stored in a matrix, indexed as w(ij). Each row in the matrix will correspond to the weights leading out of a single input unit, and each column will correspond to the weights leading in to a single hidden unit. For our three input units and two hidden units, the weights matrix looks like this:
+
+<img src="https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58a49908_multilayer-diagram-weights/multilayer-diagram-weights.png" width="500" height="400" />
 
