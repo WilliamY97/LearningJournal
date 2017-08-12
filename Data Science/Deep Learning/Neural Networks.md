@@ -46,6 +46,16 @@ Of course, with neural networks we won't know in advance what values to pick for
 
 Then the neural network starts to learn! Initially, the weights and bias are assigned a random value, and then they are updated using a learning algorithm like gradient descent. The weights and biases change so that the next training example is more accurately categorized, and patterns in data are "learned" by the neural network.
 
+## Simplest Neural Network
+
 Other activation functions are the logistic (ex. the sigmoid), tanh, and softmax functions. Mostly use of the sigmoid function.
 
 ```sigmoid(x)=1/(1+e^−x)```
+
+The sigmoid function is bounded between 0 and 1, and as an output can be interpreted as a probability for success. It turns out, again, using a sigmoid as the activation function results in the same formulation as logistic regression.
+
+This is where it stops being a perceptron and begins being called a neural network. In the case of simple networks like this, neural networks don't offer any advantage over general linear models such as logistic regression.
+
+Using activation functions that are continuous and differentiable, it's possible to train the network using gradient descent, which you'll learn about next.
+
+
