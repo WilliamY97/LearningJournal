@@ -57,5 +57,3 @@ The sigmoid function is bounded between 0 and 1, and as an output can be interpr
 This is where it stops being a perceptron and begins being called a neural network. In the case of simple networks like this, neural networks don't offer any advantage over general linear models such as logistic regression.
 
 Using activation functions that are continuous and differentiable, it's possible to train the network using gradient descent, which you'll learn about next.
-
-## Gradient Descent
