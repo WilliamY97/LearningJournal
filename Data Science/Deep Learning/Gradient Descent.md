@@ -29,5 +29,8 @@ Since the weights will just go where ever the gradient takes them, they can end 
 We can reduce this by using something called **momentum** which TLDR is 
 
 ```
-The momentum term increases for dimensions whose gradients point in the same directions and reduces updates for dimensions whose gradients change directions. As a result, we gain faster convergence and reduced oscillation. - http://ruder.io/optimizing-gradient-descent/index.html#momentum
+The momentum term increases for dimensions whose gradients point in the same directions
+and reduces updates for dimensions whose gradients change directions. As a result, we 
+gain faster convergence and reduced oscillation. 
+- http://ruder.io/optimizing-gradient-descent/index.html#momentum
 ```
