@@ -10,6 +10,8 @@ The SSE is a good choice for a few reasons. The square ensures the error is alwa
 
 ## How It Works
 
+TLDR: You pick a point, take the derivative at that point - if it's greater than 0 then subtract the derivative multiplied by some step constant from the original point (vice verse if you're less than 0) so that you can try to converge at where the slope is zero.
+
 At each step, you calculate the error and the gradient, then use those to determine how much to change each weight. Repeating this process will eventually find weights that are close to the minimum of the error function, the block dot in the middle.
 
 With gradient descent, we take multiple small steps towards our goal. In this case, we want to change the weights in steps that reduce the error. Since the fastest way down is in the steepest direction, the steps taken should be in the direction that minimizes the error the most. We can find this direction by calculating the **gradient** of the squared error.
