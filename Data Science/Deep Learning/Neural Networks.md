@@ -58,4 +58,4 @@ This is where it stops being a perceptron and begins being called a neural netwo
 
 Using activation functions that are continuous and differentiable, it's possible to train the network using gradient descent, which you'll learn about next.
 
-
+## Gradient Descent
