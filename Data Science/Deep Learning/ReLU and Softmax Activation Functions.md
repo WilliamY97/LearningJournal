@@ -34,3 +34,9 @@ Unfortunately, ReLU units can be fragile during training and can “die”. For 
 ## Softmax
 
 Often we want to predict if some input belongs to one of many classes. This is a classification problem, but a sigmoid is no longer the best choice. Instead, we use the softmax function. **The softmax function squashes the outputs of each unit to be between 0 and 1**, just like a sigmoid. It also divides each output such that the total sum of the outputs is equal to 1. The output of the softmax function is equivalent to a categorical probability distribution, it tells you the probability that any of the classes are true.
+
+### Difference Between Softmax and Normal Sigmoid
+
+The only real difference between this and a normal sigmoid is that the softmax normalizes the outputs so that they sum to one. In both cases you can put in a vector and get out a vector where the outputs are a vector of the same size, but all the values are squashed between 0 and 1. You would use a sigmoid with one output unit for binary classification. But if you’re doing multinomial classification, you’d want to use multiple output units (one for each class) and the softmax activation on the output.
+
+
