@@ -1,6 +1,6 @@
 # Support Vector Machines (SVM)
 
-Support Vector Machines (aka Support Vector Networks) are a type of supervised learning model used for classification and regression analysis.
+Support Vector Machines (aka Support Vector Networks) are a type of **supervised learning model** used for classification and regression analysis.
 
 ![alt tag](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/512px-Kernel_Machine.svg.png)
 
