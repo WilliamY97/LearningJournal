@@ -1,7 +1,5 @@
 # Convolutional Networks
 
-## About CovNets
-
 Convolutional Networks are neural networks that share their parameters across space.
 
 If the data has some structure, and the neural network doesn't have to learn that structure from scratch, it's going to perform better.
