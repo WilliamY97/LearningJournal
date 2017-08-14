@@ -19,4 +19,3 @@ Graphically, it looks like:
 ![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58915ae8_relu/relu.png)
 
 ReLU activations are the simplest non-linear activation function you can use. When the input is positive, the derivative is 1, so there isn't the vanishing effect you see on backpropagated errors from sigmoids. Research has shown that ReLUs result in much faster training for large networks. Most frameworks like TensorFlow and TFLearn make it simple to use ReLUs on the the hidden layers, so you won't need to implement them yourself.
-
