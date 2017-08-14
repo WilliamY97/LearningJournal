@@ -25,4 +25,12 @@ The ```tf.global_variables_initializer()``` call returns an operation that will 
 
 Initializing the weights with random numbers from a normal distribution is good practice. Randomizing the weights helps the model from becoming stuck in the same place every time you train it.
 
+## Weights from Normal Distribution
+
 Similarly, choosing weights from a normal distribution prevents any one weight from overwhelming other weights. You'll use the ```tf.truncated_normal()``` function to generate random numbers from a normal distribution.
+
+```
+n_features = 120
+n_labels = 5
+weights = tf.Variable(tf.truncated_normal((n_features, n_labels)))
+```
