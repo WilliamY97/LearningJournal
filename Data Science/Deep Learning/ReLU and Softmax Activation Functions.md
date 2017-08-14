@@ -5,10 +5,7 @@ output unit. Howeve, this is not the only activation function, and it also has d
 
 ![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5893d15c_sigmoids/sigmoids.png)
 
-As mentioned in my other notes, the derivative of the sigmoid function maxes out at 0.25. This means when performing **back propogation** with
-sigmoid units, the errors going back into the network will be shrunk by at least 75% at every layer. For layers close to the input layer,
-the weight updates will be tiny if you have a lot of layers and those weights will take a really long time to train. **Due to this, sigmoids
-have fallen out of favor as activations on hidden units.**
+As mentioned in my other notes, the derivative of the sigmoid function maxes out at 0.25. This means when performing **back propogation** with sigmoid units, the errors going back into the network will be shrunk by at least 75% at every layer. For layers close to the input layer, the weight updates will be tiny if you have a lot of layers and those weights will take a really long time to train. **Due to this, sigmoids have fallen out of favor as activations on hidden units.**
 
 ## Rectified Linear Units (The New Popular Activation Function)
 
@@ -20,3 +17,6 @@ The output of the function is either the input x, or 0, whichever is larger. So 
 Graphically, it looks like:
 
 ![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58915ae8_relu/relu.png)
+
+ReLU activations are the simplest non-linear activation function you can use. When the input is positive, the derivative is 1, so there isn't the vanishing effect you see on backpropagated errors from sigmoids. Research has shown that ReLUs result in much faster training for large networks. Most frameworks like TensorFlow and TFLearn make it simple to use ReLUs on the the hidden layers, so you won't need to implement them yourself.
+
