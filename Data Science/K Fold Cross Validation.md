@@ -11,3 +11,15 @@ kk = kFold(12,3)
 for train_indices, test_indices in kf:
   print train_indices, test_indices
 ```
+
+## Randomizing in Cross Validation
+It is always recommended to randomize data to remove any hint of bias.
+
+Here we are still splitting our data into buckets except there are chosen randomly instead of in order.
+
+Randomizing is also easily done in sklearn by setting the shuffle parameter to be true when we initialize our KFold object.
+
+```
+kf = kFold(12, 3, shuffle = True)
+```
+
