@@ -1,7 +1,7 @@
 # ReLU and Softmax Activation Functions
 
 Previously, I've been using the sigmoid function as the activation function on hidden layers, in the case of classification, on the
-output unit. Howeve, this is not the only activation function, and it also has drawbacks.
+output unit. However, this is not the only activation function, and it also has drawbacks.
 
 ![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5893d15c_sigmoids/sigmoids.png)
 
@@ -30,3 +30,7 @@ CS231 Quote:
 ***
 Unfortunately, ReLU units can be fragile during training and can “die”. For example, a large gradient flowing through a ReLU neuron could cause the weights to update in such a way that the neuron will never activate on any datapoint again. If this happens, then the gradient flowing through the unit will forever be zero from that point on. That is, the ReLU units can irreversibly die during training since they can get knocked off the data manifold. For example, you may find that as much as 40% of your network can be “dead” (i.e. neurons that never activate across the entire training dataset) if the learning rate is set too high. With a proper setting of the learning rate this is less frequently an issue.
 ***
+
+## Softmax
+
+Often we want to predict if some input belongs to one of many classes. This is a classification problem, but a sigmoid is no longer the best choice. Instead, we use the softmax function. **The softmax function squashes the outputs of each unit to be between 0 and 1**, just like a sigmoid. It also divides each output such that the total sum of the outputs is equal to 1. The output of the softmax function is equivalent to a categorical probability distribution, it tells you the probability that any of the classes are true.
