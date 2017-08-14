@@ -1,0 +1,22 @@
+# ReLU and Softmax Activation Functions
+
+Previously, I've been using the sigmoid function as the activation function on hidden layers, in the case of classification, on the
+output unit. Howeve, this is not the only activation function, and it also has drawbacks.
+
+![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/5893d15c_sigmoids/sigmoids.png)
+
+As mentioned in my other notes, the derivative of the sigmoid function maxes out at 0.25. This means when performing **back propogation** with
+sigmoid units, the errors going back into the network will be shrunk by at least 75% at every layer. For layers close to the input layer,
+the weight updates will be tiny if you have a lot of layers and those weights will take a really long time to train. **Due to this, sigmoids
+have fallen out of favor as activations on hidden units.**
+
+## Rectified Linear Units (The New Popular Activation Function)
+
+Instead of sigmoids, most recent deep learning networks use **rectified linear units (ReLUs)** for the hidden layers. A rectified linear
+unit has output 0 if the input is less than 0, and raw output otherwise. That is, if the input is greater than 0, the output is equal to
+the input. Mathematically this is f(x) = max(x,0).
+
+The output of the function is either the input x, or 0, whichever is larger. So if x = -1, then f(x) = 0 and if x = 0.5 then f(x) = 0.5.
+Graphically, it looks like:
+
+![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58915ae8_relu/relu.png)
