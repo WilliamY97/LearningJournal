@@ -36,3 +36,4 @@ z = tf.placeholder(tf.float32)
 with tf.Session() as sess:
     output = sess.run(x, feed_dict={x: 'Test String', y: 123, z: 45.67})
 ```
+
