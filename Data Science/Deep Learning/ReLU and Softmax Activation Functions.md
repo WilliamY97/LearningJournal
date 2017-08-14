@@ -19,3 +19,14 @@ Graphically, it looks like:
 ![alt tag](https://d17h27t6h515a5.cloudfront.net/topher/2017/February/58915ae8_relu/relu.png)
 
 ReLU activations are the simplest non-linear activation function you can use. When the input is positive, the derivative is 1, so there isn't the vanishing effect you see on backpropagated errors from sigmoids. Research has shown that ReLUs result in much faster training for large networks. Most frameworks like TensorFlow and TFLearn make it simple to use ReLUs on the the hidden layers, so you won't need to implement them yourself.
+
+# Drawbacks
+
+It's possible that a large gradient can set the weights such that a ReLU units will always be 0. These "dead" units will always be
+0 and a lot of computation will be wasted in training.
+
+CS231 Quote:
+
+```
+Unfortunately, ReLU units can be fragile during training and can “die”. For example, a large gradient flowing through a ReLU neuron could cause the weights to update in such a way that the neuron will never activate on any datapoint again. If this happens, then the gradient flowing through the unit will forever be zero from that point on. That is, the ReLU units can irreversibly die during training since they can get knocked off the data manifold. For example, you may find that as much as 40% of your network can be “dead” (i.e. neurons that never activate across the entire training dataset) if the learning rate is set too high. With a proper setting of the learning rate this is less frequently an issue.
+```
