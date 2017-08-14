@@ -1,7 +1,7 @@
 # Linear Functions in Tensor Flow
 
 The most common operation in neural networks is calculating the linear combination of inputs, weights, and biases. As a reminder, we can
-write the output of the linear operation as y = xW + b
+write the output of the linear operation as **y = xW + b**
 
 ## Weights and Bias in TensorFlow
 
