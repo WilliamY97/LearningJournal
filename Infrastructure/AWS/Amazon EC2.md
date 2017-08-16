@@ -16,3 +16,11 @@ easier for developers.
 - Click on “Edit Storage”
 - Increase the storage size to x GB
 - Click on the “Review and Launch” button again.
+
+## Launch
+
+Click on the “Launch” button to launch your GPU instance.
+
+AWS will ask if you’d like to specify an authentication key pair. In this case the AMI has a pre-configured user account and password, so you can select “Proceed without a key pair” and click the “Launch Instances” button.
+
+Click the “View Instances” button to go to the EC2 Management Console and watch your instance boot.
