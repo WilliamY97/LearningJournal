@@ -26,4 +26,7 @@ Channel is a conventional term used to refer to a certain component of an image.
 A grayscale image, on the other hand, has just one channel. We only consider grayscale images, since they are easier for your classifier to
 learn. So we will have a single 2d matrix representing an image. The value of each pixel in the matrix will range from 0 to 255 – zero indicating black and 255 indicating white.
 
+## The Convolution Step
+
+![alt tag](https://ujwlkarn.files.wordpress.com/2016/07/convolution_schematic.gif?w=268&h=196)
 
