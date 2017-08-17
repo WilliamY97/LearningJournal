@@ -1,6 +1,6 @@
 # Convolutional Networks
 
-Notes taken from the source https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/ which is an incredible explaination of the
+Notes taken from the source https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/ which is an incredible explanation of the
 steps for CovNets.
 
 Convolutional Networks are neural networks that share their parameters across space.
