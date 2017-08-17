@@ -3,6 +3,8 @@
 Notes taken from the source https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/ which is an incredible explanation of the
 steps for CovNets.
 
+![alt tag](https://ujwlkarn.files.wordpress.com/2016/08/conv_all.png?w=748)
+
 Convolutional Networks are neural networks that share their parameters across space.
 
 If the data has some structure, and the neural network doesn't have to learn that structure from scratch, it's going to perform better.
