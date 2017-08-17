@@ -80,4 +80,16 @@ In case of **Max Pooling**, we define a spatial neighborhood (for example, a 2×
 
 **Note**: Pooling operation is applied seperately to each feature map (notice that, due to this, we get three output maps from three input maps).
 
+### What is the Purpose of Pooling
+
+The function of Pooling is to progressively reduce the spatial size of the input representation. In particular, pooling
+
+- makes the input representations (feature dimension) smaller and more manageable
+- reduces the number of parameters and computations in the network, therefore, controlling overfitting
+- makes the network invariant to small transformations, distortions and translations in the input image (a small distortion in input will not change the output of Pooling – since we take the maximum / average value in a local neighborhood).
+- helps us arrive at an almost scale invariant representation of our image (the exact term is “equivariant”). This is very powerful since we can detect objects in an image no matter where they are located.
+
+## Big Picture
+
+![alt tag](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-08-at-2-26-09-am.png?w=748)
 
