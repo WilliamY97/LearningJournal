@@ -19,3 +19,11 @@ There are four main operations in the ConvNet:
 **Weight Sharing:** When you know two inputs can contain the same kind of information, then you join their weights and train the weights
 jointly for those inputs.
 
+## Application to Images
+
+Channel is a conventional term used to refer to a certain component of an image. An image from a standard digital camera will have three channels – red, green and blue – you can imagine those as three 2d-matrices stacked over each other (one for each color), each having pixel values in the range 0 to 255.
+
+A grayscale image, on the other hand, has just one channel. We only consider grayscale images, since they are easier for your classifier to
+learn. So we will have a single 2d matrix representing an image. The value of each pixel in the matrix will range from 0 to 255 – zero indicating black and 255 indicating white.
+
+
