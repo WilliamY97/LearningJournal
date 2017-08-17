@@ -29,6 +29,13 @@ Channel is a conventional term used to refer to a certain component of an image.
 A grayscale image, on the other hand, has just one channel. We only consider grayscale images, since they are easier for your classifier to
 learn. So we will have a single 2d matrix representing an image. The value of each pixel in the matrix will range from 0 to 255 – zero indicating black and 255 indicating white.
 
+## Application of the Non Linearity (ReLU)
+
+The ReLU activation function is used after every Convolution operation. ReLU is an element wise operation (applied per pixel) and replaces all negative pixel values in the feature map by zero. The purpose of ReLU is **to introduce non-linearity in our ConvNet, since most of the real-world data we would want our ConvNet to learn would be non-linear** (Convolution is a linear operation – element wise matrix multiplication and addition, so we account for non-linearity by introducing a non-linear function like ReLU).
+
+![alt tag](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-07-at-6-18-19-pm.png?w=748)
+
+
 ## The Convolution Step
 
 ![alt tag](https://ujwlkarn.files.wordpress.com/2016/07/convolution_schematic.gif?w=268&h=196)
@@ -67,5 +74,10 @@ In practice, a CNN learns the values of these filters on its own during the trai
 
 **Spatial Pooling** (also called subsampling or downsampling) reduces the dimensionality of each feature map but retains the most important information. Spatial Pooling can be of different types: Max, Average, Sum etc.
 
+In case of **Max Pooling**, we define a spatial neighborhood (for example, a 2×2 window) and take the largest element from the rectified feature map within that window. Instead of taking the largest element we could also take the average (Average Pooling) or sum of all elements in that window. In practice, Max Pooling has been shown to work better.
+
+![alt tag](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-10-at-3-38-39-am.png?w=494)
+
+**Note**: Pooling operation is applied seperately to each feature map (notice that, due to this, we get three output maps from three input maps).
 
 
