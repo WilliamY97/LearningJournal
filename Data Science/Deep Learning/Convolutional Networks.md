@@ -30,3 +30,14 @@ learn. So we will have a single 2d matrix representing an image. The value of ea
 
 ![alt tag](https://ujwlkarn.files.wordpress.com/2016/07/convolution_schematic.gif?w=268&h=196)
 
+The figure above displays the Convolution operation. The output matrix is called **Convolved Feature or Feature Map**.
+
+We slide the orange matrix over our original matrix by 1 pixel (called stride) and for every position, we compute element
+wise multiplication (between two matrices) and add the multiplication outputs to get the final integer which forms a single
+element of the output matrix (pink). The 3x3 matrix "sees" only a part of the input image in each stride.
+
+In CNN terminology, the 3×3 matrix is called a ‘filter‘ or ‘kernel’ or ‘feature detector’ and the matrix formed by sliding the filter over the image and computing the dot product is called the ‘Convolved Feature’ or ‘Activation Map’ or the ‘Feature Map‘. It is important to note that filters acts as feature detectors from the original input image.
+
+In the table below, we can see the effects of convolution of the above image with different filters. As shown, we can perform operations such as Edge Detection, Sharpen and Blur just by changing the numeric values of our filter matrix before the convolution operation.
+
+![alt tag](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-05-at-11-03-00-pm.png?w=342&h=562)
