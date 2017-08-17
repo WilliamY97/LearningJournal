@@ -93,3 +93,33 @@ The function of Pooling is to progressively reduce the spatial size of the input
 
 ![alt tag](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-08-at-2-26-09-am.png?w=748)
 
+## Fully Connected Layer
+
+The Fully Connected layer is a traditional Multi Layer Perceptron that uses a softmax activation function in the output layer (other classifiers like SVM can also be used, but will stick to softmax in this post). The term “Fully Connected” implies that every neuron in the previous layer is connected to every neuron on the next layer.
+
+![alt tag](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-06-at-12-34-02-am.png?w=484&h=152)
+
+The output from the convolutional and pooling layers represent high-level features of the input image. The purpose of the Fully Connected layer is to use these features for classifying the input image into various classes based on the training dataset.
+
+Apart from classification, adding a fully-connected layer is also a (usually) cheap way of learning non-linear combinations of these features. Most of the features from convolutional and pooling layers may be good for the classification task, but combinations of those features might be even better.
+
+The sum of output probabilities from the Fully Connected Layer is 1. This is ensured by using the Softmax as the activation function in the output layer of the Fully Connected Layer. The Softmax function takes a vector of arbitrary real-valued scores and squashes it to a vector of values between zero and one that sum to one.
+
+## Putting Everything Together
+
+As discussed above, the Convolution + Pooling layers act as Feature Extractors from the input image while Fully Connected layer acts as a classifier.
+
+![alt tag](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-07-at-9-15-21-pm.png?w=748)
+
+- Step1: We initialize all filters and parameters / weights with random values
+- Step2: The network takes a training image as input, goes through the forward propagation step (convolution, ReLU and pooling operations along with forward propagation in the Fully Connected layer) and finds the output probabilities for each class.
+Lets say the output probabilities for the boat image above are [0.2, 0.4, 0.1, 0.3]
+Since weights are randomly assigned for the first training example, output probabilities are also random.
+- Step3: Calculate the total error at the output layer (summation over all 4 classes)
+ Total Error = ∑  ½ (target probability – output probability) ²
+- Step4: Use Backpropagation to calculate the gradients of the error with respect to all weights in the network and use gradient descent to update all filter values / weights and parameter values to minimize the output error.
+The weights are adjusted in proportion to their contribution to the total error.
+When the same image is input again, output probabilities might now be [0.1, 0.1, 0.7, 0.1], which is closer to the target vector [0, 0, 1, 0].
+This means that the network has learnt to classify this particular image correctly by adjusting its weights / filters such that the output error is reduced.
+Parameters like number of filters, filter sizes, architecture of the network etc. have all been fixed before Step 1 and do not change during training process – only the values of the filter matrix and connection weights get updated.
+- Step5: Repeat steps 2-4 with all images in the training set.
