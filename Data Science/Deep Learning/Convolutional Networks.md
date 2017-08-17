@@ -5,6 +5,13 @@ Convolutional Networks are neural networks that share their parameters across sp
 If the data has some structure, and the neural network doesn't have to learn that structure from scratch, it's going to perform better.
 For example in classifying letters, the attribute of color does not play a role in what makes an A an A.
 
+There are four main operations in the ConvNet:
+
+1. Convolution
+2. Non Linearity (ReLU)
+3. Pooling or Sub Sampling
+4. Classification (Fully Connected Layer)
+
 ## Important Concepts
 
 **Translation Invariance:** Showing explicitly, that objects and images are largely the same whether or not they are on the left or on the right of the picture.
