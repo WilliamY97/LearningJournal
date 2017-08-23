@@ -6,4 +6,4 @@ Traditional neural networks do not address the concept of persistence. The idea 
 before away and start thinking from scratch again. Recurrent neural networks address this issue, they are networks with loops
 in them, allowing for information to persist.
 
-<img src="http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-rolled.png" alt="Drawing" style="width: 60px;"/>
+![alt tag](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png)
