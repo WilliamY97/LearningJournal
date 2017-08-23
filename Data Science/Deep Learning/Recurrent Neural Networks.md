@@ -7,3 +7,4 @@ before away and start thinking from scratch again. Recurrent neural networks add
 in them, allowing for information to persist.
 
 src="http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-rolled.png" width="200" height="400" />
+![alt tag](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-rolled.png =100x20)
