@@ -1,5 +1,9 @@
 # Software Infrastructure
 
+### August 29, 2017
+
+- Performed case study on Twitter infrastructure
+
 ### August 11, 2017
 
 Things to learn:
