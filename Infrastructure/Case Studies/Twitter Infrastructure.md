@@ -35,4 +35,36 @@ The network looked like this:
 - No longer exposed to several known root causes of prior major incidents: increased protocol reconvergence times, route churn issues and unexpected issues with inherent OSPF complexities.
 - Enables non-impacting rack migrations.
 
-## Data Center Traffic
+## Storage
+
+Hundreds of millions of Tweets are sent every day. They are processed, stored, cached, served and analyzed.
+
+With such massive content, we need a consequent infrastructure. Storage and messaging represents 45% of Twitter’s infrastructure footprint.
+
+Following services were provided by their storage and messaging teams:
+
+![alt tag](https://blog.twitter.com/content/dam/blog-twitter/engineering/en_us/infrastructure/2017/behind-twitter-scale/eng_infra_002.png.img.fullhd.medium.png)
+
+### Challenges
+
+**scale multi-tenancy**: Often customers have corner cases that would impact existing tenants and force us to build dedicated clusters. More dedicated clusters increases the operational workload to keep things running.
+
+## Chronological Evolution
+
+Twitter was built on MySQL and originally all data was stored on it. We went from a small database instance to a large one, and eventually many large database clusters. Manually moving data across MySQL instances requires a lot of time consuming hands on work, so in April 2010 they introduced Gizzard – a framework for creating **distributed datastores**.
+
+Introduced FlockDB, a **graph storage solution** on top of Gizzard and MySQL, and in June 2010, Snowflake our **unique identifier service**. 2010 was also when we invested in Hadoop. Originally intended to store MySQL backups, it now is heavily used for analytics.
+
+2010 - Added Cassandra as a storage solution, and while it didn’t fully replace MySQL due to it’s lack of an auto-increment feature, it did gain adoption as a metrics store.
+
+- As traffic was growing exponentially, needed to grow the cluster, and, in April 2014 they built Manhattan: real-time, multi-tenant distributed database. Since then Manhattan has become one of their common storage layers and Cassandra has been deprecated.
+
+### Lessons Learned
+
+- Started protecting storage layers from abuse by sending a **back pressure signal** and enabling **query filtering**.
+
+## Big Wins
+
+- Code linting, style check hooks, documenting of best practices, and holding regular office hours.
+
+With linting tooling (puppet-lint) they were able to conform to common community linting standards. Reduced our linting errors and warnings in our codebase by 10s of thousands of lines and touched more than 20% of the codebase.
