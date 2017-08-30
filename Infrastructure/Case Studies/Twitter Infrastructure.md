@@ -18,4 +18,9 @@ of servers. In early 2015, they were suffering due to changing service architect
 physical scalability limits in the data center when a full mesh topology would not support additional hardware needed to add
 racks.
 
-- Existing data center **IGP** began to behave unexpectedly due to increasing **route scale** and **topology complexity**
+- Existing data center **IGP** began to behave unexpectedly due to increasing **route scale** and **topology complexity**.
+To address this, converted existing data centers to a **Clos** topology + **BGP** – a conversion which had to be done on a live network, yet, despite the complexity, was completed with minimal impact to services in a relatively short time span.
+
+The network looked like this:
+
+![alt tag](https://blog.twitter.com/content/dam/blog-twitter/engineering/en_us/infrastructure/2017/behind-twitter-scale/eng_infra_007.png.img.fullhd.medium.png)
