@@ -24,3 +24,15 @@ To address this, converted existing data centers to a **Clos** topology + **BGP*
 The network looked like this:
 
 ![alt tag](https://blog.twitter.com/content/dam/blog-twitter/engineering/en_us/infrastructure/2017/behind-twitter-scale/eng_infra_007.png.img.fullhd.medium.png)
+
+## Highlights of New Network
+
+- Smaller blast radius of a single device failure
+- Horizontal bandwidth scaling capabilities
+- Lower routing engine CPU overhead; far more efficient processing of route updates.
+- Higher route capacity due to lower CPU overhead.
+- More granular control of routing policy on a per device and link basis.
+- No longer exposed to several known root causes of prior major incidents: increased protocol reconvergence times, route churn issues and unexpected issues with inherent OSPF complexities.
+- Enables non-impacting rack migrations.
+
+## Data Center Traffic
