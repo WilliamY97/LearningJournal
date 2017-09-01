@@ -137,7 +137,7 @@ doesn't matter just as the question states.
 
 **1. Minimum Size Subarray Question**
 
-**2. Largest Substring Without Repating Characters**
+**2. Largest Substring Without Repeating Characters**
 
 **3. Largest Substring With at most two distinct characters**
 
