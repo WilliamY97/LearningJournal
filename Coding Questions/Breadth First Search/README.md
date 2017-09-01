@@ -150,6 +150,11 @@ complete.
 
 **210. Course Schedule II**
 
+This one wants to return the order of the courses if it is valid. Thus to do this I've create an additional array called
+result that I append zero indegree courses to everytime I pop them from the zeros array. Same idea as Question 207. but
+at the end when I check if the graph length is zero, I return the result array instead, or a blank array if the length
+isn't zero as requested in the question.
+
 **310. Minimum Height Trees**
 
 ## Array
