@@ -140,6 +140,14 @@ are part of the component and mark them as visited so they are not checked again
 
 **207. Course Schedule**
 
+A topological sort can be performed by keeping track of the in-degrees of a graph. Set up a dictionary that keeps track of the
+nodes and which ones they connect to. While doing this you can populate an array that keeps track of how many in degrees there are
+to a particular node. Finally iterate through your indegree array and find the nodes that have zero in-degree. Add these to a zero
+array which you will pop nodes from and check the nodes they connect to. Subtract an in degree for each connected node and then
+check if it now has zero in-degrees. If so then add it to the queue of zero in-degree nodes to be checked. At the end, delete the node we initially popped from the graph hash. When there are no more nodes in the zero array, we check if the length of the graph dict is
+zero - if it is then we know there are no contradictary cycles in the graph and based off the pre-reqs this course schedule can be
+complete.
+
 **210. Course Schedule II**
 
 **310. Minimum Height Trees**
