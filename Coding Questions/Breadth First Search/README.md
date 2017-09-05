@@ -157,6 +157,10 @@ isn't zero as requested in the question.
 
 **310. Minimum Height Trees**
 
+The idea is to pluck the leaves off the graph and then check what nodes are leaves after. Take those new leaves and repeat this method
+until there are 2 or less nodes left in the graph as that is the largest amount of nodes that can create a minimum height tree. Basically
+by peeling the layers off the graph we can find the nodes that can provide the most balanced distance to the initial leaves.
+
 ## Array
 
 Array based BFS is similar to Graphs in that we need to be concerned if we have visited a certain node before. In this case we don't
