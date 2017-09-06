@@ -131,6 +131,11 @@ doesn't matter just as the question states.
 
 **4. Sort Colors**
 
+Key to this problem is to have two tails. One on either side of the array. Iterate through it starting at zero and see which color it is.
+If it's 0 or 2 then we need to swap with the appropriate tail. If it's 2 specifically, after swapping, we check what the new value is. If
+it's 0 then we need to do another swap, if it's 1 then it stays where it is, if it's 2 then we do another swap. Keep doing this until the
+iteration reaches the end of the array.
+
 **5. Move Zeroes**
 
 Set a tail and then iterate through the indices of the array. If the indice is not a zero, then swap it with the tail value and
