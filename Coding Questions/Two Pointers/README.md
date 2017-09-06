@@ -133,6 +133,10 @@ doesn't matter just as the question states.
 
 **5. Move Zeroes**
 
+Set a tail and then iterate through the indices of the array. If the indice is not a zero, then swap it with the tail value and
+then increment the tail value. Thus it will ensure all non zero values propogate to the front and zeros will thus be pushed to the
+end.
+
 ### Window Subcategory
 
 **1. Minimum Size Subarray Question**
