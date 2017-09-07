@@ -129,6 +129,11 @@ doesn't matter just as the question states.
 
 **3. Remove Duplicates from Sorted Array II**
 
+Have two pointers just like before, but start on the third element. Check the indice your on and compare it to the two values before it.
+If it's different then set the tail indice to be that value and then increment the tail. The reason why we do this is to ensure that we
+will only ever take two of every element. At the end we simply return the tail value as that represent the number of elements that meet
+the requirement of the question (since it only increments when we do find such a value)
+
 **4. Sort Colors**
 
 Key to this problem is to have two tails. One on either side of the array. Iterate through it starting at zero and see which color it is.
