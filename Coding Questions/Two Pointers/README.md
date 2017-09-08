@@ -5,7 +5,9 @@ Two pointer questions can be seperated into three categories with subcategories:
 ### 1. Meeting (Sum or Array)
 Having two pointers approach each other from left and right side
 ### 2. Forwarding (List, Tail, Window, or Fast&Slow)
+Iteration of two pointers usually from left to right together
 ### 3. Two Arrays
+Makes usage of two arrays to solve issue
 
 ## Meeting
 
@@ -162,6 +164,10 @@ for i to end of array:
 
 **1. Minimum Size Subarray Question**
 
+We have to find the smallest contiguous array that sums to a specific value. To do this we keep a pointer at the start and iterate
+over the array adding each index value to a sum. If the sum gets over the target value then we know that logically this is as far
+as we can go (considering all values are positive - this is the core logic/trick to solve this) and to try and find the target we must decrease the sum. Thus we must shift the pointer we put at the start to the right until the sum is below the target again. The result is the minimum of the current result and the iterator - head + 1 to present how large the contiguous array is that sums to the value. 
+
 **2. Largest Substring Without Repeating Characters**
 
 **3. Largest Substring With at most two distinct characters**
@@ -170,4 +176,10 @@ for i to end of array:
 
 ### Fast&Slow Subcategory
 
+## Two Arrays
 
+**1. Implement strStr()**
+
+**2. Merge Sorted Array**
+
+**3. The Smallest Difference**
