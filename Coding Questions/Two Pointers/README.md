@@ -149,6 +149,17 @@ end.
 
 ### Window Subcategory
 
+Template Code:
+
+```
+for i to end of array:
+    add number to window
+    while match (eg. sum is greater than target):
+        update result
+        remove head element (aka the tail)
+        move the window
+```
+
 **1. Minimum Size Subarray Question**
 
 **2. Largest Substring Without Repeating Characters**
