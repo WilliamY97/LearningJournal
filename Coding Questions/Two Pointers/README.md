@@ -170,6 +170,13 @@ as we can go (considering all values are positive - this is the core logic/trick
 
 **2. Largest Substring Without Repeating Characters**
 
+The strategy to solve this problem is to set up a tail pointer like usual for window questions. Set up a dictionary that keeps track
+of the positions of the values inside the string. If we notice that a letter has been seen before in the dictionary then we must update
+the tail (start) pointer to be the original position of the letter + 1 as we are starting over again with a new substring. If we haven't
+seen the letter in the dictionary before then we check the distance from it and the start + 1 and compare it with the previous longest
+substring to see which is longer. It should be recognized that in this for loop iteration we will update the dictionary to include the
+current letter and its position (even if its already in the dict we update the position).
+
 **3. Largest Substring With at most two distinct characters**
 
 **4. Minimum Window Substring**
