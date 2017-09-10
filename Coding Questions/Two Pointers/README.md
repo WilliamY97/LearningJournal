@@ -179,6 +179,11 @@ current letter and its position (even if its already in the dict we update the p
 
 **3. Largest Substring With at most two distinct characters**
 
+The strategy here is to iterate through the array and add 1 to the occurence dictionary of that letter. If the length of the dictionary
+is larger than 2 then we know that we have more than 2 distinct letters. Logically the only way we can proceed is to get rid of letters
+from the back. So as long as the length of the dict is > 2 we decrement the letter occurence from the dict that the start pointer is at and then move it. If an occurence for a letter hits d from where the start pointer decrements it - we delete that key from the dictionary.
+Thus bringing down the length of the dict back to below 2. We use a maxval variable to keep track of the longest substring through the loop iterations.
+
 **4. Minimum Window Substring**
 
 ### Fast&Slow Subcategory
