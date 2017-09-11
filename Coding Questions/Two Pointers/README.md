@@ -188,12 +188,12 @@ Thus bringing down the length of the dict back to below 2. We use a maxval varia
 
 ### Fast&Slow Subcategory
 
-1. Linked List Cycle
+**1. Linked List Cycle**
 
 Simply run one pointer faster than the other pointer and then wait until either the faster one hits None (end of list) or they match
 meaning there is a cycle
 
-2. Linked List Cycle II
+**2. Linked List Cycle II**
 
 Core logic: Let s = l + d and f = l+d+c, where the point on the cycle they meet is l + d so the rest of the cycle is c - d but 
 f also equals 2(l+d) which means c = l+d so the rest of the cycle is equal to l. Thus when they meet we set the slow pointer back to
