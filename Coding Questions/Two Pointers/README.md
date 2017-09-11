@@ -188,6 +188,10 @@ Thus bringing down the length of the dict back to below 2. We use a maxval varia
 
 ### Fast&Slow Subcategory
 
+1. Linked List Cycle
+
+2. Linked List Cycle II
+
 ## Two Arrays
 
 **1. Implement strStr()**
