@@ -10,3 +10,8 @@ we compare if the letters match - if they do then we compare the next letter of 
 if they match until the end of pattern. If they don't match then we must iterate to the next letter of the text and start the
 process over again.
 
+## Run Time
+
+The worst case run-time of this algorithm is O(NM) where the M is the is length of the text and N is the length of the pattern.
+
+KMP Search can do the substring search in O(N + M) time. 
