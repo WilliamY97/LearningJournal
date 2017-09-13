@@ -11,7 +11,7 @@ def bsearch(array, l, r, target):
 		if array[mid] > target:
 			r = mid - 1
 		elif array[mid] < target:
-			l = mid
+			l = mid + 1
 		else:
 			return mid
 	return -1
