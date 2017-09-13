@@ -204,6 +204,10 @@ l steps
 
 **1. Implement strStr()**
 
+This is essentially finding a pattern in a string which makes use of the KMP algorithm. What we do is we iterate through the needle and compare it with a pivot on the haystack. If the letter matches we check the next letters of both strings to see if they match. If not we
+simply break and shift the pivot. The algorithm knows that the text and pattern will return -1 when the pivot and the iteration on the needle adds up to be the length of the string. This just means there will be not enough letters left to match a pattern. This can be shown
+by example.
+
 **2. Merge Sorted Array**
 
 **3. The Smallest Difference**
