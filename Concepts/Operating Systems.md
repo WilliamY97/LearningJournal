@@ -1,5 +1,7 @@
 # Operating Systems
 
+Note: In-depth study of OS in https://github.com/WilliamY97/LearningJournal/tree/master/uWaterloo/ECE254%20-%20Operating%20Systems%20and%20Systems%20Programming
+
 ## What Is An Operating System?
 
 Computing systems consist of a number of hardware components. This includes one or more processing elements (processors or CPU's). There

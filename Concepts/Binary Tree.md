@@ -6,7 +6,7 @@
 **Definition:** A data structure in which a record is linked to two successor records, usually referred to as the left branch
 when greater and the right when less than the previous record.
 
-##Implementation: LinkedList Vs. Array?
+## Implementation: LinkedList Vs. Array?
 
 For a **binary tree** the answer is an array (if it's dynamic hopefully). Here is an analysis given that that **the tree is balanced**
 

@@ -26,7 +26,7 @@ Ex. Ubuntu has various versions, some made for desktop, mobile, and servers.
 
 **Core OS** - Clustered, containerized deployment of apps
 
-##Important Directories
+## Important Directories
 
 **etc** - Configuration files live
 
