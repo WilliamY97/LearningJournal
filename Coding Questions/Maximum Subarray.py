@@ -19,6 +19,8 @@ class Solution(object):
         currentMax = totalMax = nums[0]
         
         for i in range(1,len(nums)):
+            # the thought process is - if nums[i] is larger than the held max + itself then the values before nums[i] are smaller than
+            # nums[i] and we can start over at nums[i] as the start of the subarray now instead
             currentMax = max(nums[i],currentMax + nums[i])
             totalMax = max(totalMax,currentMax)
         
