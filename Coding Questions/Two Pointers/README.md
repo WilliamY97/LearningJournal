@@ -210,4 +210,8 @@ by example.
 
 **2. Merge Sorted Array**
 
+Set a pointer to the end value of each array. Set a pointer to the actual end of num1. Now compare the element at each pointer indice from
+the arrays. If one is larger than the other then put that element at indice of the end pointer on num1 and then decrement the end pointer and the pointer on the array that the element came from. Repeat until out of elements. In the case that there are leftover elements in the second array, then we simply take them and put them at the start of num1. Since they are already ordered that's all we need to do. If there
+are elements leftover in num1 it doesn't matter because they already exist in the array we are adding to.
+
 **3. The Smallest Difference**
