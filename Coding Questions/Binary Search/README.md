@@ -17,6 +17,16 @@ def bsearch(array, l, r, target):
 	return -1
 ```
 
+**1. Two Sum II - Input Array is Sorted**
+
+**2. Search a 2D Matrix**
+
+**3. H-Index II**
+
+**4. Search a 2D Matrix II**
+
+**5. Find Peak Element**
+
 ## 2. >=
 
 ## 3. <=
