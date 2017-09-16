@@ -51,7 +51,7 @@ Following services were provided by their storage and messaging teams:
 
 ## Chronological Evolution
 
-Twitter was built on MySQL and originally all data was stored on it. We went from a small database instance to a large one, and eventually many large database clusters. Manually moving data across MySQL instances requires a lot of time consuming hands on work, so in April 2010 they introduced Gizzard – a framework for creating **distributed datastores**.
+Twitter was built on MySQL and originally all data was stored on it. Went from a small database instance to a large one, and eventually many large database clusters. Manually moving data across MySQL instances requires a lot of time consuming hands on work, so in April 2010 they introduced Gizzard – a framework for creating **distributed datastores**.
 
 Introduced FlockDB, a **graph storage solution** on top of Gizzard and MySQL, and in June 2010, Snowflake our **unique identifier service**. 2010 was also when we invested in Hadoop. Originally intended to store MySQL backups, it now is heavily used for analytics.
 
