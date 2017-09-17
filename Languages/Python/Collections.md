@@ -23,3 +23,15 @@ d = collections.defaultdict(int)
 print d['a']
 # prints 0
 ```
+
+Another example is defaulting the value of the dict to be a list.
+
+```
+>>> s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+>>> d = defaultdict(list)
+>>> for k, v in s:
+...     d[k].append(v)
+...
+>>> d.items()
+[('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
+```
