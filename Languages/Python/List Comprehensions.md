@@ -11,3 +11,5 @@ primes = [x for x in range(2, 50) if x not in noprimes]
 print primes
 [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
 ```
+
+Like the example above, you can develop a list with nested for loops. The nesting is read from left to right.
