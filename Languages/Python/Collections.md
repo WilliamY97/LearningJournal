@@ -1,4 +1,9 @@
-# defaultdict
+# Collections
+
+The collections module provides specialized container datatypes providing altneratives to Python's general purpose built-in containers:
+dict, list, set, and tuple.
+
+# defaultdict objects
 
 Dictionaries are used to store data for later retrieval by name (key). Keys must be unique, immutable objects, and are typically strings.
 The values in a dictionary can be anything. For many applications the values are simple types such as integers and strings.
