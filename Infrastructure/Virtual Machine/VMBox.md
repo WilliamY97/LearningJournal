@@ -13,3 +13,4 @@ Reboot the linux guest OS.
 Once the virtual linux comes back up, you should see your shared folder in /media/sf_foldername
 If you have not installed the guest additions, it may not work. That is also under the devices menu.
 
+On Ubuntu 16.0.4: **sudo mount -t vboxsf main_project sf_main_project**
