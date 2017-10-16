@@ -3,12 +3,12 @@
 The collections module provides specialized container datatypes providing altneratives to Python's general purpose built-in containers:
 dict, list, set, and tuple.
 
-# defaultdict objects
+## defaultdict objects
 
 Dictionaries are used to store data for later retrieval by name (key). Keys must be unique, immutable objects, and are typically strings.
 The values in a dictionary can be anything. For many applications the values are simple types such as integers and strings.
 
-## What is the different between defaultdic and a normal dict structure?
+### What is the different between defaultdic and a normal dict structure?
 
 A **defaultdict** works exactly like a normal dict, but it is initialized with a function ("default factory") that takes no arguments
 and provides the default value for a nonexistent key.
@@ -35,3 +35,5 @@ Another example is defaulting the value of the dict to be a list.
 >>> d.items()
 [('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
 ```
+
+## counter objects
