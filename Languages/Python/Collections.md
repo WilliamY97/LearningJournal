@@ -37,3 +37,11 @@ Another example is defaulting the value of the dict to be a list.
 ```
 
 ## counter objects
+
+A counter tool is provided to support convenient and rapid tallies. For example:
+
+```
+test = 'hello'
+c = collections.Counter(hello)
+print c => {h:1, e:1, l:2, o:1}
+```
