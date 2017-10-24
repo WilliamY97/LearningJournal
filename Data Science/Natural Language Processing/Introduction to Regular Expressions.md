@@ -25,6 +25,7 @@ What exactly are regular expressions?
   ## A Few Common Patterns
   
 | Pattern | Matches | Example |
+| --- | --- | --- |
 | \w+         |     word      |    'Magic'   |
 | \d          | digit         | 9            |
 | \s     | space              | ''           |
