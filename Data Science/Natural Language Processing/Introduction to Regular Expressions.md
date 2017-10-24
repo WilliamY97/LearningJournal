@@ -29,5 +29,20 @@ What exactly are regular expressions?
 | \w+         |     word      |    'Magic'   |
 | \d          | digit         | 9            |
 | \s     | space              | ''           |
-| *      | wildcard    | 'username74'        |
+| .*      | wildcard    | 'username74'        |
 | + or * | greedy match | `aaaaaa`           |
+
+- \w+ is to find words
+- \d is to find digits
+- \s is to find spaces
+- wildcard matches anything
+- greedy match helps match more than one ex. \w matchines letter \w+ matches word
+
+### Using these as capital letters negates them.
+
+| Pattern | Matches | Example |
+| --- | --- | --- |
+| \S         |     not space      |    'no_spaces'   |
+| [a-z]          | lowercase group         | 'abcdefg'            |
+
+
