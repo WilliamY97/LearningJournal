@@ -4,3 +4,4 @@
 - findall: find all patterns in a string
 - search: search for a pattern
 - match: match an entire string or substring based on a pattern
+- Pattern first, and the string second
