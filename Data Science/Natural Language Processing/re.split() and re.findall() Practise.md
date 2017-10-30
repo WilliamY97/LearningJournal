@@ -1,3 +1,5 @@
+Remember, you can use "\w" to match alphanumeric, "\d" to match digits, "\s" to match spaces and "+" to make anything greedy. For groupings, you can use square brackets [] to declare part of the pattern or the entire pattern.
+
 Input:
 ```
 # Import the regex module
