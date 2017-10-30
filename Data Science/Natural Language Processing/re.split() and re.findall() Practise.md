@@ -3,6 +3,8 @@ Input:
 # Import the regex module
 import re
 
+print(my_string)
+
 # Write a pattern to match sentence endings: sentence_endings
 sentence_endings = r"[.?!]"
 
