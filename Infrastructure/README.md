@@ -1,7 +1,7 @@
 # Software Infrastructure
 
 ### November 27, 2017
-- Great article on System's Design interviews relevant to Infra
+- Great article on System's Design interviews relevant to Infra https://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/
 
 ### August 29, 2017
 
