@@ -1,5 +1,8 @@
 # Software Infrastructure
 
+### November 27, 2017
+- Great article on System's Design interviews relevant to Infra
+
 ### August 29, 2017
 
 - Performed case study on Twitter infrastructure
