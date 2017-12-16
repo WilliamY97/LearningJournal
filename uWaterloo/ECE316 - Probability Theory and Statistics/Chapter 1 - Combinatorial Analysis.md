@@ -30,3 +30,7 @@ The total number of ways of ordering r elements, chosen from n distinct elements
 This quantity can be also expressed as n!(n-r)!.. This is denoted by nPr, the number of permutations of n things taken r at a time.
 
 ## 1.4 Combinations
+
+### Number of ways to select r elements from n distinct elements (order is not important)
+It is possible to choose, without regard of order, r elements from n distinct elements in n!/r!(n-r)! different ways. This is an important
+quantity in combinartors and will be denoted by (n r). It is also called a binomial coefficient and is sometimes written as rCn.
